@@ -1139,80 +1139,38 @@
   }
 
 
-  
   /* ── MOBILE LAYOUT CRITICAL FIXES + OVERLAY NAV ─────────────────── */
 @media (max-width: 768px) {
-    /* Banner: wraps text, stays fixed at top */
     .top-banner {
-      position: fixed !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      z-index: 300 !important;
-      height: auto !important;
-      min-height: 32px !important;
-      white-space: normal !important;
-      font-size: .68rem !important;
-      padding: .4rem 1rem !important;
-      line-height: 1.5 !important;
-      box-sizing: border-box !important;
+      position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important;
+      z-index: 300 !important; height: auto !important; min-height: 32px !important;
+      white-space: normal !important; font-size: .68rem !important;
+      padding: .4rem 1rem !important; line-height: 1.5 !important; box-sizing: border-box !important;
     }
-    /* Push ALL page content below fixed banner — mobile only */
     body { padding-top: 44px !important; }
-    /* Hero: remove desktop padding-top, use body offset instead */
     .hero { padding-top: 0 !important; min-height: calc(100vh - 44px) !important; }
-    /* Service/article page heroes */
     .page-hero { padding-top: 2.5rem !important; }
     .article-hero { padding-top: 2rem !important; }
-    /* Nav hidden on mobile */
     nav { display: none !important; }
-    /* Hamburger: sits just below banner */
     .mobile-fab { display: flex !important; top: 50px !important; }
-    /* Footer fix */
     footer {
-      padding: 2rem 1.25rem !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      text-align: center !important;
-      gap: 1.25rem !important;
-      display: flex !important;
+      padding: 2rem 1.25rem !important; flex-direction: column !important;
+      align-items: center !important; text-align: center !important;
+      gap: 1.25rem !important; display: flex !important;
     }
     .footer-logo { display: block !important; font-size: 1rem !important; }
-    .footer-links {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      gap: .4rem 1rem !important;
-      width: 100% !important;
-    }
+    .footer-links { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: .4rem 1rem !important; width: 100% !important; }
     .footer-links li { display: inline !important; }
     .footer-links a { display: inline-block !important; font-size: .8rem !important; color: rgba(255,255,255,.6) !important; }
     .footer-copy { font-size: .68rem !important; width: 100% !important; }
-
-    /* ── OVERLAY FONT IMPROVEMENTS ──────────────────────────────────── */
-    .mobile-overlay-logo {
-      color: rgba(255,255,255,.75) !important;
-      font-size: 1rem !important;
-      margin-bottom: 0.5rem !important;
-    }
-    .mobile-overlay-nav a {
-      color: rgba(255,255,255,.82) !important;
-      padding: .5rem 0 !important;
-    }
-    .mobile-overlay-nav .overlay-section-label {
-      color: var(--warm) !important;
-      opacity: 1 !important;
-    }
-    .mobile-overlay-nav .overlay-sub a {
-      color: rgba(255,255,255,.65) !important;
-    }
-    .mobile-overlay-cta {
-      background: var(--warm) !important;
-      color: #fff !important;
-      opacity: 1 !important;
-    }
+    .mobile-overlay-logo { color: rgba(255,255,255,.75) !important; font-size: 1rem !important; margin-bottom: 0.5rem !important; }
+    .mobile-overlay-nav a { color: rgba(255,255,255,.82) !important; padding: .5rem 0 !important; }
+    .mobile-overlay-nav .overlay-section-label { color: var(--warm) !important; opacity: 1 !important; }
+    .mobile-overlay-nav .overlay-sub a { color: rgba(255,255,255,.65) !important; }
+    .mobile-overlay-cta { background: var(--warm) !important; color: #fff !important; opacity: 1 !important; }
 
     /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────── */
+@media (max-width: 768px) {
   /* Show fab and overlay on mobile */
   .mobile-fab {
     display: flex;
@@ -1732,7 +1690,7 @@
 <!-- FOOTER -->
 <div style="background:var(--cream);border-top:1px solid var(--border);padding:2rem 5rem;">
   <p style="font-size:.82rem;color:var(--text-muted);line-height:1.7;max-width:960px;margin:0 auto;text-align:center;">
-    Serving couples and individuals throughout Tennessee via secure telehealth &mdash; including <strong>Brentwood</strong>, <strong>Nashville</strong>, <strong>Franklin</strong>, <strong>Cool Springs</strong>, <strong>Murfreesboro</strong>, <strong>Knoxville</strong>, <strong>Memphis</strong>, and surrounding communities across <strong>Shelby County</strong>, <strong>Davidson County</strong>, <strong>Knox County</strong>, <strong>Hamilton County</strong>, <strong>Rutherford County</strong>, <strong>Montgomery County</strong> and <strong>Williamson County</strong>. Marriage counseling, couples therapy, discernment counseling, and individual therapy available online throughout Tennessee.
+    Serving couples and individuals throughout Tennessee via secure telehealth &mdash; including <strong>Brentwood</strong>, <strong>Nashville</strong>, <strong>Franklin</strong>, <strong>Cool Springs</strong>, <strong>Murfreesboro</strong>, <strong>Knoxville</strong>, <strong>Memphis</strong>, <strong>Chattanooga</strong>, and <strong>Clarksville</strong>, and surrounding communities across <strong>Shelby County</strong>, <strong>Davidson County</strong>, <strong>Knox County</strong>, <strong>Hamilton County</strong>, <strong>Rutherford County</strong>, <strong>Montgomery County</strong>, and <strong>Williamson County</strong>. Marriage counseling, couples therapy, discernment counseling, and individual therapy available online throughout Tennessee.
   </p>
 </div>
 <div class="credential-strip">

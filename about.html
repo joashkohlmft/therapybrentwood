@@ -928,6 +928,7 @@
     /* Related/continue blocks less padding */
     [style*="border-radius:14px"][style*="padding:2rem"],
     [style*="border-radius:14px"][style*="padding: 2rem"] { padding: 1.25rem !important; margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; }
+    /* Credential strip compact */
     /* CTA strips */
     .cta-strip { padding: 1.75rem 1.25rem !important; }
     /* Article body spacing */
@@ -1105,20 +1106,11 @@
 
   /* ── MOBILE LAYOUT CRITICAL FIXES + OVERLAY NAV ─────────────────── */
 @media (max-width: 768px) {
-    /* Banner: wraps text, stays fixed at top */
     .top-banner {
-      position: fixed !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      z-index: 300 !important;
-      height: auto !important;
-      min-height: 32px !important;
-      white-space: normal !important;
-      font-size: .68rem !important;
-      padding: .4rem 1rem !important;
-      line-height: 1.5 !important;
-      box-sizing: border-box !important;
+      position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important;
+      z-index: 300 !important; height: auto !important; min-height: 32px !important;
+      white-space: normal !important; font-size: .68rem !important;
+      padding: .4rem 1rem !important; line-height: 1.5 !important; box-sizing: border-box !important;
     }
     body { padding-top: 44px !important; }
     .hero { padding-top: 0 !important; min-height: calc(100vh - 44px) !important; }
@@ -1127,26 +1119,15 @@
     nav { display: none !important; }
     .mobile-fab { display: flex !important; top: 50px !important; }
     footer {
-      padding: 2rem 1.25rem !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      text-align: center !important;
-      gap: 1.25rem !important;
-      display: flex !important;
+      padding: 2rem 1.25rem !important; flex-direction: column !important;
+      align-items: center !important; text-align: center !important;
+      gap: 1.25rem !important; display: flex !important;
     }
     .footer-logo { display: block !important; font-size: 1rem !important; }
-    .footer-links {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      gap: .4rem 1rem !important;
-      width: 100% !important;
-    }
+    .footer-links { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: .4rem 1rem !important; width: 100% !important; }
     .footer-links li { display: inline !important; }
     .footer-links a { display: inline-block !important; font-size: .8rem !important; color: rgba(255,255,255,.6) !important; }
     .footer-copy { font-size: .68rem !important; width: 100% !important; }
-
-    /* ── OVERLAY FONT IMPROVEMENTS ──────────────────────────────────── */
     .mobile-overlay-logo { color: rgba(255,255,255,.75) !important; font-size: 1rem !important; margin-bottom: 0.5rem !important; }
     .mobile-overlay-nav a { color: rgba(255,255,255,.82) !important; padding: .5rem 0 !important; }
     .mobile-overlay-nav .overlay-section-label { color: var(--warm) !important; opacity: 1 !important; }
@@ -1154,6 +1135,7 @@
     .mobile-overlay-cta { background: var(--warm) !important; color: #fff !important; opacity: 1 !important; }
 
     /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────── */
+@media (max-width: 768px) {
   /* Show fab and overlay on mobile */
   .mobile-fab {
     display: flex;
@@ -1668,9 +1650,9 @@
 </section>
 
 <!-- CTA -->
-<div style="background:var(--sage-light);border-radius:12px;padding:1.5rem 2rem;margin:2rem 0;">
-  <p style="font-size:.82rem;color:var(--text-muted);line-height:1.7;margin:0;text-align:center;">
-    Available for marriage counseling, couples therapy, and individual therapy throughout Tennessee via secure telehealth &mdash; <strong>Brentwood</strong>, <strong>Nashville</strong>, <strong>Franklin</strong>, <strong>Cool Springs</strong>, <strong>Murfreesboro</strong>, <strong>Knoxville</strong>, <strong>Memphis</strong>, <strong>Chattanooga</strong>, and all of <strong>Shelby County</strong>, <strong>Davidson County</strong>, <strong>Knox County</strong>, <strong>Hamilton County</strong>, <strong>Rutherford County</strong>, <strong>Montgomery County</strong> and <strong>Williamson County</strong>.
+<div style="background:var(--sage-light);border-radius:12px;padding:1.25rem 1.75rem;margin:2rem 0;">
+  <p style="font-size:.78rem;color:var(--text-muted);line-height:1.7;margin:0;">
+    Serving couples and individuals throughout Tennessee via secure telehealth &mdash; including <strong>Brentwood</strong>, <strong>Nashville</strong>, <strong>Franklin</strong>, <strong>Cool Springs</strong>, <strong>Murfreesboro</strong>, <strong>Knoxville</strong>, <strong>Memphis</strong>, <strong>Chattanooga</strong>, and <strong>Clarksville</strong>, and surrounding communities across <strong>Shelby County</strong>, <strong>Davidson County</strong>, <strong>Knox County</strong>, <strong>Hamilton County</strong>, <strong>Rutherford County</strong>, <strong>Montgomery County</strong>, and <strong>Williamson County</strong>. Marriage counseling, couples therapy, discernment counseling, and individual therapy available online throughout Tennessee.
   </p>
 </div>
 <section class="cta-section">
