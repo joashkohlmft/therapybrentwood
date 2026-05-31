@@ -73,8 +73,20 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
 .cta-strip h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 500; margin-bottom: 1rem; }
 .cta-strip h2 em { font-style: italic; color: #b8d4c8; }
 .cta-strip p { font-size: 0.97rem; color: rgba(255,255,255,0.72); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
-.btn-warm { display: inline-block; background: var(--warm); color: #fff; padding: 0.9rem 2.25rem; border-radius: 100px; font-size: 1rem; font-weight: 500; text-decoration: none; }
-.btn-warm:hover { background: #b8935e; }
+.btn-warm {
+    display: inline-block;
+    background: var(--warm);
+    color: #fff;
+    padding: 0.9rem 2.25rem;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.02em;
+  }
+  
+
 
 .credential-strip { background: var(--cream); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 1.5rem 3rem; }
 .credential-strip-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap; }
@@ -575,7 +587,7 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
   #reading-progress { display: none !important; }
 }
 </style>
-<!-- v7 2026-05-31 02:14:03 -->
+<!-- v8 2026-05-31 02:19:50 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

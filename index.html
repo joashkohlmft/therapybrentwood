@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v7 2026-05-31 02:14:03 -->
+<!-- v8 2026-05-31 02:19:50 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -729,6 +729,27 @@
     margin-top: 0.5rem;
   }
 
+  /* ── TOP BANNER ──────────────────────────────────────────────────────── */
+  .top-banner {
+    background: var(--sage-dark);
+    color: rgba(255,255,255,0.88);
+    text-align: center;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    height: 34px;
+    line-height: 34px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .top-banner strong { color: #fff; font-weight: 600; }
+
 @media (max-width: 1280px) {
   .hero { grid-template-columns: 55% 45%; }
   .hero-left { padding: 4rem 2.5rem 4rem 3rem; }
@@ -813,24 +834,6 @@
   .dropdown-divider { border-top: 1px solid var(--border); margin: 0.35rem 0; }
 
   /* TOP BANNER */
-  .top-banner {
-    background: var(--sage-dark);
-    color: rgba(255,255,255,0.88);
-    text-align: center;
-    font-size: 0.78rem;
-    letter-spacing: 0.02em;
-    padding: 0 1.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 300;
-    height: 34px;
-    line-height: 34px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   .top-banner strong { color: #fff; font-weight: 500; }
 
   /* CREDENTIAL STRIP */
@@ -1448,7 +1451,7 @@
       High-achieving couples face a particular kind of loneliness — outwardly successful, inwardly disconnected, often feeling like roommates in the lives they've built together. I bring both the clinical depth and the firsthand understanding of high-pressure professional worlds to help you find each other again.
     </p>
     <div class="hero-actions">
-      <a href="https://www.therapybrentwood.com/contact.html" class="btn-primary">Click here to schedule a complimentary consultation</a>
+      <a href="https://www.therapybrentwood.com/contact.html" class="btn-warm">Click here to schedule a complimentary consultation</a>
       <a href="about.html" class="btn-secondary">Meet Joash</a>
     </div>
     <div class="hero-trust">
@@ -1703,7 +1706,7 @@
     <p class="section-label">Ready to begin?</p>
     <h2 class="reveal">Ready to work with someone who <em>understands your world?</em></h2>
     <p class="cta-body">Schedule a complimentary 20-minute consultation. We'll discuss what you're navigating, I'll answer your questions, and we'll determine together whether we're the right fit.</p>
-    <a href="https://www.therapybrentwood.com/contact.html" class="btn-primary" style="font-size:1.05rem; padding: 1rem 2.5rem;">Click here to schedule a complimentary consultation</a>
+    <a href="https://www.therapybrentwood.com/contact.html" class="btn-warm" font-size:1.05rem; padding: 1rem 2.5rem;">Click here to schedule a complimentary consultation</a>
     <p class="cta-note">Strictly confidential · Online sessions · Tennessee</p>
   </div>
 </section>

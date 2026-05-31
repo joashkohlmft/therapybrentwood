@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v7 2026-05-31 02:14:03 -->
+<!-- v8 2026-05-31 02:19:50 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -660,6 +660,27 @@
     margin-top: 0.5rem;
   }
 
+  /* ── TOP BANNER ──────────────────────────────────────────────────────── */
+  .top-banner {
+    background: var(--sage-dark);
+    color: rgba(255,255,255,0.88);
+    text-align: center;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    height: 34px;
+    line-height: 34px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .top-banner strong { color: #fff; font-weight: 600; }
+
 @media (max-width: 900px) {
     .about-hero { grid-template-columns: 1fr; }
     .about-hero-right { min-height: 340px; }
@@ -733,24 +754,6 @@
   .dropdown-divider { border-top: 1px solid var(--border); margin: 0.35rem 0; }
 
   /* TOP BANNER */
-  .top-banner {
-    background: var(--sage-dark);
-    color: rgba(255,255,255,0.88);
-    text-align: center;
-    font-size: 0.78rem;
-    letter-spacing: 0.02em;
-    padding: 0 1.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 300;
-    height: 34px;
-    line-height: 34px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   .top-banner strong { color: #fff; font-weight: 500; }
 
   /* CREDENTIAL STRIP */
@@ -1410,7 +1413,7 @@
     <p class="about-hero-subtitle">
       Triple-certified in EFCT, EFIT, and EFFT by ICEEFT. Helping couples reconnect, rebuild trust, and resolve conflict — including couples who feel disconnected, stuck, or like roommates in the life they've built. A former telecommunications RF engineer and consultant with leading global telecoms companies — who brings rare firsthand understanding of high-achieving professional worlds alongside deep clinical training and a genuinely human approach.
     </p>
-    <a href="contact.html" class="btn-primary">Click here to schedule a complimentary consultation</a>
+    <a href="contact.html" class="btn-warm">Click here to schedule a complimentary consultation</a>
   </div>
   <div class="about-hero-right">
     <img src="images/joash-photo.jpg" alt="Joash Koh, Licensed Marriage and Family Therapist in Brentwood Tennessee" />
@@ -1688,7 +1691,7 @@
     <p class="cta-body">
       A complimentary 20-minute consultation is the first step. No pressure, no commitment — just an honest conversation about what you're carrying and whether I'm the right person to help.
     </p>
-    <a href="contact.html" class="btn-sage">Click here to schedule a complimentary consultation</a>
+    <a href="contact.html" class="btn-warm">Click here to schedule a complimentary consultation</a>
     <p class="cta-note">Confidential · Online sessions available · Brentwood · Nashville, TN</p>
   </div>
 </section>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v7 2026-05-31 02:14:03 -->
+<!-- v8 2026-05-31 02:19:50 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -73,8 +73,20 @@
   .cta-strip h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; margin-bottom: 1rem; }
   .cta-strip h2 em { font-style: italic; color: #b8d4c8; }
   .cta-strip p { font-size: 0.97rem; color: rgba(255,255,255,0.72); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
-  .btn-warm { display: inline-block; background: var(--warm); color: #fff; padding: 0.9rem 2.25rem; border-radius: 100px; font-size: 1rem; font-weight: 500; text-decoration: none; transition: background 0.2s; }
-  .btn-warm:hover { background: #b8935e; }
+  .btn-warm {
+    display: inline-block;
+    background: var(--warm);
+    color: #fff;
+    padding: 0.9rem 2.25rem;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.02em;
+  }
+  
+  
   
 /* Mobile overlay — hidden on desktop */
 
@@ -132,6 +144,27 @@
     padding-top: 1rem;
     margin-top: 0.5rem;
   }
+
+  /* ── TOP BANNER ──────────────────────────────────────────────────────── */
+  .top-banner {
+    background: var(--sage-dark);
+    color: rgba(255,255,255,0.88);
+    text-align: center;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 300;
+    height: 34px;
+    line-height: 34px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .top-banner strong { color: #fff; font-weight: 600; }
 
 @media (max-width: 768px) {
     /* Location block mobile */
@@ -252,24 +285,6 @@
   .dropdown-divider { border-top: 1px solid var(--border); margin: 0.35rem 0; }
 
   /* TOP BANNER */
-  .top-banner {
-    background: var(--sage-dark);
-    color: rgba(255,255,255,0.88);
-    text-align: center;
-    font-size: 0.78rem;
-    letter-spacing: 0.02em;
-    padding: 0 1.5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 300;
-    height: 34px;
-    line-height: 34px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   .top-banner strong { color: #fff; font-weight: 500; }
 
   /* CREDENTIAL STRIP */

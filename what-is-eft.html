@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v7 2026-05-31 02:14:03 -->
+<!-- v8 2026-05-31 02:19:50 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -106,8 +106,20 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
 .article-closing { background: var(--sage-dark); border-radius: 14px; padding: 2.5rem; margin-top: 3rem; color: #fff; text-align: center; }
 .article-closing p { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-style: italic; color: rgba(255,255,255,0.88); line-height: 1.7; margin-bottom: 1rem; }
 .article-closing p:last-of-type { margin-bottom: 1.5rem; }
-.btn-warm { display: inline-block; background: var(--warm); color: #fff; padding: 0.9rem 2.25rem; border-radius: 100px; font-size: 1rem; font-weight: 500; text-decoration: none; transition: background 0.2s; font-family: 'DM Sans', sans-serif; }
-.btn-warm:hover { background: #b8935e; }
+.btn-warm {
+    display: inline-block;
+    background: var(--warm);
+    color: #fff;
+    padding: 0.9rem 2.25rem;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.02em;
+  }
+  
+
 
 /* RELATED ARTICLES */
 .related-articles { background: var(--warm-light); padding: 4rem 2rem; border-top: 1px solid var(--border); }
