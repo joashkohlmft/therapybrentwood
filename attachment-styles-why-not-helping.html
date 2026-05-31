@@ -2,24 +2,24 @@
 <!-- v9 2026-05-31 02:27:12 -->
 <html lang="en">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Attachment Styles: Why Isn't It Helping? | EFT</title>
-<meta name="description" content="Knowing your attachment style isn&apos;t enough to change your relationship. Here&apos;s why &mdash; and what the nervous system actually needs. Introduces the knowing gap and effort trap. By Joash Koh LMFT, Brentwood Nashville TN."
-<meta name="keywords" content="attachment styles not working, why doesn't knowing attachment style help, anxious avoidant relationship, knowing gap, effort trap relationship, EFT attachment therapy Nashville, Joash Koh LMFT Brentwood"
-<meta name="robots" content="index, follow"
-<link rel="canonical" href="https://www.therapybrentwood.com/attachment-styles-why-not-helping.html"
-<meta name="geo.region" content="US-TN"
-<meta name="geo.placename" content="Brentwood, Tennessee"
-<meta name="geo.position" content="36.0334;-86.7827"
-<meta property="og:type" content="article"
-<meta property="og:title" content="You Know Your Attachment Style. Why Isn&rsquo;t It Helping?"
-<meta property="og:description" content="Knowing your attachment style isn&apos;t enough to change your relationship. Introduces the original knowing gap and effort trap frameworks. By Joash Koh LMFT."
-<meta property="og:url" content="https://www.therapybrentwood.com/attachment-styles-why-not-helping.html"
-<meta property="og:image" content="https://www.therapybrentwood.com/images/couple-distance.jpg"
-<meta property="og:image:width" content="1200"
-<meta property="og:image:height" content="630"
-<meta name="twitter:image" content="https://www.therapybrentwood.com/images/couple-distance.jpg"
+<meta name="description" content="Knowing your attachment style isn&apos;t enough to change your relationship. Here&apos;s why &mdash; and what the nervous system actually needs. Introduces the knowing gap and effort trap. By Joash Koh LMFT, Brentwood Nashville TN.">
+<meta name="keywords" content="attachment styles not working, why doesn't knowing attachment style help, anxious avoidant relationship, knowing gap, effort trap relationship, EFT attachment therapy Nashville, Joash Koh LMFT Brentwood">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.therapybrentwood.com/attachment-styles-why-not-helping.html">
+<meta name="geo.region" content="US-TN">
+<meta name="geo.placename" content="Brentwood, Tennessee">
+<meta name="geo.position" content="36.0334;-86.7827">
+<meta property="og:type" content="article">
+<meta property="og:title" content="You Know Your Attachment Style. Why Isn&rsquo;t It Helping?">
+<meta property="og:description" content="Knowing your attachment style isn&apos;t enough to change your relationship. Introduces the original knowing gap and effort trap frameworks. By Joash Koh LMFT.">
+<meta property="og:url" content="https://www.therapybrentwood.com/attachment-styles-why-not-helping.html">
+<meta property="og:image" content="https://www.therapybrentwood.com/images/couple-distance.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://www.therapybrentwood.com/images/couple-distance.jpg">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -48,7 +48,7 @@
 </script>
 <script>
 // Reading progress bar
-(function(){
+document.addEventListener('DOMContentLoaded', function(){
   var bar = document.getElementById('reading-progress');
   if (!bar) return;
   window.addEventListener('scroll', function(){
@@ -57,11 +57,11 @@
     var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
     bar.style.width = Math.min(pct, 100) + '%';
   }, { passive: true });
-})();
+});
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com"
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -436,79 +436,37 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
   /* Reading progress bar */
   #reading-progress{position:fixed;top:0;left:0;height:3px;background:var(--warm);width:0%;z-index:9999;transition:width .1s linear;}
 
-  
-    /* ── MOBILE LAYOUT CRITICAL FIXES ───────────────────────────────── */
-    /* Banner: wraps text, stays fixed at top */
+  /* ── MOBILE LAYOUT CRITICAL FIXES + OVERLAY NAV ─────────────────── */
+@media (max-width: 768px) {
     .top-banner {
-      position: fixed !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      z-index: 300 !important;
-      height: auto !important;
-      min-height: 32px !important;
-      white-space: normal !important;
-      font-size: .68rem !important;
-      padding: .4rem 1rem !important;
-      line-height: 1.5 !important;
-      box-sizing: border-box !important;
+      position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important;
+      z-index: 300 !important; height: auto !important; min-height: 32px !important;
+      white-space: normal !important; font-size: .68rem !important;
+      padding: .4rem 1rem !important; line-height: 1.5 !important; box-sizing: border-box !important;
     }
-    /* Push ALL page content below fixed banner — mobile only */
     body { padding-top: 44px !important; }
-    /* Hero: remove desktop padding-top, use body offset instead */
     .hero { padding-top: 0 !important; min-height: calc(100vh - 44px) !important; }
-    /* Service/article page heroes */
     .page-hero { padding-top: 2.5rem !important; }
     .article-hero { padding-top: 2rem !important; }
-    /* Nav hidden on mobile */
     nav { display: none !important; }
-    /* Hamburger: sits just below banner */
     .mobile-fab { display: flex !important; top: 50px !important; }
-    /* Footer fix */
     footer {
-      padding: 2rem 1.25rem !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      text-align: center !important;
-      gap: 1.25rem !important;
-      display: flex !important;
+      padding: 2rem 1.25rem !important; flex-direction: column !important;
+      align-items: center !important; text-align: center !important;
+      gap: 1.25rem !important; display: flex !important;
     }
     .footer-logo { display: block !important; font-size: 1rem !important; }
-    .footer-links {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      gap: .4rem 1rem !important;
-      width: 100% !important;
-    }
+    .footer-links { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: .4rem 1rem !important; width: 100% !important; }
     .footer-links li { display: inline !important; }
     .footer-links a { display: inline-block !important; font-size: .8rem !important; color: rgba(255,255,255,.6) !important; }
     .footer-copy { font-size: .68rem !important; width: 100% !important; }
+    .mobile-overlay-logo { color: rgba(255,255,255,.75) !important; font-size: 1rem !important; margin-bottom: 0.5rem !important; }
+    .mobile-overlay-nav a { color: rgba(255,255,255,.82) !important; padding: .5rem 0 !important; }
+    .mobile-overlay-nav .overlay-section-label { color: var(--warm) !important; opacity: 1 !important; }
+    .mobile-overlay-nav .overlay-sub a { color: rgba(255,255,255,.65) !important; }
+    .mobile-overlay-cta { background: var(--warm) !important; color: #fff !important; opacity: 1 !important; }
 
-  
-    /* ── OVERLAY FONT IMPROVEMENTS ──────────────────────────────────── */
-    .mobile-overlay-logo {
-      color: rgba(255,255,255,.75) !important;
-      font-size: 1rem !important;
-      margin-bottom: 0.5rem !important;
-    }
-    .mobile-overlay-nav a {
-      color: rgba(255,255,255,.82) !important;
-      padding: .5rem 0 !important;
-    }
-    .mobile-overlay-nav .overlay-section-label {
-      color: var(--warm) !important;
-      opacity: 1 !important;
-    }
-    .mobile-overlay-nav .overlay-sub a {
-      color: rgba(255,255,255,.65) !important;
-    }
-    .mobile-overlay-cta {
-      background: var(--warm) !important;
-      color: #fff !important;
-      opacity: 1 !important;
-    }
-  /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────────────── */
+    /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   /* Show fab and overlay on mobile */
   .mobile-fab {

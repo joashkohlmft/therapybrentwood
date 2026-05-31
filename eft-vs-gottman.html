@@ -2,22 +2,22 @@
 <!-- v9 2026-05-31 02:27:12 -->
 <html lang="en">
 <head>
-<meta charset="UTF-8"
-<meta name="viewport" content="width=device-width, initial-scale=1.0"
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EFT vs Gottman Method | Which Is Right for You?</title>
-<meta name="description" content="EFT vs the Gottman Method — an honest, research-based comparison of the two most studied couples therapy approaches. Written by Joash Koh LMFT, certified EFT therapist in Brentwood, TN."
-<meta name="keywords" content="EFT vs Gottman, emotionally focused therapy vs Gottman method, which couples therapy is best, EFT or Gottman Tennessee, couples therapy comparison Nashville, best couples therapy approach Brentwood TN"
-<meta name="robots" content="index, follow"
-<link rel="canonical" href="https://www.therapybrentwood.com/eft-vs-gottman.html"
-<meta name="geo.region" content="US-TN"
-<meta name="geo.placename" content="Brentwood, Tennessee"
-<meta property="og:type" content="article"
-<meta property="og:image" content="https://www.therapybrentwood.com/images/couple-walking.jpg"
-<meta property="og:image:width" content="1600"
-<meta property="og:image:height" content="900"
-<meta property="og:title" content="EFT vs Gottman — Two Maps, One Destination | Joash Koh LMFT"
-<meta property="og:description" content="An honest, research-based comparison of EFT and the Gottman Method. What makes them different, and why the evidence points clearly in one direction."
-<meta property="og:url" content="https://www.therapybrentwood.com/eft-vs-gottman.html"
+<meta name="description" content="EFT vs the Gottman Method — an honest, research-based comparison of the two most studied couples therapy approaches. Written by Joash Koh LMFT, certified EFT therapist in Brentwood, TN.">
+<meta name="keywords" content="EFT vs Gottman, emotionally focused therapy vs Gottman method, which couples therapy is best, EFT or Gottman Tennessee, couples therapy comparison Nashville, best couples therapy approach Brentwood TN">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.therapybrentwood.com/eft-vs-gottman.html">
+<meta name="geo.region" content="US-TN">
+<meta name="geo.placename" content="Brentwood, Tennessee">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://www.therapybrentwood.com/images/couple-walking.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="900">
+<meta property="og:title" content="EFT vs Gottman — Two Maps, One Destination | Joash Koh LMFT">
+<meta property="og:description" content="An honest, research-based comparison of EFT and the Gottman Method. What makes them different, and why the evidence points clearly in one direction.">
+<meta property="og:url" content="https://www.therapybrentwood.com/eft-vs-gottman.html">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -33,7 +33,7 @@
 </script>
 <script>
 // Reading progress bar
-  (function(){
+  document.addEventListener('DOMContentLoaded', function(){
     var bar = document.getElementById('reading-progress');
     if (!bar) return;
     window.addEventListener('scroll', function(){
@@ -42,12 +42,12 @@
       var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
       bar.style.width = Math.min(pct, 100) + '%';
     }, { passive: true });
-  })();
+  });
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com"
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -479,79 +479,37 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
   /* Reading progress bar */
   #reading-progress{position:fixed;top:0;left:0;height:3px;background:var(--warm);width:0%;z-index:9999;transition:width .1s linear;}
 
-  
-    /* ── MOBILE LAYOUT CRITICAL FIXES ───────────────────────────────── */
-    /* Banner: wraps text, stays fixed at top */
+  /* ── MOBILE LAYOUT CRITICAL FIXES + OVERLAY NAV ─────────────────── */
+@media (max-width: 768px) {
     .top-banner {
-      position: fixed !important;
-      top: 0 !important;
-      left: 0 !important;
-      right: 0 !important;
-      z-index: 300 !important;
-      height: auto !important;
-      min-height: 32px !important;
-      white-space: normal !important;
-      font-size: .68rem !important;
-      padding: .4rem 1rem !important;
-      line-height: 1.5 !important;
-      box-sizing: border-box !important;
+      position: fixed !important; top: 0 !important; left: 0 !important; right: 0 !important;
+      z-index: 300 !important; height: auto !important; min-height: 32px !important;
+      white-space: normal !important; font-size: .68rem !important;
+      padding: .4rem 1rem !important; line-height: 1.5 !important; box-sizing: border-box !important;
     }
-    /* Push ALL page content below fixed banner — mobile only */
     body { padding-top: 44px !important; }
-    /* Hero: remove desktop padding-top, use body offset instead */
     .hero { padding-top: 0 !important; min-height: calc(100vh - 44px) !important; }
-    /* Service/article page heroes */
     .page-hero { padding-top: 2.5rem !important; }
     .article-hero { padding-top: 2rem !important; }
-    /* Nav hidden on mobile */
     nav { display: none !important; }
-    /* Hamburger: sits just below banner */
     .mobile-fab { display: flex !important; top: 50px !important; }
-    /* Footer fix */
     footer {
-      padding: 2rem 1.25rem !important;
-      flex-direction: column !important;
-      align-items: center !important;
-      text-align: center !important;
-      gap: 1.25rem !important;
-      display: flex !important;
+      padding: 2rem 1.25rem !important; flex-direction: column !important;
+      align-items: center !important; text-align: center !important;
+      gap: 1.25rem !important; display: flex !important;
     }
     .footer-logo { display: block !important; font-size: 1rem !important; }
-    .footer-links {
-      display: flex !important;
-      flex-wrap: wrap !important;
-      justify-content: center !important;
-      gap: .4rem 1rem !important;
-      width: 100% !important;
-    }
+    .footer-links { display: flex !important; flex-wrap: wrap !important; justify-content: center !important; gap: .4rem 1rem !important; width: 100% !important; }
     .footer-links li { display: inline !important; }
     .footer-links a { display: inline-block !important; font-size: .8rem !important; color: rgba(255,255,255,.6) !important; }
     .footer-copy { font-size: .68rem !important; width: 100% !important; }
+    .mobile-overlay-logo { color: rgba(255,255,255,.75) !important; font-size: 1rem !important; margin-bottom: 0.5rem !important; }
+    .mobile-overlay-nav a { color: rgba(255,255,255,.82) !important; padding: .5rem 0 !important; }
+    .mobile-overlay-nav .overlay-section-label { color: var(--warm) !important; opacity: 1 !important; }
+    .mobile-overlay-nav .overlay-sub a { color: rgba(255,255,255,.65) !important; }
+    .mobile-overlay-cta { background: var(--warm) !important; color: #fff !important; opacity: 1 !important; }
 
-  
-    /* ── OVERLAY FONT IMPROVEMENTS ──────────────────────────────────── */
-    .mobile-overlay-logo {
-      color: rgba(255,255,255,.75) !important;
-      font-size: 1rem !important;
-      margin-bottom: 0.5rem !important;
-    }
-    .mobile-overlay-nav a {
-      color: rgba(255,255,255,.82) !important;
-      padding: .5rem 0 !important;
-    }
-    .mobile-overlay-nav .overlay-section-label {
-      color: var(--warm) !important;
-      opacity: 1 !important;
-    }
-    .mobile-overlay-nav .overlay-sub a {
-      color: rgba(255,255,255,.65) !important;
-    }
-    .mobile-overlay-cta {
-      background: var(--warm) !important;
-      color: #fff !important;
-      opacity: 1 !important;
-    }
-  /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────────────── */
+    /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   /* Show fab and overlay on mobile */
   .mobile-fab {
@@ -845,7 +803,7 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
 <div style="width:100%;height:600px;overflow:hidden;position:relative;">
   <img src="images/couple-walking.jpg"
        alt=""
-       style=" width:100%;height:100%;object-fit:cover;object-position:center 40%;"" class="parallax-img"
+       style="width:100%;height:100%;object-fit:cover;object-position:center 40%;" class="parallax-img"
        loading="lazy" />
   <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(61,92,80,0.2) 0%, rgba(250,248,244,0.7) 100%);"></div>
 </div>
