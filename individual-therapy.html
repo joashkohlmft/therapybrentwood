@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- v3 2026-05-31 01:52:37 -->
+<!-- v5 2026-05-31 01:59:31 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -443,7 +443,7 @@
 
   
     /* ── MOBILE LAYOUT CRITICAL FIXES ───────────────────────────────── */
-    /* Banner: fixed height so page knows how much to offset */
+    /* Banner: wraps text, stays fixed at top */
     .top-banner {
       position: fixed !important;
       top: 0 !important;
@@ -458,21 +458,18 @@
       line-height: 1.5 !important;
       box-sizing: border-box !important;
     }
-    /* All pages: push content below fixed banner */
+    /* Push ALL page content below fixed banner — mobile only */
     body { padding-top: 44px !important; }
-    /* Hero page: override the hardcoded 102px desktop padding */
+    /* Hero: remove desktop padding-top, use body offset instead */
     .hero { padding-top: 0 !important; min-height: calc(100vh - 44px) !important; }
-    /* Page heroes and article heroes */
+    /* Service/article page heroes */
     .page-hero { padding-top: 2.5rem !important; }
     .article-hero { padding-top: 2rem !important; }
-    /* Nav hidden on mobile — no space needed for it */
+    /* Nav hidden on mobile */
     nav { display: none !important; }
-    /* Hamburger FAB — position below banner */
-    .mobile-fab {
-      display: flex !important;
-      top: 52px !important;
-    }
-    /* Footer — force correct display */
+    /* Hamburger: sits just below banner */
+    .mobile-fab { display: flex !important; top: 50px !important; }
+    /* Footer fix */
     footer {
       padding: 2rem 1.25rem !important;
       flex-direction: column !important;
@@ -481,10 +478,7 @@
       gap: 1.25rem !important;
       display: flex !important;
     }
-    .footer-logo {
-      display: block !important;
-      font-size: 1rem !important;
-    }
+    .footer-logo { display: block !important; font-size: 1rem !important; }
     .footer-links {
       display: flex !important;
       flex-wrap: wrap !important;
@@ -493,15 +487,9 @@
       width: 100% !important;
     }
     .footer-links li { display: inline !important; }
-    .footer-links a {
-      display: inline-block !important;
-      font-size: .8rem !important;
-      color: rgba(255,255,255,.6) !important;
-    }
-    .footer-copy {
-      font-size: .68rem !important;
-      width: 100% !important;
-    }
+    .footer-links a { display: inline-block !important; font-size: .8rem !important; color: rgba(255,255,255,.6) !important; }
+    .footer-copy { font-size: .68rem !important; width: 100% !important; }
+
   /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   /* Show fab and overlay on mobile */
