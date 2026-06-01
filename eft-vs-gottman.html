@@ -661,11 +661,11 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
   /* Progress bar hidden on mobile */
   #reading-progress { display: none !important; }
 }
+} /* closes outer @media (max-width: 768px) */
 
-
-  /* Mobile comparison cards */
-  .comparison-mobile { display: none !important; }
-  .comparison-table-wrap { display: block !important; }
+/* ── COMPARISON TABLE — desktop default (outside all media queries) ── */
+.comparison-mobile { display: none !important; }
+.comparison-table-wrap { display: block !important; }
   .comparison-mobile-row { border: 1px solid var(--border); border-radius: 10px; padding: 1rem; margin-bottom: 1rem; background: #fff; }
   .comparison-mobile-label { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: .75rem; }
   .comparison-mobile-eft, .comparison-mobile-gottman { font-size: .9rem; color: var(--text-muted); line-height: 1.55; padding: .6rem .85rem; border-radius: 6px; margin-bottom: .5rem; display: flex; gap: .6rem; align-items: flex-start; }
