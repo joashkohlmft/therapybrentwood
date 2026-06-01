@@ -1093,7 +1093,7 @@
   <!-- LEFT PANEL -->
   <div class="left-panel">
     <p class="eyebrow">Complimentary 20-minute consultation</p>
-    <h1 class="left-title">Let's talk about<br><em>what matters most</em></h1>
+    <h1 class="left-title">You've already done<br><em>the hardest part</em></h1>
     <p class="left-body">
       Send me a message and I will personally respond within 24 hours. Our complimentary consultation is a direct, confidential conversation — no pressure, no commitment, no sales process.
     </p>
@@ -1109,7 +1109,7 @@
       </li>
       <li>
         <span class="check">✓</span>
-        Online sessions available throughout Tennessee and Malaysia
+        No right words needed — there's no wrong way to start this conversation
       </li>
       <li>
         <span class="check">✓</span>
@@ -1179,7 +1179,7 @@
       </div>
 
       <div class="form-group">
-        <label for="location">Where are you located? <span>*</span></label>
+        <label for="location">Where are you located? <span style="color:var(--text-muted);font-weight:400">(optional)</span></label>
         <select id="location" name="location">
           <option value="" disabled selected>Select your location</option>
           <option value="Tennessee, USA">Tennessee, USA</option>
@@ -1191,7 +1191,8 @@
 
       <div class="form-group">
         <label for="message">Tell me a little about what's going on <span>*</span></label>
-        <textarea id="message" name="message" placeholder="Share as much or as little as you're comfortable with. There's no right or wrong way to start this conversation."></textarea>
+        <p style="font-size:0.82rem;color:var(--text-muted);margin:-0.25rem 0 0.5rem;line-height:1.6;">Share as much or as little as you're comfortable with. There's no right or wrong way to start this conversation.</p>
+        <textarea id="message" name="message" placeholder="What's been weighing on you?"></textarea>
         <p class="field-error" id="messageError">Please share a little about what's going on.</p>
       </div>
 
@@ -1216,7 +1217,7 @@
       </div>
 
       <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
-        Send my message
+        Send — I'll respond within 24 hours
       </button>
     </form>
 
@@ -1230,25 +1231,6 @@
     </div>
   </div>
 
-</div>
-
-<!-- FOOTER -->
-<div style="background:var(--sage-light);border-radius:14px;padding:2rem;margin:3rem 0;">
-  <p style="font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);margin-bottom:1rem;">Before you reach out</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
-    <a href="faq" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:1rem;text-decoration:none;display:block;transition:border-color .2s;" onmouseover="this.style.borderColor='var(--sage)'" onmouseout="this.style.borderColor='var(--border)'">
-      <p style="font-size:.78rem;font-weight:500;color:var(--sage-dark);margin-bottom:.25rem;">Frequently Asked Questions</p>
-      <p style="font-size:.78rem;color:var(--text-muted);margin:0;line-height:1.5;">How sessions work, fees, and what to expect.</p>
-    </a>
-    <a href="about" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:1rem;text-decoration:none;display:block;transition:border-color .2s;" onmouseover="this.style.borderColor='var(--sage)'" onmouseout="this.style.borderColor='var(--border)'">
-      <p style="font-size:.78rem;font-weight:500;color:var(--sage-dark);margin-bottom:.25rem;">About Joash</p>
-      <p style="font-size:.78rem;color:var(--text-muted);margin:0;line-height:1.5;">Background, training, and approach.</p>
-    </a>
-    <a href="couples-therapy" style="background:#fff;border:1px solid var(--border);border-radius:10px;padding:1rem;text-decoration:none;display:block;transition:border-color .2s;" onmouseover="this.style.borderColor='var(--sage)'" onmouseout="this.style.borderColor='var(--border)'">
-      <p style="font-size:.78rem;font-weight:500;color:var(--sage-dark);margin-bottom:.25rem;">Couples Therapy</p>
-      <p style="font-size:.78rem;color:var(--text-muted);margin:0;line-height:1.5;">The primary work — EFT couples therapy.</p>
-    </a>
-  </div>
 </div>
 
 <div style="background:var(--sage-light);border-radius:12px;padding:1.25rem 1.75rem;margin:2rem 0;">
@@ -1322,7 +1304,7 @@
     const v2 = validateField('lastName', 'lastNameError', v => v.trim().length > 0);
     const v3 = validateField('email', 'emailError', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
     const v4 = validateField('service', 'serviceError', v => v.length > 0);
-    const v5 = validateField('location', 'locationError', v => v.length > 0);
+    const v5 = validateField('location', 'locationError', v => true);
     const v6 = validateField('message', 'messageError', v => v.trim().length > 10);
 
     const banner = document.getElementById('errorBanner');
@@ -1373,7 +1355,7 @@
     })
     .catch(() => {
       btn.disabled = false;
-      btn.textContent = 'Send my message';
+      btn.textContent = 'Send — I\'ll respond within 24 hours';
       alert('Something went wrong. Please try again or email me directly at joash@therapybrentwood.com');
     });
   }
