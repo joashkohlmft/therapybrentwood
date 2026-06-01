@@ -376,6 +376,74 @@
     line-height: 1.7;
   }
 
+  /* WHAT HAPPENS NEXT */
+  .what-happens-next {
+    margin-top: 1.75rem;
+    padding: 1.5rem 1.75rem;
+    background: var(--cream);
+    border: 1px solid rgba(61,92,80,0.12);
+    border-radius: 12px;
+  }
+
+  .whn-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--sage-dark);
+    letter-spacing: 0.01em;
+    margin-bottom: 1.1rem;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    color: var(--text-muted);
+  }
+
+  .whn-steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .whn-steps li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.9rem;
+  }
+
+  .whn-num {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--sage-dark);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.15rem;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .whn-steps li div strong {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.2rem;
+  }
+
+  .whn-steps li div p {
+    font-size: 0.83rem;
+    color: var(--text-muted);
+    line-height: 1.55;
+    margin: 0;
+  }
+
   /* ERROR */
   .field-error {
     font-size: 0.78rem;
@@ -1220,6 +1288,33 @@
         Send — I'll respond within 24 hours
       </button>
     </form>
+
+    <div class="what-happens-next">
+      <p class="whn-heading">What happens next</p>
+      <ol class="whn-steps">
+        <li>
+          <span class="whn-num">1</span>
+          <div>
+            <strong>I'll read your message personally</strong>
+            <p>Every inquiry comes directly to me. No receptionist, no intake coordinator.</p>
+          </div>
+        </li>
+        <li>
+          <span class="whn-num">2</span>
+          <div>
+            <strong>I'll reply within 24 hours</strong>
+            <p>Usually sooner. I'll suggest a few times for a free 20-minute phone consultation.</p>
+          </div>
+        </li>
+        <li>
+          <span class="whn-num">3</span>
+          <div>
+            <strong>We talk — no commitment required</strong>
+            <p>The consultation is a real conversation, not a sales call. You ask questions. I answer honestly. You decide if it feels right.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
 
     <div class="success-message" id="successMessage">
       <div class="success-icon">🌿</div>
