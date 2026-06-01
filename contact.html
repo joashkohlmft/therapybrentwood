@@ -26,22 +26,6 @@
 <meta property="og:title" content="Book a Free Consultation | Joash Koh LMFT Brentwood TN">
 <meta property="og:description" content="Schedule a complimentary 20-minute consultation with Joash Koh, LMFT — EFT couples therapist in Brentwood, Tennessee. Online sessions available throughout Tennessee and Malaysia.">
 <meta property="og:url" content="https://www.therapybrentwood.com/contact">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ContactPage",
-  "name": "Contact Joash Koh · EFT Therapist &amp; Supervisor",
-  "url": "https://www.therapybrentwood.com/contact",
-  "description": "Schedule a complimentary consultation with Joash Koh, LMFT — EFT couples therapist in Brentwood, Tennessee.",
-  "provider": {
-    "@type": "Person",
-    "name": "Joash Koh",
-    "jobTitle": "Licensed Marriage and Family Therapist",
-    "url": "https://www.therapybrentwood.com"
-  }
-}
-</script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -981,7 +965,14 @@
   "paymentAccepted": "Private Pay",
   "areaServed": [
     {"@type": "City", "name": "Brentwood", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
-    {"@type": "City", "name": "Nashville", "containedInPlace": {"@type": "State", "name": "Tennessee"}}
+    {"@type": "City", "name": "Nashville", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+    {"@type": "City", "name": "Franklin", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+    {"@type": "City", "name": "Murfreesboro", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+    {"@type": "City", "name": "Knoxville", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+    {"@type": "City", "name": "Memphis", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+    {"@type": "City", "name": "Chattanooga", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+    {"@type": "City", "name": "Clarksville", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
+    {"@type": "AdministrativeArea", "name": "Tennessee"}
   ],
   "address": {
     "@type": "PostalAddress",
@@ -1035,8 +1026,8 @@
   "speakable": {
     "@type": "SpeakableSpecification",
     "cssSelector": [
-      ".page-hero h1",
-      ".page-hero-sub"
+      ".left-title",
+      ".left-body"
     ]
   }
 }
@@ -1104,7 +1095,7 @@
     <p class="eyebrow">Complimentary 20-minute consultation</p>
     <h1 class="left-title">Let's talk about<br><em>what matters most</em></h1>
     <p class="left-body">
-      Send me a message and I will personally respond within one business day. Our complimentary consultation is a direct, confidential conversation — no pressure, no commitment, no sales process.
+      Send me a message and I will personally respond within 24 hours. Our complimentary consultation is a direct, confidential conversation — no pressure, no commitment, no sales process.
     </p>
 
     <ul class="reassurance-list">
@@ -1138,44 +1129,45 @@
   <!-- RIGHT PANEL -->
   <div class="right-panel">
     <h2 class="reveal">Send me a message</h2>
-    <p class="form-subtitle">I'll respond within one business day to schedule your complimentary consultation.</p>
+    <p class="form-subtitle">I'll personally respond within 24 hours to schedule your complimentary consultation.</p>
 
     <div class="form-error-banner" id="errorBanner">
       Please fill in all required fields before submitting.
     </div>
 
-    <div id="contactForm">
+    <form id="contactForm" action="https://formspree.io/f/mnjwyjrl" method="POST" novalidate>
       <div class="form-row">
         <div class="form-group">
           <label for="firstName">First name <span>*</span></label>
-          <input type="text" id="firstName" placeholder="Your first name" autocomplete="given-name" />
+          <input type="text" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name" />
           <p class="field-error" id="firstNameError">Please enter your first name.</p>
         </div>
         <div class="form-group">
           <label for="lastName">Last name <span>*</span></label>
-          <input type="text" id="lastName" placeholder="Your last name" autocomplete="family-name" />
+          <input type="text" id="lastName" name="lastName" placeholder="Your last name" autocomplete="family-name" />
           <p class="field-error" id="lastNameError">Please enter your last name.</p>
         </div>
       </div>
 
       <div class="form-group">
         <label for="email">Email address <span>*</span></label>
-        <input type="email" id="email" placeholder="you@email.com" autocomplete="email" />
+        <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" />
         <p class="field-error" id="emailError">Please enter a valid email address.</p>
       </div>
 
       <div class="form-group">
         <label for="phone">Phone number <span style="color:var(--text-muted);font-weight:400">(optional)</span></label>
-        <input type="tel" id="phone" placeholder="+1 (000) 000-0000" autocomplete="tel" />
+        <input type="tel" id="phone" name="phone" placeholder="+1 (000) 000-0000" autocomplete="tel" />
       </div>
 
       <div class="form-group">
         <label for="service">What brings you in? <span>*</span></label>
-        <select id="service">
+        <select id="service" name="service">
           <option value="" disabled selected>Select the best description</option>
           <option value="Couples Therapy">Couples therapy / marriage counseling</option>
           <option value="Premarital Counseling">Premarital counseling</option>
           <option value="Infidelity Recovery">Infidelity recovery</option>
+          <option value="Sex & Intimacy Therapy">Sex &amp; intimacy therapy</option>
           <option value="Trauma Therapy">Trauma therapy</option>
           <option value="Family Therapy">Family therapy</option>
           <option value="Individual Therapy">Individual therapy</option>
@@ -1188,7 +1180,7 @@
 
       <div class="form-group">
         <label for="location">Where are you located? <span>*</span></label>
-        <select id="location">
+        <select id="location" name="location">
           <option value="" disabled selected>Select your location</option>
           <option value="Tennessee, USA">Tennessee, USA</option>
           <option value="Malaysia">Malaysia</option>
@@ -1199,16 +1191,18 @@
 
       <div class="form-group">
         <label for="message">Tell me a little about what's going on <span>*</span></label>
-        <textarea id="message" placeholder="Share as much or as little as you're comfortable with. There's no right or wrong way to start this conversation."></textarea>
+        <textarea id="message" name="message" placeholder="Share as much or as little as you're comfortable with. There's no right or wrong way to start this conversation."></textarea>
         <p class="field-error" id="messageError">Please share a little about what's going on.</p>
       </div>
 
       <div class="form-group">
         <label for="heardAbout">How did you hear about me? <span style="color:var(--text-muted);font-weight:400">(optional)</span></label>
-        <select id="heardAbout">
+        <select id="heardAbout" name="heardAbout">
           <option value="" disabled selected>Select one</option>
           <option value="Google Search">Google search</option>
           <option value="Psychology Today">Psychology Today</option>
+          <option value="ICEEFT Directory">ICEEFT therapist directory</option>
+          <option value="LinkedIn">LinkedIn</option>
           <option value="Referral from therapist">Referral from a therapist</option>
           <option value="Friend or family">Friend or family recommendation</option>
           <option value="Social media">Social media</option>
@@ -1224,13 +1218,13 @@
       <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
         Send my message
       </button>
-    </div>
+    </form>
 
     <div class="success-message" id="successMessage">
       <div class="success-icon">🌿</div>
       <h3 class="success-title">Message received</h3>
       <p class="success-body">
-        Thank you for reaching out. I've received your message and will personally respond within one business day to schedule your complimentary consultation.<br><br>
+        Thank you for reaching out. I've received your message and will personally respond within 24 hours to schedule your complimentary consultation.<br><br>
         Taking this step takes courage — I look forward to connecting with you.
       </p>
     </div>
