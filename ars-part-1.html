@@ -9,14 +9,15 @@
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ARS Part 1: When One Partner Carries the Relationship | Joash Koh LMFT</title>
-<meta name="description" content="Asymmetrical Repair Syndrome — when one partner carries all the emotional repair. Original framework by Joash Koh LMFT, Brentwood TN. Part 1 of 4.">
+<title>Asymmetrical Repair Syndrome: Part 1 | Joash Koh LMFT</title>
+<meta name="description" content="When one partner carries 100% of a relationship's emotional repair. Original ARS framework by Joash Koh LMFT, Brentwood TN. Part 1 of 4.">
 <meta name="keywords" content="asymmetrical repair syndrome, one partner does all emotional work, relationship repair imbalance, why do I always apologize first, EFT couples therapy Brentwood TN, Joash Koh LMFT">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Joash Koh, LMFT">
 <link rel="canonical" href="https://www.therapybrentwood.com/ars-part-1">
 <meta name="geo.region" content="US-TN">
 <meta name="geo.placename" content="Brentwood, Tennessee">
+<meta name="geo.position" content="36.0334;-86.7827">
 <meta property="og:type" content="article">
 <meta property="og:image" content="https://www.therapybrentwood.com/images/couple-distance.jpg">
 <meta property="og:image:width" content="1600">
@@ -655,6 +656,35 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
   /* Progress bar hidden on mobile */
   #reading-progress { display: none !important; }
 }
+
+/* ── DIAGRAM ELEMENTS ─────────────────────────────────────── */
+.diagram-wrap { margin: 2.5rem 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: #fff; }
+.diagram-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); padding: 0.75rem 1.5rem; border-bottom: 1px solid var(--border); background: var(--cream); }
+@media (max-width: 768px) { .diagram-wrap svg { height: auto !important; } }
+.archetype-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin: 2rem 0; }
+.archetype-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; }
+.archetype-card-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.5rem; display: block; }
+.archetype-card-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--sage-dark); margin-bottom: 0.6rem; }
+.archetype-card-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin: 0; }
+.archetype-card-belief { font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; font-style: italic; color: var(--sage-dark); margin-top: 0.65rem; padding-top: 0.65rem; border-top: 1px solid var(--border); line-height: 1.55; }
+@media (max-width: 768px) { .archetype-grid { grid-template-columns: 1fr; } }
+.not-too-much-box { background: var(--sage-dark); color: rgba(255,255,255,0.9); border-radius: 14px; padding: 2rem 2.5rem; margin: 2.5rem 0; text-align: center; }
+.not-too-much-box .ntm-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--warm); margin-bottom: 1rem; display: block; }
+.not-too-much-box p { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-style: italic; color: rgba(255,255,255,0.88); line-height: 1.7; margin: 0; }
+@media (max-width: 768px) { .not-too-much-box { padding: 1.25rem; font-size: 1rem; } }
+.healing-map { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+.healing-map-col { padding: 1.5rem; }
+.healing-map-col.before { background: rgba(107,103,96,0.06); }
+.healing-map-col.after { background: var(--sage-light); }
+.healing-map-header { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1rem; display: block; }
+.healing-map-col.before .healing-map-header { color: var(--text-muted); }
+.healing-map-col.after .healing-map-header { color: var(--sage-dark); }
+.healing-map-item { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; padding: 0.4rem 0; border-bottom: 1px solid var(--border); display: flex; gap: 0.6rem; align-items: baseline; }
+.healing-map-item:last-child { border-bottom: none; }
+.healing-map-col.after .healing-map-item { color: var(--sage-dark); }
+.healing-map-icon { flex-shrink: 0; font-size: 0.8rem; }
+@media (max-width: 768px) { .healing-map { grid-template-columns: 1fr; } .healing-map-col { padding: 1rem; } }
+
 </style>
 <script type="application/ld+json">
 {
@@ -969,7 +999,34 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
   <p>The original pain of their absence. And a fresh layer of shame about how you responded to it.</p>
   <p><em>You're too much. You're crazy. Why can't you just let it go?</em></p>
   <p>This is the cycle. It does not begin with you being "too much." It begins with a structural imbalance in which one person is doing all of the emotional reaching, and the other has learned, consciously or not, that going quiet is safe.</p>
-  <h2 class="reveal">What ARS Actually Feels Like</h2>
+  <div class="diagram-wrap reveal">
+  <div class="diagram-label">Diagram &mdash; The ARS Cycle: How the Pattern Repeats</div>
+  <svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',sans-serif;">
+    <defs>
+      <marker id="arrowC1" markerWidth="9" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 9 3.5, 0 7" fill="#c9a87c"/></marker>
+      <marker id="arrowS1" markerWidth="9" markerHeight="7" refX="7" refY="3.5" orient="auto"><polygon points="0 0, 9 3.5, 0 7" fill="#7a9e8e"/></marker>
+    </defs>
+    <rect x="280" y="20" width="160" height="58" rx="10" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+    <text x="360" y="44" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#3d5c50">Partner Withdraws</text>
+    <text x="360" y="62" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10.5" fill="#6b6760">silence, distance, shutdown</text>
+    <rect x="500" y="130" width="160" height="58" rx="10" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.5"/>
+    <text x="580" y="154" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#9a7a4a">Alarm Fires</text>
+    <text x="580" y="172" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10.5" fill="#6b6760">bond feels unsafe, body reacts</text>
+    <rect x="280" y="240" width="160" height="58" rx="10" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+    <text x="360" y="264" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#3d5c50">Pursuer Reaches</text>
+    <text x="360" y="282" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10.5" fill="#6b6760">texts, initiates, escalates</text>
+    <rect x="60" y="130" width="160" height="58" rx="10" fill="rgba(44,42,38,0.07)" stroke="#e2ddd6" stroke-width="1.5"/>
+    <text x="140" y="154" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#2c2a26">Shame &amp; Collapse</text>
+    <text x="140" y="172" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10.5" fill="#6b6760">&ldquo;I&rsquo;m too much&rdquo; &middot; cycle repeats</text>
+    <path d="M 440,55 Q 530,55 500,140" fill="none" stroke="#c9a87c" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowC1)"/>
+    <path d="M 530,190 Q 530,270 440,265" fill="none" stroke="#c9a87c" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowC1)"/>
+    <path d="M 280,265 Q 190,265 220,190" fill="none" stroke="#7a9e8e" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowS1)"/>
+    <path d="M 190,130 Q 190,55 280,52" fill="none" stroke="#7a9e8e" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowS1)"/>
+    <text x="360" y="160" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#9a9490">The ARS</text>
+    <text x="360" y="177" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#9a9490">Cycle</text>
+  </svg>
+</div>
+<h2 class="reveal">What ARS Actually Feels Like</h2>
   <p>Because ARS lives at the intersection of the body, the mind, and the relational system, its symptoms are wide-ranging and deeply personal. What follows is not a complete or exhaustive list, and it was never meant to be. Human pain is too particular for that. But these are some of the most common experiences people describe when they are living inside this dynamic, and if even two or three of them resonate with you, that resonance itself is worth paying attention to.</p>
   <p><strong>The attachment drop.</strong> A visceral, physical sensation of hollowing in the chest or stomach the moment a partner withdraws. Not just emotional discomfort. A felt sense that something essential has just left the room. Some people describe it as a dropping feeling, like an elevator that suddenly loses its cable. Others describe it as a coldness that spreads from the center of the chest outward. Whatever the specific sensation, the body is responding before the mind has fully registered what happened.</p>
   <p><strong>Somatic vigilance.</strong> The inability to rest, sleep, eat, or focus on anything unrelated to the relationship. The nervous system has locked entirely onto the partner, scanning their sighs, their body language, the tone of a one-word reply, the sound of their footsteps in another room. This is not paranoia. It is a threat-detection system running on full power because the environment has repeatedly signaled that the bond is unsafe.</p>
@@ -983,7 +1040,27 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
   <h2 class="reveal">Where This Wound Comes From</h2>
   <p>ARS is triggered by an adult relationship, but the ground it grows in was almost always prepared long before you met your partner. Most people who develop ARS did not arrive at adulthood with a blank emotional slate. They arrived carrying a specific kind of nervous system, one that was trained, in childhood, to accept an asymmetric burden of care. To work for love rather than simply receive it.</p>
   <p>This is not about blame. It is not about diagnosing your parents or your childhood as the source of all your pain. It is about understanding the architecture beneath the pattern, because when you understand where something comes from, it becomes a little less frightening. A little less proof of your brokenness. A little more like: <em>of course. Of course this is where I learned this.</em></p>
-  <h2 class="reveal">The Glasshouse Child</h2>
+  <div class="archetype-grid reveal">
+  <div class="archetype-card">
+    <span class="archetype-card-label">Origin Pattern 1</span>
+    <p class="archetype-card-name">The Glasshouse Child</p>
+    <p class="archetype-card-text">Grew up reading the emotional temperature of a fragile or volatile home. Became expert at monitoring, adjusting, managing the climate before it could turn.</p>
+    <p class="archetype-card-belief">&ldquo;If I am not actively managing this relationship, everything will fall apart.&rdquo;</p>
+  </div>
+  <div class="archetype-card">
+    <span class="archetype-card-label">Origin Pattern 2</span>
+    <p class="archetype-card-name">The Ghost Child</p>
+    <p class="archetype-card-text">Emotional needs went unacknowledged. A parent present in body but absent in response. Learned that reaching into blankness feels like erasure.</p>
+    <p class="archetype-card-belief">&ldquo;When someone goes quiet, it means I am disappearing.&rdquo;</p>
+  </div>
+  <div class="archetype-card">
+    <span class="archetype-card-label">Origin Pattern 3</span>
+    <p class="archetype-card-name">The Performance-Based Child</p>
+    <p class="archetype-card-text">Love was earned through achieving, fixing, fulfilling a role. Warmth was conditional. Resting felt like falling out of favour.</p>
+    <p class="archetype-card-belief">&ldquo;I only have value when I am working for love. Stopping means being left.&rdquo;</p>
+  </div>
+</div>
+<h2 class="reveal">The Glasshouse Child</h2>
   <p>You grew up in a home where the emotional atmosphere was fragile. A parent who was chronically depressed, or volatile, or unpredictable, or who carried a grief so large it filled every room. And because that parent's emotional state determined the safety of the entire household, you learned to read the room before you learned to read a book.</p>
   <p>You became expert at monitoring. At noticing when a parent's voice was a half-tone too tight. At watching for the particular way a door closed that meant tonight would be difficult. You learned to adjust yourself, to become quieter or funnier or more helpful, to manage the climate before it could turn.</p>
   <p>And deep in your nervous system, a belief formed: <em>if I am not actively managing the emotional temperature of this relationship, everything will fall apart.</em></p>
