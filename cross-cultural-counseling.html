@@ -27,12 +27,42 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Joash Koh · EFT Therapist & Supervisor",
+  "@type": "ProfessionalService",
+  "name": "Joash Koh \u00b7 EFT Therapist & Supervisor",
   "description": "Cross-cultural and multicultural counseling for Asian Americans, immigrant couples, and cross-cultural relationships in Brentwood and Nashville, Tennessee.",
   "url": "https://www.therapybrentwood.com/cross-cultural-counseling",
-  "areaServed": ["Brentwood TN", "Nashville TN"],
-  "medicalSpecialty": "MentalHealth"
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Brentwood",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Tennessee"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.0331,
+        "longitude": -86.7828
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Nashville",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Tennessee"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.1627,
+        "longitude": -86.7816
+      }
+    },
+    {
+      "@type": "State",
+      "name": "Tennessee"
+    }
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -622,7 +652,37 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
 }
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Joash Koh","jobTitle":"Licensed Marriage and Family Therapist","url":"https://www.therapybrentwood.com/about","hasCredential":["LMFT #1970 Tennessee","ICEEFT Certified EFT Therapist (EFCT, EFIT, EFFT)","AAMFT Clinical Fellow","CCTP"],"worksFor":{"@type":"MedicalBusiness","name":"Joash Koh · EFT Therapist & Supervisor","url":"https://www.therapybrentwood.com"},"areaServed":["Brentwood TN","Nashville TN","Tennessee"]}
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Joash Koh",
+  "jobTitle": "Licensed Marriage and Family Therapist",
+  "url": "https://www.therapybrentwood.com/about",
+  "hasCredential": [
+    "LMFT #1970 Tennessee",
+    "ICEEFT Certified EFT Therapist (EFCT, EFIT, EFFT)",
+    "AAMFT Clinical Fellow",
+    "CCTP"
+  ],
+  "worksFor": {
+    "@type": "ProfessionalService",
+    "name": "Joash Koh \u00b7 EFT Therapist & Supervisor",
+    "url": "https://www.therapybrentwood.com"
+  },
+  "areaServed": [
+    "Brentwood TN",
+    "Nashville TN",
+    "Tennessee"
+  ],
+  "sameAs": [
+    "https://www.psychologytoday.com/us/therapists/joash-koh-brentwood-tn/1399554",
+    "https://directory.iceeft.com/therapist-profile/joash_koh_10323/",
+    "https://www.therapistlocator.net",
+    "https://www.linkedin.com/in/joash-koh-lmft-certified-eft-therapist-3763b35/",
+    "https://www.asianmhc.org/",
+    "https://wayfindercounselingknox.com/staff-member/joash-koh/"
+  ]
+}
 </script>
 <script type="application/ld+json">
 {
@@ -630,11 +690,11 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
   "@type": "WebPage",
   "name": "Cross-Cultural Counseling Brentwood TN | Multicultural Therapy | Joash Koh LMFT",
   "url": "https://www.therapybrentwood.com/cross-cultural-counseling",
-  "description": "Cross-cultural counseling for Asian Americans, immigrant couples, and multicultural relationships in Nashville, Brentwood and across Tennessee. Joash Koh LMFT — Chinese Malaysian therapist with lived cross-cultural experience.",
+  "description": "Cross-cultural counseling for Asian Americans, immigrant couples, and multicultural relationships in Nashville, Brentwood and across Tennessee. Joash Koh LMFT \u2014 Chinese Malaysian therapist with lived cross-cultural experience.",
   "about": {
     "@type": "Thing",
     "name": "Cross-Cultural Counseling",
-    "description": "Therapy that holds the whole of a person's identity — including cultural frameworks, family expectations, immigration experiences, and the complexity of navigating multiple cultural worlds simultaneously. Grounded in Emotionally Focused Therapy and lived cross-cultural experience."
+    "description": "Therapy that holds the whole of a person's identity \u2014 including cultural frameworks, family expectations, immigration experiences, and the complexity of navigating multiple cultural worlds simultaneously. Grounded in Emotionally Focused Therapy and lived cross-cultural experience."
   },
   "mentions": [
     {
@@ -660,7 +720,15 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
     {
       "@type": "Person",
       "name": "Joash Koh",
-      "jobTitle": "Licensed Marriage and Family Therapist"
+      "jobTitle": "Licensed Marriage and Family Therapist",
+      "sameAs": [
+        "https://www.psychologytoday.com/us/therapists/joash-koh-brentwood-tn/1399554",
+        "https://directory.iceeft.com/therapist-profile/joash_koh_10323/",
+        "https://www.therapistlocator.net",
+        "https://www.linkedin.com/in/joash-koh-lmft-certified-eft-therapist-3763b35/",
+        "https://www.asianmhc.org/",
+        "https://wayfindercounselingknox.com/staff-member/joash-koh/"
+      ]
     }
   ],
   "speakable": {
