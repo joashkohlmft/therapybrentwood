@@ -669,6 +669,12 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
     .withdrawer-note{padding:1rem 1.25rem;margin:1.5rem 0;}
     .article-pull{margin-left:0!important;margin-right:0!important;}
   }
+
+/* ── DIAGRAM ELEMENTS ──────────────────────────────────────── */
+.diagram-wrap { margin: 2.5rem 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: #fff; }
+.diagram-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); padding: 0.75rem 1.5rem; border-bottom: 1px solid var(--border); background: var(--cream); }
+@media (max-width: 768px) { .diagram-wrap svg { height: auto !important; } .diagram-label { padding: 0.6rem 1rem; font-size: 0.6rem; } }
+
 </style>
 <script type="application/ld+json">
 {
@@ -848,7 +854,48 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
   <p>This is why two people can both know their attachment styles, both be genuinely trying, and still end up stuck in the same cycle.</p>
   <p>Effort is not the same as emotional attunement. And the nervous system knows the difference.</p>
 
-  <div class="withdrawer-note">
+  <div class="diagram-wrap reveal">
+  <div class="diagram-label">Diagram &mdash; The Effort Trap: Why Trying Harder Isn&rsquo;t Working</div>
+  <svg viewBox="0 0 720 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',sans-serif;">
+    <defs>
+      <marker id="arrowET" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#c9a87c"/>
+      </marker>
+      <marker id="arrowETback" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#9a9490"/>
+      </marker>
+    </defs>
+    <!-- 4 boxes -->
+    <!-- 1: Insight -->
+    <rect x="20" y="44" width="140" height="72" rx="8" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+    <text x="90" y="72" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#3d5c50">Insight</text>
+    <text x="90" y="92" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#6b6760">&ldquo;I know my pattern&rdquo;</text>
+    <!-- arrow -->
+    <line x1="162" y1="80" x2="193" y2="80" stroke="#c9a87c" stroke-width="2" marker-end="url(#arrowET)"/>
+    <!-- 2: Effort -->
+    <rect x="196" y="44" width="140" height="72" rx="8" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.5"/>
+    <text x="266" y="72" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#9a7a4a">Effort</text>
+    <text x="266" y="92" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#6b6760">&ldquo;I&rsquo;ll try differently&rdquo;</text>
+    <!-- arrow -->
+    <line x1="338" y1="80" x2="369" y2="80" stroke="#c9a87c" stroke-width="2" marker-end="url(#arrowET)"/>
+    <!-- 3: Same response -->
+    <rect x="372" y="44" width="160" height="72" rx="8" fill="rgba(44,42,38,0.06)" stroke="#e2ddd6" stroke-width="1.5"/>
+    <text x="452" y="68" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#2c2a26">Same nervous</text>
+    <text x="452" y="84" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#2c2a26">system fires</text>
+    <text x="452" y="102" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#6b6760">body doesn&rsquo;t update</text>
+    <!-- arrow -->
+    <line x1="534" y1="80" x2="565" y2="80" stroke="#c9a87c" stroke-width="2" marker-end="url(#arrowET)"/>
+    <!-- 4: More insight -->
+    <rect x="568" y="44" width="132" height="72" rx="8" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+    <text x="634" y="68" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#3d5c50">More</text>
+    <text x="634" y="84" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#3d5c50">insight</text>
+    <text x="634" y="102" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#6b6760">search continues</text>
+    <!-- Return arrow along bottom: box 4 back to box 1 -->
+    <path d="M 634,118 Q 634,148 360,148 Q 90,148 90,118" fill="none" stroke="#9a9490" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#arrowETback)"/>
+    <text x="360" y="143" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="9.5" fill="#9a9490">The effort trap — cycles without felt experience</text>
+  </svg>
+</div>
+<div class="withdrawer-note">
     <p class="note-label">A note for the one who holds everything quietly</p>
     <p>If you are the one who withdraws &mdash; who holds everything carefully because you are afraid of making things worse &mdash; this piece is for you too.</p>
     <p>Pulling away was your only move. But you also know that the distance was not bringing you closer to a solution. The automatic protection was both instinctive and conscious, even if it came across as an absence to them or as an act of ignoring their needs. And the cost of carrying everything quietly, year after year, is its own kind of exhaustion that the articles rarely name.</p>
@@ -869,7 +916,44 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
     &ldquo;The distance between understanding your partner&rsquo;s attachment wound, and the moment your body actually feels them reach across it.&rdquo;
   </div>
 
-  <p>It lives in both of you simultaneously.</p>
+  <div class="diagram-wrap reveal">
+  <div class="diagram-label">Diagram &mdash; The Knowing Gap: Why Insight Alone Is Not Enough</div>
+  <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',sans-serif;">
+    <!-- Left platform: What You Know -->
+    <rect x="20" y="50" width="210" height="100" rx="10" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+    <text x="125" y="88" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="#3d5c50">WHAT YOU KNOW</text>
+    <text x="125" y="110" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#3d5c50">&ldquo;I am anxiously attached.&rdquo;</text>
+    <text x="125" y="130" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#3d5c50">&ldquo;They withdraw from fear.&rdquo;</text>
+    <!-- Right platform: What Changes You -->
+    <rect x="490" y="50" width="210" height="100" rx="10" fill="#c9a87c" stroke="rgba(201,168,124,0.6)" stroke-width="1.5"/>
+    <text x="595" y="88" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="rgba(255,255,255,0.8)">WHAT CHANGES YOU</text>
+    <text x="595" y="110" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#fff">Feeling genuinely seen.</text>
+    <text x="595" y="130" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#fff">Being actually met.</text>
+    <!-- The Gap -->
+    <rect x="240" y="80" width="230" height="40" rx="0" fill="none"/>
+    <!-- Chasm lines -->
+    <line x1="240" y1="95" x2="480" y2="95" stroke="#e2ddd6" stroke-width="1" stroke-dasharray="6,4"/>
+    <line x1="240" y1="105" x2="480" y2="105" stroke="#e2ddd6" stroke-width="1" stroke-dasharray="6,4"/>
+    <!-- Gap label -->
+    <rect x="300" y="68" width="120" height="64" rx="8" fill="#fff" stroke="#e2ddd6" stroke-width="1"/>
+    <text x="360" y="91" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#c9a87c">THE KNOWING</text>
+    <text x="360" y="105" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#c9a87c">GAP</text>
+    <text x="360" y="122" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#9a9490">insight cannot</text>
+    <text x="360" y="135" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#9a9490">cross this alone</text>
+    <!-- Arrows from left platform edge to gap -->
+    <defs>
+      <marker id="arrowKG" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#9a9490"/>
+      </marker>
+    </defs>
+    <line x1="232" y1="100" x2="298" y2="100" stroke="#9a9490" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowKG)"/>
+    <!-- Labels below -->
+    <text x="125" y="178" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#7a9e8e">Intellectual understanding</text>
+    <text x="595" y="178" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#c9a87c">Emotional experience</text>
+    <text x="360" y="178" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#9a9490">What EFT bridges</text>
+  </svg>
+</div>
+<p>It lives in both of you simultaneously.</p>
   <p>You understand the pattern. But understanding it is not the same as feeling safe inside it. Your partner understands their withdrawal affects you. But understanding that is not the same as knowing, in their body, what it costs you to be on the other side of their silence.</p>
 
   <hr class="article-divider">
