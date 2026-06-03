@@ -1020,22 +1020,31 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     <text x="132" y="165" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" font-weight="600" fill="#2c2a26">Shame &amp; Collapse</text>
     <text x="132" y="183" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10.5" fill="#6b6760">&ldquo;I&rsquo;m too much&rdquo; &middot; repeats</text>
 
-    <!-- ARROWS: solid curves ending short of box edges, then explicit polygon tips -->
-    <!-- Arrow 1: TOP-RIGHT corner → RIGHT box left edge (warm, clockwise) -->
-    <path d="M 440,54 Q 508,54 508,140" fill="none" stroke="#c9a87c" stroke-width="2.2"/>
-    <polygon points="502,136 514,136 508,148" fill="#c9a87c"/>
+    <!-- ARROWS: face-center to face-center, explicit polygon arrowheads -->
 
-    <!-- Arrow 2: RIGHT box bottom → BOTTOM box right edge -->
-    <path d="M 588,200 Q 588,286 440,286" fill="none" stroke="#c9a87c" stroke-width="2.2"/>
-    <polygon points="444,280 444,292 432,286" fill="#c9a87c"/>
+    <!-- Arrow 1 (warm): TOP bottom-center → RIGHT top-center -->
+    <!-- Path from (360,84) curves right-and-down to (588,140) -->
+    <path d="M 360,84 Q 540,84 588,134" fill="none" stroke="#c9a87c" stroke-width="2.2"/>
+    <!-- Arrowhead pointing down into RIGHT top-center (588,140) -->
+    <polygon points="582,132 594,132 588,142" fill="#c9a87c"/>
 
-    <!-- Arrow 3: BOTTOM box left edge → LEFT box bottom edge (sage, counter) -->
-    <path d="M 280,276 Q 212,276 212,200" fill="none" stroke="#7a9e8e" stroke-width="2.2"/>
-    <polygon points="206,204 218,204 212,192" fill="#7a9e8e"/>
+    <!-- Arrow 2 (warm): RIGHT bottom-center → BOTTOM right-center -->
+    <!-- Path from (588,200) curves down-and-left to (440,286) -->
+    <path d="M 588,200 Q 588,286 446,286" fill="none" stroke="#c9a87c" stroke-width="2.2"/>
+    <!-- Arrowhead pointing left into BOTTOM right-center (440,286) -->
+    <polygon points="450,280 450,292 440,286" fill="#c9a87c"/>
 
-    <!-- Arrow 4: LEFT box top → TOP box left edge -->
-    <path d="M 132,140 Q 132,54 280,54" fill="none" stroke="#7a9e8e" stroke-width="2.2"/>
-    <polygon points="276,48 276,60 288,54" fill="#7a9e8e"/>
+    <!-- Arrow 3 (sage): BOTTOM top-center → LEFT bottom-center [your suggestion] -->
+    <!-- Path from (360,256) curves left-and-up to (132,200) -->
+    <path d="M 360,256 Q 132,256 132,206" fill="none" stroke="#7a9e8e" stroke-width="2.2"/>
+    <!-- Arrowhead pointing up into LEFT bottom-center (132,200) -->
+    <polygon points="126,210 138,210 132,200" fill="#7a9e8e"/>
+
+    <!-- Arrow 4 (sage): LEFT top-center → TOP left-center [your suggestion equivalent] -->
+    <!-- Path from (132,140) curves up-and-right to (280,54) -->
+    <path d="M 132,140 Q 132,54 274,54" fill="none" stroke="#7a9e8e" stroke-width="2.2"/>
+    <!-- Arrowhead pointing right into TOP left-center (280,54) -->
+    <polygon points="272,48 272,60 282,54" fill="#7a9e8e"/>
 
     <!-- Centre label -->
     <text x="360" y="172" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#9a9490">The ARS</text>

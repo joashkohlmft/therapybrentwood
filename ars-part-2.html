@@ -1112,19 +1112,23 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     <text x="122" y="161" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13.5" font-weight="600" fill="#9a7a4a">Pursuer Left Alone</text>
     <text x="122" y="179" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#6b6760">with the aftermath</text>
 
-    <!-- Outer arrows: solid, explicit polygon tips -->
-    <!-- TOP-RIGHT edge → RIGHT box left -->
-    <path d="M 442,53 Q 516,53 516,138" fill="none" stroke="#7a9e8e" stroke-width="2"/>
-    <polygon points="510,134 522,134 516,146" fill="#7a9e8e"/>
-    <!-- RIGHT box bottom → BOTTOM box right -->
-    <path d="M 598,192 Q 598,277 442,277" fill="none" stroke="#7a9e8e" stroke-width="2"/>
-    <polygon points="446,271 446,283 434,277" fill="#7a9e8e"/>
-    <!-- BOTTOM box left → LEFT box bottom -->
-    <path d="M 278,267 Q 204,267 204,192" fill="none" stroke="#c9a87c" stroke-width="2"/>
-    <polygon points="198,196 210,196 204,184" fill="#c9a87c"/>
-    <!-- LEFT box top → TOP box left -->
-    <path d="M 122,138 Q 122,53 278,53" fill="none" stroke="#c9a87c" stroke-width="2"/>
-    <polygon points="274,47 274,59 286,53" fill="#c9a87c"/>
+    <!-- Outer arrows: face-center to face-center, explicit polygon tips -->
+
+    <!-- Arrow 1 (sage): TOP bottom-center → RIGHT top-center -->
+    <path d="M 360,80 Q 540,80 598,132" fill="none" stroke="#7a9e8e" stroke-width="2"/>
+    <polygon points="592,130 604,130 598,140" fill="#7a9e8e"/>
+
+    <!-- Arrow 2 (sage): RIGHT bottom-center → BOTTOM right-center -->
+    <path d="M 598,192 Q 598,277 448,277" fill="none" stroke="#7a9e8e" stroke-width="2"/>
+    <polygon points="452,271 452,283 442,277" fill="#7a9e8e"/>
+
+    <!-- Arrow 3 (warm): BOTTOM top-center → LEFT bottom-center -->
+    <path d="M 360,250 Q 122,250 122,198" fill="none" stroke="#c9a87c" stroke-width="2"/>
+    <polygon points="116,202 128,202 122,192" fill="#c9a87c"/>
+
+    <!-- Arrow 4 (warm): LEFT top-center → TOP left-center -->
+    <path d="M 122,138 Q 122,53 272,53" fill="none" stroke="#c9a87c" stroke-width="2"/>
+    <polygon points="270,47 270,59 280,53" fill="#c9a87c"/>
 
     <!-- ── INNER RING: Internal shame loop ───────────────────────────────── -->
     <!-- Centre oval for internal loop -->
