@@ -1233,7 +1233,7 @@
       Please fill in all required fields before submitting.
     </div>
 
-    <form id="contactForm" action="https://formspree.io/f/mnjwyjrl" method="POST" novalidate>
+    <form id="contactForm" action="https://formspree.io/f/mnjwyjrl" method="POST" novalidate onsubmit="handleSubmit(event)">
       <div class="form-row">
         <div class="form-group">
           <label for="firstName">First name <span>*</span></label>
@@ -1290,7 +1290,7 @@
       <div class="form-group">
         <label for="message">Tell me a little about what's going on <span>*</span></label>
         <p style="font-size:0.82rem;color:var(--text-muted);margin:-0.25rem 0 0.5rem;line-height:1.6;">Share as much or as little as you're comfortable with. There's no right or wrong way to start this conversation.</p>
-        <textarea id="message" name="message" placeholder="What's been weighing on you?"></textarea>
+        <textarea id="message" name="message" placeholder="What's been weighing on you?" minlength="10"></textarea>
         <p class="field-error" id="messageError">Please share a little about what's going on.</p>
       </div>
 
@@ -1314,7 +1314,7 @@
         Your information is completely confidential and will only be used to respond to your inquiry. I will never share your details with anyone.
       </div>
 
-      <button class="submit-btn" id="submitBtn" onclick="handleSubmit()">
+      <button class="submit-btn" id="submitBtn" type="submit">
         Send — I'll respond within 24 hours
       </button>
     </form>
@@ -1348,11 +1348,15 @@
 
     <div class="success-message" id="successMessage">
       <div class="success-icon">🌿</div>
-      <h3 class="success-title">Message received</h3>
+      <h3 class="success-title">You're in good hands</h3>
       <p class="success-body">
-        Thank you for reaching out. I've received your message and will personally respond within 24 hours to schedule your complimentary consultation.<br><br>
-        Taking this step takes courage — I look forward to connecting with you.
+        Your message has reached me directly. I personally read every message and will respond within 24 hours to schedule your complimentary consultation.<br><br>
+        What you're carrying is real — and reaching out took courage. I'm glad you did.
       </p>
+      <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--text-muted);">
+        In the meantime, feel free to explore the site — or simply close this tab and rest.
+      </p>
+      <a href="/" style="display:inline-block;margin-top:1.5rem;padding:0.65rem 1.5rem;background:var(--sage-dark);color:#fff;border-radius:8px;text-decoration:none;font-size:0.88rem;font-weight:500;">Back to home</a>
     </div>
   </div>
 
@@ -1422,7 +1426,8 @@
     return valid;
   }
 
-  function handleSubmit() {
+  function handleSubmit(event) {
+    event.preventDefault();
     // Validate
     const v1 = validateField('firstName', 'firstNameError', v => v.trim().length > 0);
     const v2 = validateField('lastName', 'lastNameError', v => v.trim().length > 0);
