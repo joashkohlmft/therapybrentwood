@@ -1114,16 +1114,16 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
 
     <!-- Outer arrows: face-center to face-center, explicit polygon tips -->
 
-    <!-- Arrow 1 (sage): TOP bottom-center → RIGHT top-center -->
-    <path d="M 360,80 Q 540,80 598,132" fill="none" stroke="#7a9e8e" stroke-width="2"/>
+    <!-- Arrow 1 (sage): TOP right-center → RIGHT top-center -->
+    <path d="M 442,53 Q 560,53 598,132" fill="none" stroke="#7a9e8e" stroke-width="2"/>
     <polygon points="592,130 604,130 598,140" fill="#7a9e8e"/>
 
     <!-- Arrow 2 (sage): RIGHT bottom-center → BOTTOM right-center -->
     <path d="M 598,192 Q 598,277 448,277" fill="none" stroke="#7a9e8e" stroke-width="2"/>
     <polygon points="452,271 452,283 442,277" fill="#7a9e8e"/>
 
-    <!-- Arrow 3 (warm): BOTTOM top-center → LEFT bottom-center -->
-    <path d="M 360,250 Q 122,250 122,198" fill="none" stroke="#c9a87c" stroke-width="2"/>
+    <!-- Arrow 3 (warm): BOTTOM left-center → LEFT bottom-center -->
+    <path d="M 278,277 Q 122,277 122,198" fill="none" stroke="#c9a87c" stroke-width="2"/>
     <polygon points="116,202 128,202 122,192" fill="#c9a87c"/>
 
     <!-- Arrow 4 (warm): LEFT top-center → TOP left-center -->
@@ -1131,14 +1131,18 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     <polygon points="270,47 270,59 280,53" fill="#c9a87c"/>
 
     <!-- ── INNER RING: Internal shame loop ───────────────────────────────── -->
-    <!-- Centre oval for internal loop -->
-    <ellipse cx="360" cy="165" rx="62" ry="44" fill="rgba(201,168,124,0.08)" stroke="#c9a87c" stroke-width="1.5"/>
-    <text x="360" y="157" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#c9a87c">INTERNAL LOOP</text>
-    <text x="360" y="171" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="11" font-style="italic" fill="#9a7a4a">shame spiral</text>
+    <!-- Centre oval for internal loop — distinct mauve color to separate from interpersonal ring -->
+    <ellipse cx="360" cy="165" rx="62" ry="44" fill="rgba(180,120,120,0.10)" stroke="#b47878" stroke-width="1.5"/>
+    <text x="360" y="157" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#b47878">INTERNAL LOOP</text>
+    <text x="360" y="171" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="11" font-style="italic" fill="#a06060">shame spiral</text>
     <text x="360" y="185" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="9" fill="#9a9490">inside the pursuer</text>
-    <!-- Small clockwise arrow on the oval -->
-    <path d="M 392,133 A 44,30 0 0 1 417,165" fill="none" stroke="#c9a87c" stroke-width="1.8"/>
-    <polygon points="412,161 420,170 424,159" fill="#c9a87c"/>
+    <!-- Internal loop: two arcs just outside the oval, nudged ~3px away from its edge -->
+    <!-- Top-right arc -->
+    <path d="M 390,118 A 58,41 0 0 1 425,165" fill="none" stroke="#b47878" stroke-width="1.8"/>
+    <polygon points="420,161 428,170 432,158" fill="#b47878"/>
+    <!-- Bottom-left arc -->
+    <path d="M 330,212 A 58,41 0 0 1 295,165" fill="none" stroke="#b47878" stroke-width="1.8"/>
+    <polygon points="300,169 292,160 288,172" fill="#b47878"/>
 
     <!-- Caption -->
     <line x1="60" y1="322" x2="660" y2="322" stroke="#e2ddd6" stroke-width="1"/>
