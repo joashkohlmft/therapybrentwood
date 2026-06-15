@@ -1,4 +1,41 @@
+# robots.txt — therapybrentwood.com
+# Policy: open to search engines and to AI retrieval/citation crawlers, so this
+# site can be indexed and cited in AI answers (ChatGPT, Claude, Perplexity,
+# Google AI). AI *training* crawlers are disallowed: we consent to being cited,
+# not to our content being used to train models.
+
+# Default: all crawlers may access the full site.
 User-agent: *
 Allow: /
+
+# --- AI training crawlers: disallowed (no training on our content) ---
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+# Retrieval and search crawlers (OAI-SearchBot, ChatGPT-User, Claude-SearchBot,
+# Claude-User, PerplexityBot, GoogleOther, Googlebot, Bingbot, and others) are
+# intentionally allowed by the default rule above so this site can appear in
+# AI-generated answers.
 
 Sitemap: https://www.therapybrentwood.com/sitemap.xml
