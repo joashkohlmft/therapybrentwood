@@ -147,13 +147,44 @@ document.addEventListener('DOMContentLoaded', function(){
   "currenciesAccepted": "USD",
   "paymentAccepted": "Private Pay",
   "areaServed": [
-    {"@type": "City", "name": "Brentwood", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
-    {"@type": "City", "name": "Nashville", "containedInPlace": {"@type": "State", "name": "Tennessee"}},
-    {"@type": "State", "name": "Tennessee"}
+    {
+      "@type": "City",
+      "name": "Brentwood",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Tennessee"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Nashville",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Tennessee"
+      }
+    },
+    {
+      "@type": "State",
+      "name": "Tennessee"
+    }
   ],
-  "address": {"@type": "PostalAddress", "addressLocality": "Brentwood", "addressRegion": "TN", "addressCountry": "US"},
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15180 Old Hickory Blvd",
+    "addressLocality": "Nashville",
+    "addressRegion": "TN",
+    "postalCode": "37211",
+    "addressCountry": "US"
+  },
   "openingHours": "Mo-Fr 09:00-18:00",
-  "sameAs": ["https://www.psychologytoday.com/us/therapists/joash-koh-brentwood-tn/1399554"]
+  "sameAs": [
+    "https://www.psychologytoday.com/us/therapists/joash-koh-brentwood-tn/1399554"
+  ],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 36.0463,
+    "longitude": -86.7208
+  }
 }
 </script>
 
