@@ -402,7 +402,7 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 3rem 5
   .article-body h2 { margin-top: 1.5rem !important; }
   .article-body p { margin-bottom: .85rem !important; line-height: 1.75 !important; font-size: 1rem !important; }
   .article-divider { margin: 1.5rem 0 !important; }
-  .article-hero-inner, .article-body { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .article-hero-inner, .article-body { padding-left: 2rem; padding-right: 2rem; }
   .article-stat-grid { grid-template-columns: 1fr; }
   .six-redirections-box { padding: 1.25rem; font-size: 1rem; margin: 1.5rem 0; }
   .night-note { padding: 1rem 1.25rem; margin: 1.5rem 0; }
@@ -510,22 +510,24 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 3rem 5
     padding: 5rem 2rem 3rem;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .35s ease;
+    transition: opacity .28s ease, transform .34s cubic-bezier(.4,0,.2,1);
+    transform: translateY(-100%);
   }
-  .mobile-overlay.open { opacity: 1; pointer-events: auto; }
+  .mobile-overlay.open { opacity: 1; pointer-events: auto; transform: translateY(0); }
   nav { display: none !important; }
   .mobile-fab span { display: block; width: 20px; height: 2px; background: #fff; border-radius: 2px; transition: transform .3s ease, opacity .3s ease; }
   .mobile-fab.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .mobile-fab.open span:nth-child(2) { opacity: 0; }
   .mobile-fab.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-  .mobile-overlay-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: rgba(255,255,255,.55); text-decoration: none; letter-spacing: .05em; margin-bottom: 0.5rem; display: block; text-align: center; }
+  .mobile-fab.open { background: rgba(255,255,255,.18); }
+  .mobile-overlay-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: rgba(255,255,255,.75); text-decoration: none; letter-spacing: .05em; margin-bottom: 0.5rem; display: block; text-align: center; }
   .mobile-overlay-nav { list-style: none; width: 100%; max-width: 320px; display: flex; flex-direction: column; gap: 0; }
   .mobile-overlay-nav > li { border-bottom: 1px solid rgba(255,255,255,.08); }
   .mobile-overlay-nav > li:first-child { border-top: 1px solid rgba(255,255,255,.08); }
-  .mobile-overlay-nav a { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: rgba(255,255,255,.88); text-decoration: none; padding: .55rem 0; letter-spacing: .02em; transition: color .2s; }
+  .mobile-overlay-nav a { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 500; color: rgba(255,255,255,.82); text-decoration: none; padding: .4rem 0; letter-spacing: .02em; transition: color .2s; }
   .mobile-overlay-nav a:hover { color: var(--warm); }
-  .mobile-overlay-nav .overlay-section-label { font-family: 'DM Sans', sans-serif; font-size: .65rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--warm); padding: .85rem 0 .3rem; display: block; }
-  .mobile-overlay-nav .overlay-sub a { font-family: 'DM Sans', sans-serif; font-size: .88rem; font-weight: 400; color: rgba(255,255,255,.65); padding: .3rem 0; }
+  .mobile-overlay-nav .overlay-section-label { font-family: 'DM Sans', sans-serif; font-size: .65rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--warm); padding: .5rem 0 .2rem; display: block; }
+  .mobile-overlay-nav .overlay-sub a { font-family: 'DM Sans', sans-serif; font-size: .88rem; font-weight: 400; color: rgba(255,255,255,.65); padding: .18rem 0; }
   .mobile-overlay-cta { margin-top: 2rem; display: inline-block; background: var(--warm); color: #fff !important; font-family: 'DM Sans', sans-serif !important; font-size: .95rem !important; font-weight: 500 !important; padding: .9rem 2.25rem !important; border-radius: 100px !important; text-align: center; letter-spacing: .03em !important; }
   .page-hero, .hero, .article-hero { padding-top: 52px !important; }
   #reading-progress { display: none !important; }

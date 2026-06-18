@@ -297,7 +297,7 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
   .dropdown-menu.mobile-open{display:block;}
   .dropdown-menu li a{padding:.7rem 1.5rem .7rem 2.5rem!important;font-size:.88rem!important;color:var(--text-muted)!important;border-bottom:1px solid rgba(0,0,0,.05)!important;}
   .nav-dropdown-toggle{justify-content:flex-start;text-align:left;width:100%;}
-  .article-hero-inner,.article-body{padding-left:1.25rem;padding-right:1.25rem;}
+  .article-hero-inner,.article-body{padding-left: 2rem;padding-right: 2rem;}
   .continue-grid{grid-template-columns:1fr;}
   .series-nav-links{flex-direction:row;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:.35rem;justify-content:flex-start;gap:.4rem;}
   .series-nav-links a{white-space:nowrap;flex-shrink:0;font-size:.78rem;}
@@ -373,10 +373,12 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     .footer-links a { display: inline-block !important; font-size: .8rem !important; color: rgba(255,255,255,.6) !important; }
     .footer-copy { font-size: .68rem !important; width: 100% !important; }
     .mobile-overlay-logo { color: rgba(255,255,255,.75) !important; font-size: 1rem !important; margin-bottom: 0.5rem !important; }
-    .mobile-overlay-nav a { color: rgba(255,255,255,.82) !important; padding: .5rem 0 !important; }
+    .mobile-overlay-nav a { color: rgba(255,255,255,.82) !important; padding: .4rem 0 !important; }
     .mobile-overlay-nav .overlay-section-label { color: var(--warm) !important; opacity: 1 !important; }
     .mobile-overlay-nav .overlay-sub a { color: rgba(255,255,255,.65) !important; }
     .mobile-overlay-cta { background: var(--warm) !important; color: #fff !important; opacity: 1 !important; }
+}
+
 
     /* ── MOBILE OVERLAY NAV ──────────────────────────────────────────── */
 @media (max-width: 768px) {
@@ -461,12 +463,12 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     padding: 5rem 2rem 3rem;
     opacity: 0;
     pointer-events: none;
-    transition: opacity .35s ease;
+    transition: opacity .28s ease, transform .34s cubic-bezier(.4,0,.2,1);
+    transform: translateY(-100%);
   }
   .mobile-overlay.open {
     opacity: 1;
-    pointer-events: auto;
-  }
+    pointer-events: auto; transform: translateY(0); }
 
     
     
@@ -571,18 +573,18 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
   .mobile-fab.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
   .mobile-fab.open span:nth-child(2) { opacity: 0; }
   .mobile-fab.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-fab.open { background: rgba(255,255,255,.18); }
 
   /* Full-screen overlay */
 .mobile-overlay.open {
     opacity: 1;
-    pointer-events: auto;
-  }
+    pointer-events: auto; transform: translateY(0); }
 
   /* Overlay logo */
   .mobile-overlay-logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.1rem;
-    color: rgba(255,255,255,.55);
+    color: rgba(255,255,255,.75);
     text-decoration: none;
     letter-spacing: .05em;
     margin-bottom: 0.5rem;
@@ -611,9 +613,9 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.35rem;
     font-weight: 500;
-    color: rgba(255,255,255,.88);
+    color: rgba(255,255,255,.82);
     text-decoration: none;
-    padding: .55rem 0;
+    padding: .4rem 0;
     letter-spacing: .02em;
     transition: color .2s;
   }
@@ -625,7 +627,7 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     letter-spacing: .14em;
     text-transform: uppercase;
     color: var(--warm);
-    padding: .85rem 0 .3rem;
+    padding: .5rem 0 .2rem;
     display: block;
   }
   .mobile-overlay-nav .overlay-sub a {
@@ -633,7 +635,7 @@ nav{position:fixed;top:34px;left:0;right:0;z-index:200;background:rgba(250,248,2
     font-size: .88rem;
     font-weight: 400;
     color: rgba(255,255,255,.65);
-    padding: .3rem 0;
+    padding: .18rem 0;
   }
   .mobile-overlay-nav .overlay-sub a:hover { color: rgba(255,255,255,.95); }
   .mobile-overlay-cta {
