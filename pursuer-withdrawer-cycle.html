@@ -693,6 +693,11 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
   /* Progress bar hidden on mobile */
   #reading-progress { display: none !important; }
 }
+
+/* ── DIAGRAM ELEMENTS ── */
+.diagram-wrap { margin: 2.5rem 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: #fff; }
+.diagram-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); padding: 0.75rem 1.5rem; border-bottom: 1px solid var(--border); background: var(--cream); }
+@media (max-width: 768px) { .diagram-wrap svg { height: auto !important; } .diagram-label { padding: 0.6rem 1rem; font-size: 0.6rem; } }
 </style>
 <script type="application/ld+json">
 {

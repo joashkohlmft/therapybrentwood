@@ -354,6 +354,11 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 3rem 5
     .page-hero, .hero, .article-hero { padding-top: 52px !important; }
   }
 }
+
+/* ── DIAGRAM ELEMENTS ── */
+.diagram-wrap { margin: 2.5rem 0; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: #fff; }
+.diagram-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); padding: 0.75rem 1.5rem; border-bottom: 1px solid var(--border); background: var(--cream); }
+@media (max-width: 768px) { .diagram-wrap svg { height: auto !important; } .diagram-label { padding: 0.6rem 1rem; font-size: 0.6rem; } }
 </style>
 </head>
 <body>
@@ -514,11 +519,11 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 3rem 5
 
   <div class="diagram-wrap reveal">
   <div class="diagram-label">Diagram: The Arc of Couples Therapy</div>
-  <svg viewBox="0 0 720 222" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',sans-serif;">
+  <svg viewBox="0 0 720 172" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',sans-serif;">
     <defs>
       <marker id="tlWarm" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#c9a87c"/></marker>
     </defs>
-    <text x="24" y="28" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#9a9490">THE TYPICAL ARC &mdash; WEEKLY OR BI-WEEKLY SESSIONS</text>
+    <text x="24" y="28" font-size="9.5" font-weight="700" letter-spacing="1.5" fill="#9a9490">TYPICAL ARC OF COUPLES THERAPY</text>
     <!-- Phase 1 -->
     <rect x="24" y="40" width="212" height="112" rx="10" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
     <text x="130" y="64" text-anchor="middle" font-size="8.5" font-weight="700" letter-spacing="1.2" fill="#3d5c50">PHASE 1</text>
@@ -543,12 +548,7 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 3rem 5
     <!-- connecting arrows -->
     <line x1="238" y1="96" x2="252" y2="96" stroke="#c9a87c" stroke-width="2" marker-end="url(#tlWarm)"/>
     <line x1="468" y1="96" x2="482" y2="96" stroke="#c9a87c" stroke-width="2" marker-end="url(#tlWarm)"/>
-    <!-- Pace note -->
-    <rect x="24" y="162" width="672" height="46" rx="8" fill="rgba(201,168,124,0.10)"/>
-    <text x="44" y="180" font-size="8.5" font-weight="700" letter-spacing="1.2" fill="#9a7a4a">A NOTE ON PACE</text>
-    <text x="44" y="195" font-size="9.3" fill="#6b6760">I gently discourage bi-weekly sessions early on, momentum is easy to lose.</text>
-    <text x="44" y="207" font-size="9.3" fill="#6b6760">Most couples start as frequently as possible, then taper as security grows.</text>
-    <text x="712" y="218" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3">&#169; Joash Koh, LMFT</text>
+    <text x="712" y="166" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3">&#169; Joash Koh, LMFT</text>
   </svg>
 </div>
 
@@ -586,7 +586,7 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 3rem 5
     <text x="428" y="196" text-anchor="middle" font-size="9" fill="#9a7a4a">Momentum cools in the long gaps, each session re-warms</text>
     <!-- note -->
     <line x1="170" y1="214" x2="686" y2="214" stroke="#e2ddd6" stroke-width="1"/>
-    <text x="24" y="232" font-family="'Cormorant Garamond',serif" font-size="12" font-style="italic" fill="#9a9490">Early on, the thread between sessions is fragile. Frequent sessions keep it taut.</text>
+    <text x="24" y="232" font-family="'Cormorant Garamond',serif" font-size="12" font-style="italic" fill="#9a9490">Early on, the thread between sessions is fragile. Frequent sessions keep momentum building.</text>
     <text x="712" y="238" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3">&#169; Joash Koh, LMFT</text>
   </svg>
 </div>
