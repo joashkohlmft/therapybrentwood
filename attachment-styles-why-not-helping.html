@@ -948,24 +948,25 @@ nav { position: fixed; top: 34px; left: 0; right: 0; z-index: 200; background: r
     <text x="595" y="88" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="9.5" font-weight="600" letter-spacing="1.5" fill="rgba(255,255,255,0.8)">WHAT CHANGES YOU</text>
     <text x="595" y="110" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#fff">Feeling genuinely seen.</text>
     <text x="595" y="130" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="13" font-style="italic" fill="#fff">Being actually met.</text>
-    <!-- The Gap -->
-    <rect x="240" y="80" width="230" height="40" rx="0" fill="none"/>
-    <!-- Chasm lines -->
-    <line x1="240" y1="95" x2="480" y2="95" stroke="#e2ddd6" stroke-width="1" stroke-dasharray="6,4"/>
-    <line x1="240" y1="105" x2="480" y2="105" stroke="#e2ddd6" stroke-width="1" stroke-dasharray="6,4"/>
-    <!-- Gap label -->
-    <rect x="300" y="68" width="120" height="64" rx="8" fill="#fff" stroke="#e2ddd6" stroke-width="1"/>
-    <text x="360" y="91" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#c9a87c">THE KNOWING</text>
-    <text x="360" y="105" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#c9a87c">GAP</text>
-    <text x="360" y="122" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#9a9490">insight cannot</text>
-    <text x="360" y="135" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#9a9490">cross this alone</text>
-    <!-- Arrows from left platform edge to gap -->
+    <!-- Arrow markers -->
     <defs>
       <marker id="arrowKG" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
         <polygon points="0 0, 8 3, 0 6" fill="#9a9490"/>
       </marker>
+      <marker id="arrowKGsage" markerWidth="8" markerHeight="6" refX="6" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#7a9e8e"/>
+      </marker>
     </defs>
-    <line x1="232" y1="100" x2="298" y2="100" stroke="#9a9490" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowKG)"/>
+    <!-- Insight reaches the gap but cannot cross (grey, dashed) -->
+    <line x1="234" y1="100" x2="289" y2="100" stroke="#9a9490" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowKG)"/>
+    <!-- EFT bridges across to what changes you (sage, solid) -->
+    <line x1="431" y1="100" x2="486" y2="100" stroke="#7a9e8e" stroke-width="2" marker-end="url(#arrowKGsage)"/>
+    <!-- The Knowing Gap label box (enlarged so all text fits inside) -->
+    <rect x="294" y="60" width="132" height="84" rx="10" fill="#fff" stroke="#e2ddd6" stroke-width="1.2"/>
+    <text x="360" y="83" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#c9a87c">THE KNOWING</text>
+    <text x="360" y="97" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.5" fill="#c9a87c">GAP</text>
+    <text x="360" y="119" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#9a9490">insight cannot</text>
+    <text x="360" y="133" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#9a9490">cross this alone</text>
     <!-- Labels below -->
     <text x="125" y="178" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#7a9e8e">Intellectual understanding</text>
     <text x="595" y="178" text-anchor="middle" font-family="'DM Sans',sans-serif" font-size="10" fill="#c9a87c">Emotional experience</text>
