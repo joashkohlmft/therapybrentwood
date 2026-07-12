@@ -341,17 +341,10 @@
     </div>
 
     <form id="contactForm" action="https://formspree.io/f/mnjwyjrl" method="POST" novalidate onsubmit="handleSubmit(event)">
-      <div class="form-row">
-        <div class="form-group">
-          <label for="firstName">First name <span>*</span></label>
-          <input type="text" id="firstName" name="firstName" placeholder="Your first name" autocomplete="given-name" />
-          <p class="field-error" id="firstNameError">Please enter your first name.</p>
-        </div>
-        <div class="form-group">
-          <label for="lastName">Last name <span>*</span></label>
-          <input type="text" id="lastName" name="lastName" placeholder="Your last name" autocomplete="family-name" />
-          <p class="field-error" id="lastNameError">Please enter your last name.</p>
-        </div>
+      <div class="form-group">
+        <label for="fullName">Your name <span>*</span></label>
+        <input type="text" id="fullName" name="fullName" placeholder="First and last name" autocomplete="name" />
+        <p class="field-error" id="fullNameError">Please enter your name.</p>
       </div>
 
       <div class="form-group">
@@ -389,7 +382,7 @@
           <option value="" disabled selected>Select your location</option>
           <option value="Tennessee, USA">Tennessee, USA</option>
           <option value="Malaysia">Malaysia</option>
-          <option value="Other">Other (international)</option>
+          <option value="Other">Other</option>
         </select>
         <p class="field-error" id="locationError">Please select your location.</p>
       </div>
@@ -537,15 +530,14 @@
   function handleSubmit(event) {
     event.preventDefault();
     // Validate
-    const v1 = validateField('firstName', 'firstNameError', v => v.trim().length > 0);
-    const v2 = validateField('lastName', 'lastNameError', v => v.trim().length > 0);
+    const v1 = validateField('fullName', 'fullNameError', v => v.trim().length > 0);
     const v3 = validateField('email', 'emailError', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
     const v4 = validateField('service', 'serviceError', v => v.length > 0);
     const v5 = validateField('location', 'locationError', v => true);
     const v6 = validateField('message', 'messageError', v => v.trim().length > 10);
 
     const banner = document.getElementById('errorBanner');
-    if (!v1 || !v2 || !v3 || !v4 || !v5 || !v6) {
+    if (!v1 || !v3 || !v4 || !v5 || !v6) {
       banner.classList.add('visible');
       return;
     }
@@ -553,8 +545,7 @@
 
     // Collect data
     const data = {
-      firstName: document.getElementById('firstName').value.trim(),
-      lastName: document.getElementById('lastName').value.trim(),
+      name: document.getElementById('fullName').value.trim(),
       email: document.getElementById('email').value.trim(),
       phone: document.getElementById('phone').value.trim(),
       service: document.getElementById('service').value,
@@ -571,14 +562,14 @@
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
-        name: `${data.firstName} ${data.lastName}`,
+        name: data.name,
         email: data.email,
         phone: data.phone || 'Not provided',
         service: data.service,
         location: data.location,
         message: data.message,
         heardAbout: data.heardAbout || 'Not specified',
-        _subject: `New consultation request from ${data.firstName} ${data.lastName} — ${data.service}`,
+        _subject: `New consultation request from ${data.name} — ${data.service}`,
         _replyto: data.email,
       })
     })

@@ -904,10 +904,102 @@ nav { background: rgba(250,248,244,0.92); }
     <p class="section-label">Take the first step</p>
     <h2 class="reveal">The hardest part is<br><em>sending the first message</em></h2>
     <p class="cta-body">You don't need to have the right words. You don't need to have figured it out. A 20-minute conversation costs nothing and commits you to nothing, it's just an honest conversation to see if this is the right fit.</p>
-    <a href="https://www.therapybrentwood.com/contact" class="btn-warm">Schedule your free 20-minute consultation</a>
-    <p class="cta-note">Strictly confidential · Personal response within 24 hours · Tennessee</p>
+
+    <style>
+      .hero-contact-form { max-width: 520px; margin: 0 auto; text-align: left; background: #fff; border: 1px solid var(--border); border-radius: 16px; padding: 2rem; box-shadow: 0 8px 30px rgba(61,92,80,0.08); }
+      .hcf-group { margin-bottom: 1.1rem; }
+      .hero-contact-form label { display: block; font-size: 0.82rem; font-weight: 500; color: var(--text); margin-bottom: 0.4rem; letter-spacing: 0.02em; }
+      .hero-contact-form label span { color: var(--warm); margin-left: 2px; }
+      .hero-contact-form input, .hero-contact-form textarea { width: 100%; padding: 0.8rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-family: 'DM Sans', sans-serif; font-size: 0.93rem; color: var(--text); background: #fff; outline: none; appearance: none; transition: border-color 0.2s, box-shadow 0.2s; }
+      .hero-contact-form textarea { resize: vertical; min-height: 100px; }
+      .hero-contact-form input:focus, .hero-contact-form textarea:focus { border-color: var(--sage); box-shadow: 0 0 0 3px rgba(122,158,142,0.15); }
+      .hero-contact-form input.invalid, .hero-contact-form textarea.invalid { border-color: #c0392b; }
+      .hcf-btn { width: 100%; border: none; cursor: pointer; margin-top: 0.5rem; font-family: 'DM Sans', sans-serif; }
+      .hcf-btn:disabled { background: #aaa; cursor: not-allowed; }
+      .hcf-error { display: none; background: #fdf0ef; border: 1px solid #e8b4b0; border-radius: 8px; padding: 0.75rem 1rem; font-size: 0.83rem; color: #c0392b; margin-bottom: 1rem; }
+      .hcf-error.visible { display: block; }
+      .hero-contact-form .cta-note { text-align: center; margin-top: 1rem; }
+      .hcf-success { display: none; max-width: 520px; margin: 0 auto; text-align: center; background: #f0faf5; border: 1px solid #a8d5bf; border-radius: 16px; padding: 2.5rem 2rem; }
+      .hcf-success.visible { display: block; }
+      .hcf-success-title { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 600; color: #2e7d5e; margin-bottom: 0.5rem; }
+      .hcf-success-body { font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    </style>
+
+    <form id="heroContactForm" class="hero-contact-form" action="https://formspree.io/f/mnjwyjrl" method="POST" novalidate onsubmit="handleHeroSubmit(event)">
+      <div class="hcf-group">
+        <label for="hcName">Your name <span>*</span></label>
+        <input type="text" id="hcName" name="fullName" placeholder="First and last name" autocomplete="name" />
+      </div>
+      <div class="hcf-group">
+        <label for="hcEmail">Email address <span>*</span></label>
+        <input type="email" id="hcEmail" name="email" placeholder="you@email.com" autocomplete="email" />
+      </div>
+      <div class="hcf-group">
+        <label for="hcMessage">What's going on? <span>*</span></label>
+        <textarea id="hcMessage" name="message" placeholder="Share as much or as little as you're comfortable with." minlength="10"></textarea>
+      </div>
+      <div class="hcf-error" id="hcError">Please add your name, a valid email, and a short message.</div>
+      <button type="submit" class="btn-warm hcf-btn" id="hcBtn">Send, I'll respond within 24 hours</button>
+      <p class="cta-note">Strictly confidential · Personal response within 24 hours · Tennessee</p>
+    </form>
+
+    <div class="hcf-success" id="hcSuccess">
+      <div style="font-size:2rem;margin-bottom:0.75rem;">🌿</div>
+      <p class="hcf-success-title">You're in good hands</p>
+      <p class="hcf-success-body">Your message has reached me directly. I personally read every message and will respond within 24 hours to schedule your complimentary consultation.</p>
+    </div>
   </div>
 </section>
+
+<script>
+  function handleHeroSubmit(event) {
+    event.preventDefault();
+    var name = document.getElementById('hcName');
+    var email = document.getElementById('hcEmail');
+    var msg = document.getElementById('hcMessage');
+    var err = document.getElementById('hcError');
+    var vName = name.value.trim().length > 0;
+    var vEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
+    var vMsg = msg.value.trim().length > 10;
+    name.classList.toggle('invalid', !vName);
+    email.classList.toggle('invalid', !vEmail);
+    msg.classList.toggle('invalid', !vMsg);
+    if (!vName || !vEmail || !vMsg) { err.classList.add('visible'); return; }
+    err.classList.remove('visible');
+
+    var btn = document.getElementById('hcBtn');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    fetch('https://formspree.io/f/mnjwyjrl', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name: name.value.trim(),
+        email: email.value.trim(),
+        message: msg.value.trim(),
+        _subject: 'New consultation request from ' + name.value.trim() + ' — Homepage form',
+        _replyto: email.value.trim()
+      })
+    })
+    .then(function(res) {
+      if (res.ok) {
+        document.getElementById('heroContactForm').style.display = 'none';
+        document.getElementById('hcSuccess').classList.add('visible');
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYYYYYY' });
+        }
+      } else {
+        throw new Error('Form submission failed');
+      }
+    })
+    .catch(function() {
+      btn.disabled = false;
+      btn.textContent = "Send, I'll respond within 24 hours";
+      alert('Something went wrong. Please try again or email me directly at joash@therapybrentwood.com');
+    });
+  }
+</script>
 
 <!-- FOOTER -->
 <div style="background:var(--cream);border-top:1px solid var(--border);padding:2rem 5rem;">
