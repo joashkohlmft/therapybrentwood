@@ -17,8 +17,8 @@
 
 <!-- ============================================================
      GOOGLE ADS CONVERSION TRACKING
-     REPLACE AW-XXXXXXXXX (in 3 places: here + config + the
-     conversion event near the bottom) with your Google Ads ID.
+     Google tag GT-MQRTNQR (GA4) + Google Ads conversion AW-834613041.
+     Conversion event "Contact" fires on successful form submit (below).
      ============================================================ -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GT-MQRTNQR"></script>
 <script>
@@ -26,6 +26,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'GT-MQRTNQR');
+  gtag('config', 'AW-834613041');
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -374,9 +375,9 @@
         document.getElementById('lpForm').style.display = 'none';
         document.getElementById('successMessage').classList.add('visible');
         // ── GOOGLE ADS CONVERSION (fires only on successful submit) ──
-        // REPLACE AW-XXXXXXXXX/YYYYYYYYYYYYYYY with your conversion ID/label.
+        // Google Ads conversion (Contact) AW-834613041 configured.
         if (typeof gtag === 'function') {
-          gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYYYYYY' });
+          gtag('event', 'conversion', { 'send_to': 'AW-834613041/HWaoCIT6ss8cELHe_I0D' });
         }
       } else {
         throw new Error('Form submission failed');
