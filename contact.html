@@ -9,8 +9,8 @@
 
 <!-- ============================================================
      GOOGLE ADS CONVERSION TRACKING
-     REPLACE AW-XXXXXXXXX below with your Google Ads conversion ID
-     (find it in Google Ads > Goals > Conversions > your action).
+     Google tag GT-MQRTNQR (GA4) + Google Ads conversion AW-834613041.
+     Conversion event "Contact" fires on successful form submit (below).
      ============================================================ -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=GT-MQRTNQR"></script>
 <script>
@@ -18,6 +18,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'GT-MQRTNQR');
+  gtag('config', 'AW-834613041');
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -390,7 +391,7 @@
       <div class="form-group">
         <label for="message">Tell me a little about what's going on <span>*</span></label>
         <p style="font-size:0.82rem;color:var(--text-muted);margin:-0.25rem 0 0.5rem;line-height:1.6;">Share as much or as little as you're comfortable with. There's no right or wrong way to start this conversation.</p>
-        <textarea id="message" name="message" placeholder="What's been weighing on you?" minlength="10"></textarea>
+        <textarea id="message" name="message" placeholder="What's been weighing on you?"></textarea>
         <p class="field-error" id="messageError">Please share a little about what's going on.</p>
       </div>
 
@@ -534,7 +535,7 @@
     const v3 = validateField('email', 'emailError', v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
     const v4 = validateField('service', 'serviceError', v => v.length > 0);
     const v5 = validateField('location', 'locationError', v => true);
-    const v6 = validateField('message', 'messageError', v => v.trim().length > 10);
+    const v6 = validateField('message', 'messageError', v => v.trim().length > 0);
 
     const banner = document.getElementById('errorBanner');
     if (!v1 || !v3 || !v4 || !v5 || !v6) {
@@ -578,9 +579,9 @@
         document.getElementById('contactForm').style.display = 'none';
         document.getElementById('successMessage').classList.add('visible');
         // ── GOOGLE ADS CONVERSION (fires only on successful submit) ──
-        // REPLACE AW-XXXXXXXXX/YYYYYYYYYYYYYYY with your conversion ID/label.
+        // Google Ads conversion (Contact) AW-834613041 configured.
         if (typeof gtag === 'function') {
-          gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYYYYYY' });
+          gtag('event', 'conversion', { 'send_to': 'AW-834613041/HWaoCIT6ss8cELHe_I0D' });
         }
       } else {
         throw new Error('Form submission failed');

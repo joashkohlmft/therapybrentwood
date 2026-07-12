@@ -10,6 +10,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'GT-MQRTNQR');
+  gtag('config', 'AW-834613041');
 </script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" href="favicon.svg">
@@ -944,7 +945,7 @@ nav { background: rgba(250,248,244,0.92); }
       </div>
       <div class="hcf-group">
         <label for="hcMessage">What's going on? <span>*</span></label>
-        <textarea id="hcMessage" name="message" placeholder="Share as much or as little as you're comfortable with." minlength="10"></textarea>
+        <textarea id="hcMessage" name="message" placeholder="Share as much or as little as you're comfortable with."></textarea>
       </div>
       <div class="hcf-error" id="hcError">Please add your name, a valid email, and a short message.</div>
       <button type="submit" class="btn-warm hcf-btn" id="hcBtn">Send, I'll respond within 24 hours</button>
@@ -968,7 +969,7 @@ nav { background: rgba(250,248,244,0.92); }
     var err = document.getElementById('hcError');
     var vName = name.value.trim().length > 0;
     var vEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value);
-    var vMsg = msg.value.trim().length > 10;
+    var vMsg = msg.value.trim().length > 0;
     name.classList.toggle('invalid', !vName);
     email.classList.toggle('invalid', !vEmail);
     msg.classList.toggle('invalid', !vMsg);
@@ -995,7 +996,7 @@ nav { background: rgba(250,248,244,0.92); }
         document.getElementById('heroContactForm').style.display = 'none';
         document.getElementById('hcSuccess').classList.add('visible');
         if (typeof gtag === 'function') {
-          gtag('event', 'conversion', { 'send_to': 'AW-XXXXXXXXX/YYYYYYYYYYYYYYY' });
+          gtag('event', 'conversion', { 'send_to': 'AW-834613041/HWaoCIT6ss8cELHe_I0D' });
         }
       } else {
         throw new Error('Form submission failed');
