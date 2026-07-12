@@ -606,7 +606,7 @@
     <h2 class="iq-title">Start with a free consultation</h2>
     <p class="iq-intro">Tell me a little about your situation and what you are hoping for. I read every inquiry personally and reply within one business day to set up a complimentary consultation call. This is the first step, not a commitment to book.</p>
 
-    <div class="iq-error" id="iqError">Please add your first name, a valid email, and a sentence or two below so I can respond properly.</div>
+    <div class="iq-error" id="iqError">Please add your name, a valid email, and a short note about what's bringing you in.</div>
 
     <form id="intensiveForm" novalidate onsubmit="handleIntensiveSubmit(event)">
       <div class="iq-group"><label for="iqName">Your name <span>*</span></label><input type="text" id="iqName" name="iqName" placeholder="First and last name" autocomplete="name"></div>
@@ -620,7 +620,7 @@
         <div class="iq-group"><label for="iqDelivery">Format</label><select id="iqDelivery" name="iqDelivery"><option value="Not sure yet">Not sure yet</option><option>By video (telehealth)</option><option>In person, Brentwood</option><option>In person, Nashville</option></select></div>
       </div>
       <div class="iq-group"><label for="iqTimeframe">Timeframe</label><select id="iqTimeframe" name="iqTimeframe"><option value="Just exploring">Just exploring for now</option><option>Within the next month</option><option>In the next one to three months</option></select></div>
-      <div class="iq-group"><label for="iqMessage">What is bringing you in? <span>*</span></label><textarea id="iqMessage" name="iqMessage" placeholder="Share as much or as little as you are comfortable with." minlength="10"></textarea></div>
+      <div class="iq-group"><label for="iqMessage">What is bringing you in? <span>*</span></label><textarea id="iqMessage" name="iqMessage" placeholder="Share as much or as little as you are comfortable with."></textarea></div>
       <button type="submit" class="iq-btn" id="iqBtn">Send &mdash; I'll respond within one business day</button>
       <p class="iq-note">Strictly confidential. Submitting this does not book or charge anything.</p>
     </form>
@@ -643,7 +643,7 @@
     var message = document.getElementById('iqMessage').value.trim();
     var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     var err = document.getElementById('iqError');
-    if(!name || !emailOk || message.length < 10){ err.classList.add('visible'); return; }
+    if(!name || !emailOk || !message){ err.classList.add('visible'); return; }
     err.classList.remove('visible');
     var source = document.getElementById('iqSource').value;
     var btn = document.getElementById('iqBtn');
