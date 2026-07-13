@@ -944,12 +944,16 @@ nav { background: rgba(250,248,244,0.92); }
         <input type="email" id="hcEmail" name="email" placeholder="you@email.com" autocomplete="email" />
       </div>
       <div class="hcf-group">
+        <label for="hcPhone">Phone number <span style="color:var(--text-muted);font-weight:400">(optional)</span></label>
+        <input type="tel" id="hcPhone" name="phone" placeholder="+1 (000) 000-0000" autocomplete="tel" />
+      </div>
+      <div class="hcf-group">
         <label for="hcMessage">What's going on? <span>*</span></label>
         <textarea id="hcMessage" name="message" placeholder="Share as much or as little as you're comfortable with."></textarea>
       </div>
       <div class="hcf-error" id="hcError">Please add your name, a valid email, and a short message.</div>
       <button type="submit" class="btn-warm hcf-btn" id="hcBtn">Send, I'll respond within 24 hours</button>
-      <p class="cta-note">Strictly confidential · Personal response within 24 hours · Tennessee</p>
+      <p class="cta-note">Strictly confidential · Personal response within 24 hours</p>
     </form>
 
     <div class="hcf-success" id="hcSuccess">
@@ -986,6 +990,7 @@ nav { background: rgba(250,248,244,0.92); }
       body: JSON.stringify({
         name: name.value.trim(),
         email: email.value.trim(),
+        phone: document.getElementById('hcPhone').value.trim() || 'Not provided',
         message: msg.value.trim(),
         _subject: 'New consultation request from ' + name.value.trim() + ' — Homepage form',
         _replyto: email.value.trim()
