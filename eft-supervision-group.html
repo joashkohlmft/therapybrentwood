@@ -137,8 +137,8 @@
   .field-error { font-size: 0.78rem; color: var(--error); margin-top: 0.35rem; display: none; }
   input.invalid, textarea.invalid { border-color: var(--error); }
   .check-row { display: flex; align-items: flex-start; gap: 0.6rem; background: var(--cream); border: 1px solid var(--border); border-radius: 10px; padding: 0.9rem 1rem; }
-  .check-row input { width: auto; margin-top: 3px; flex-shrink: 0; }
-  .check-row label { margin: 0; font-weight: 400; font-size: 0.86rem; color: var(--text-muted); line-height: 1.55; }
+  .check-row input[type="checkbox"] { -webkit-appearance: checkbox; appearance: auto; width: 18px; height: 18px; min-width: 18px; margin: 2px 0 0; padding: 0; border: 0; border-radius: 3px; flex-shrink: 0; accent-color: var(--sage-dark); cursor: pointer; }
+  .check-row label { margin: 0; font-weight: 400; font-size: 0.86rem; color: var(--text-muted); line-height: 1.55; cursor: pointer; }
   .submit-btn { width: 100%; background: var(--sage-dark); color: #fff; border: none; padding: 1rem 2rem; border-radius: 100px; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 500; cursor: pointer; transition: background 0.2s, transform 0.15s; margin-top: 0.5rem; }
   .submit-btn:hover { background: var(--sage); transform: translateY(-1px); }
   .submit-btn:disabled { background: #aaa; cursor: not-allowed; transform: none; }
@@ -163,7 +163,7 @@
   "@context": "https://schema.org",
   "@type": "EducationEvent",
   "name": "Multicultural EFT Supervision Group",
-  "description": "A warm, culturally welcoming EFT group supervision cohort for therapists who have completed at least Core Skills 1 & 2. Participants share couple-session recordings, receive feedback on case conceptualization and self-of-the-therapist work, practice interventions, and deepen a multicultural orientation to EFT.",
+  "description": "A warm, culturally welcoming EFT group supervision cohort for therapists who have completed at least Core Skills 1 & 2. Participants share couple-session recordings, receive feedback on case conceptualization and self-of-the-therapist work, practice interventions, and deepen a multicultural orientation to EFT grounded in the Multicultural Orientation (MCO) model: cultural humility, cultural opportunities, and cultural comfort.",
   "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
   "eventStatus": "https://schema.org/EventScheduled",
   "startDate": "2026-08-21T09:00:00-05:00",
@@ -359,7 +359,7 @@
   </div>
   <div class="faq-item">
     <h3>What does "multicultural orientation" actually mean here?</h3>
-    <p>It means we treat culture, identity, and lived experience as always present, not as a special topic. We stay curious about how they shape each couple's cycle and each therapist's stance, and we build the kind of space where every background, including yours, is met with respect.</p>
+    <p>It points to the <a href="https://www.multiculturalorientation.com" target="_blank" rel="noopener" style="color:var(--sage-dark);text-decoration:underline;">Multicultural Orientation (MCO) model</a>, the framework I lean on, developed by Davis, Owen, Hook, and DeBlaere. Rather than treating culture as a special topic, MCO holds it as always present, through three ways of being: <strong>cultural humility</strong> (an open, other-oriented stance that never assumes superiority about anyone's background), <strong>cultural opportunities</strong> (noticing and gently stepping into the moments where culture and identity surface in the room), and <strong>cultural comfort</strong> (growing our own ease in those conversations rather than avoiding them). We bring all three to how we watch one another's work and how we sit with couples, so that every background, including yours, is met with respect.</p>
   </div>
 </section>
 
