@@ -51,9 +51,25 @@
     font-size: 0.95rem;
     font-weight: 500;
     text-decoration: none;
-    transition: background 0.2s, transform 0.15s;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.15s;
     letter-spacing: 0.02em;
   }
+
+  /* ── CTA TACTILE FEEDBACK (mobile-clarity pass, all viewports) ──────────── */
+  .btn-warm, .btn-sage, .btn-primary, .nav-cta {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  .btn-warm:active, .btn-primary:active {
+    transform: translateY(1px) scale(0.99);
+    background: #b3915f;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+  }
+  .btn-sage:active {
+    transform: translateY(1px) scale(0.99);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.20);
+  }
+  .nav-cta:active { transform: translateY(1px); background: var(--sage) !important; }
   
   
   
@@ -194,6 +210,33 @@
     .content { padding: 3rem 1.5rem; }
     .related-grid { grid-template-columns: 1fr; }
     .nav-links { gap: 1rem; }
+  }
+
+  /* ── MOBILE CTA CLARITY: 44px+ thumb targets, prominent primary CTA ────── */
+  @media (max-width: 768px) {
+    /* Primary in-content CTA becomes a full-width, high-prominence thumb target */
+    .btn-warm, .btn-primary {
+      display: block !important;
+      width: 100% !important;
+      max-width: 360px !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      min-height: 52px !important;
+      padding: 1rem 1.5rem !important;
+      font-size: 1.02rem !important;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.16) !important;
+      box-sizing: border-box !important;
+    }
+    /* Secondary ghost CTA: full-width, clear spacing below the primary */
+    .btn-sage {
+      display: block !important;
+      width: 100% !important;
+      max-width: 360px !important;
+      margin: 0.85rem auto 0 !important;
+      min-height: 52px !important;
+      padding: 1rem 1.5rem !important;
+      box-sizing: border-box !important;
+    }
   }
 
   /* DROPDOWN NAV - SMOOTH VERSION */
@@ -343,7 +386,9 @@
       margin: 0.75rem 1.5rem !important;
       display: block !important;
       text-align: center !important;
-      padding: 0.75rem 1.5rem !important;
+      padding: 0.85rem 1.5rem !important;
+      min-height: 44px !important;
+      box-sizing: border-box !important;
       border-radius: 100px !important;
     }
     /* Mobile dropdowns — always visible, indented */
