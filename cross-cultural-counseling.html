@@ -341,7 +341,7 @@
 </section>
 
 <div style="width:100%;height:600px;overflow:hidden;position:relative;">
-  <img src="images/asiancouple.jpg" alt="An Asian couple together, representing cross-cultural connection and counseling in Tennessee" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;" fetchpriority="high" class="parallax-img" />
+  <img src="images/asiancouple.jpg" alt="An Asian couple together, representing cross-cultural connection and counseling in Tennessee" style="width:100%;height:100%;object-fit:cover;object-position:center 68%;" fetchpriority="high" class="parallax-img" />
   <div style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(61,92,80,0.15) 0%,rgba(250,248,244,0.6) 100%);"></div>
 </div>
 
@@ -583,7 +583,7 @@
     parallaxImgs.forEach(img => {
       const rect = img.closest('div').getBoundingClientRect();
       const center = rect.top + rect.height / 2 - window.innerHeight / 2;
-      img.style.transform = 'scale(1.6) translateY(' + (center * 0.12) + 'px)';
+      img.style.transform = 'scale(1.2) translateY(' + (center * 0.12) + 'px)';
     });
   }
   window.addEventListener('scroll', updateParallax, { passive: true });
