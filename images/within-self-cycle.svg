@@ -1,0 +1,38 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ws-title ws-desc" width="1000" height="700">
+  <title id="ws-title">The within-self cycle</title>
+  <desc id="ws-desc">The negative cycle couples fall into, running inside one person. A tender feeling stirs (hurt, longing, fear). The inner critic cuts in ("don't be so needy"). You clamp down and go quiet. You end up alone with the feeling you needed help carrying, which stirs the tender feeling again, and the loop repeats. The way out: the wiser self turns toward the tender part with the compassion it never got.</desc>
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500&amp;display=swap');
+      .w-serif{font-family:'Cormorant Garamond',Georgia,serif;}.w-sans{font-family:'DM Sans',system-ui,sans-serif;}</style>
+    <marker id="w-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7a9e8e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="700" fill="#faf8f4"/>
+  <rect x="14" y="14" width="972" height="672" rx="10" fill="none" stroke="#e2ddd6" stroke-width="1.5"/>
+  <text x="500" y="50" text-anchor="middle" class="w-sans" font-size="13" letter-spacing="3" fill="#c9a87c">EMOTIONALLY FOCUSED PARTS WORK</text>
+  <text x="500" y="96" text-anchor="middle" class="w-serif" font-size="40" font-weight="600" fill="#3d5c50">The Within-Self Cycle</text>
+  <line x1="462" y1="116" x2="538" y2="116" stroke="#c9a87c" stroke-width="1.5"/>
+  <path d="M552.3,232.3 Q661,189 617.7,297.7" fill="none" stroke="#7a9e8e" stroke-width="2" marker-end="url(#w-ah)"/>
+  <path d="M617.7,402.3 Q661,511 552.3,467.7" fill="none" stroke="#7a9e8e" stroke-width="2" marker-end="url(#w-ah)"/>
+  <path d="M447.7,467.7 Q339,511 382.3,402.3" fill="none" stroke="#7a9e8e" stroke-width="2" marker-end="url(#w-ah)"/>
+  <path d="M382.3,297.7 Q339,189 447.7,232.3" fill="none" stroke="#7a9e8e" stroke-width="2" marker-end="url(#w-ah)"/>
+  <text x="500" y="344" text-anchor="middle" class="w-serif" font-style="italic" font-size="16" fill="#9a9490">the couple&#8217;s cycle,</text>
+  <text x="500" y="366" text-anchor="middle" class="w-serif" font-style="italic" font-size="16" fill="#9a9490">inside one person</text>
+  <circle cx="500" cy="180" r="74" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.6"/>
+  <text x="500" y="164" text-anchor="middle" class="w-sans" font-size="14.5" fill="#a9803f">A tender feeling</text>
+  <text x="500" y="183" text-anchor="middle" class="w-sans" font-size="14.5" fill="#a9803f">stirs</text>
+  <text x="500" y="203" text-anchor="middle" class="w-serif" font-style="italic" font-size="13" fill="#6b6760">hurt, longing, fear</text>
+  <circle cx="670" cy="350" r="74" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.6"/>
+  <text x="670" y="336" text-anchor="middle" class="w-sans" font-size="14.5" fill="#3d5c50">The inner critic</text>
+  <text x="670" y="355" text-anchor="middle" class="w-sans" font-size="14.5" fill="#3d5c50">cuts in</text>
+  <text x="670" y="375" text-anchor="middle" class="w-serif" font-style="italic" font-size="13" fill="#6b6760">&#8216;don&#8217;t be so needy&#8217;</text>
+  <circle cx="500" cy="520" r="74" fill="#eef1ef" stroke="#a9b3ac" stroke-width="1.6"/>
+  <text x="500" y="514" text-anchor="middle" class="w-sans" font-size="14.5" fill="#57605b">You clamp down</text>
+  <text x="500" y="534" text-anchor="middle" class="w-serif" font-style="italic" font-size="13" fill="#6b6760">go quiet, hide it</text>
+  <circle cx="330" cy="350" r="74" fill="#f3efe9" stroke="#d8ccbe" stroke-width="1.6"/>
+  <text x="330" y="336" text-anchor="middle" class="w-sans" font-size="14.5" fill="#57605b">You end up alone</text>
+  <text x="330" y="356" text-anchor="middle" class="w-serif" font-style="italic" font-size="12.5" fill="#6b6760">with the feeling</text>
+  <text x="330" y="372" text-anchor="middle" class="w-serif" font-style="italic" font-size="12.5" fill="#6b6760">you needed carried</text>
+  <line x1="460" y1="620" x2="540" y2="620" stroke="#c9a87c" stroke-width="1.5"/>
+  <text x="500" y="642" text-anchor="middle" class="w-sans" font-size="12.5" letter-spacing="3" fill="#c9a87c">THE WAY OUT</text>
+  <text x="500" y="670" text-anchor="middle" class="w-serif" font-size="21" fill="#3d5c50">The wiser self turns toward the tender part with the compassion it never got.</text>
+</svg>
