@@ -1,0 +1,48 @@
+<svg viewBox="0 0 1000 610" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="pwc-title pwc-desc" width="1000" height="610">
+  <title id="pwc-title">The Pursuer-Withdrawer Cycle</title>
+  <desc id="pwc-desc">A calm clinical diagram from Emotionally Focused Therapy: two circles, the Pursuer and the Withdrawer, connected by two curved arrows that form a self-reinforcing loop. The pursuer criticizes, protests and reaches louder, with the fear beneath being "Am I alone in this?" The withdrawer goes quiet, defends and shuts the door, with the fear beneath being "Nothing I do is enough." The more one reaches for closeness, the more the other needs distance. The way out in EFT: the withdrawer re-engages, and the pursuer softens.</desc>
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500&amp;display=swap');
+      .pwc-serif{font-family:'Cormorant Garamond',Georgia,serif;}
+      .pwc-sans{font-family:'DM Sans',system-ui,sans-serif;}
+    </style>
+    <marker id="pwc-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3d5c50"/></marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="610" fill="#faf8f4"/>
+  <rect x="14" y="14" width="972" height="582" rx="10" fill="none" stroke="#e2ddd6" stroke-width="1.5"/>
+
+  <!-- header -->
+  <text x="500" y="60" text-anchor="middle" class="pwc-sans" font-size="14" letter-spacing="3.5" fill="#c9a87c">EMOTIONALLY FOCUSED THERAPY</text>
+  <text x="500" y="106" text-anchor="middle" class="pwc-serif" font-size="43" font-weight="600" fill="#3d5c50">The Pursuer-Withdrawer Cycle</text>
+  <line x1="462" y1="126" x2="538" y2="126" stroke="#c9a87c" stroke-width="1.5"/>
+
+  <!-- loop arrows -->
+  <path d="M392,236 Q500,158 608,236" fill="none" stroke="#3d5c50" stroke-width="2" marker-end="url(#pwc-ah)"/>
+  <path d="M608,372 Q500,450 392,372" fill="none" stroke="#3d5c50" stroke-width="2" marker-end="url(#pwc-ah)"/>
+  <text x="500" y="168" text-anchor="middle" class="pwc-serif" font-style="italic" font-size="20" fill="#6b6760">The more one reaches for closeness,</text>
+  <text x="500" y="462" text-anchor="middle" class="pwc-serif" font-style="italic" font-size="20" fill="#6b6760">the more the other needs distance.</text>
+
+  <!-- Pursuer (warm) -->
+  <circle cx="295" cy="304" r="118" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.5"/>
+  <text x="295" y="250" text-anchor="middle" class="pwc-sans" font-size="14" letter-spacing="2.5" fill="#b07d3f">THE PURSUER</text>
+  <text x="295" y="284" text-anchor="middle" class="pwc-sans" font-size="16" fill="#2c2a26">Criticizes, protests,</text>
+  <text x="295" y="305" text-anchor="middle" class="pwc-sans" font-size="16" fill="#2c2a26">reaches louder</text>
+  <line x1="257" y1="324" x2="333" y2="324" stroke="#c9a87c" stroke-width="1"/>
+  <text x="295" y="345" text-anchor="middle" class="pwc-sans" font-size="10.5" letter-spacing="2" fill="#b07d3f">THE FEAR BENEATH</text>
+  <text x="295" y="372" text-anchor="middle" class="pwc-serif" font-style="italic" font-size="19" fill="#3d5c50">&#8220;Am I alone in this?&#8221;</text>
+
+  <!-- Withdrawer (sage) -->
+  <circle cx="705" cy="304" r="118" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+  <text x="705" y="250" text-anchor="middle" class="pwc-sans" font-size="14" letter-spacing="2.5" fill="#4d7060">THE WITHDRAWER</text>
+  <text x="705" y="284" text-anchor="middle" class="pwc-sans" font-size="16" fill="#2c2a26">Goes quiet, defends,</text>
+  <text x="705" y="305" text-anchor="middle" class="pwc-sans" font-size="16" fill="#2c2a26">shuts the door</text>
+  <line x1="667" y1="324" x2="743" y2="324" stroke="#7a9e8e" stroke-width="1"/>
+  <text x="705" y="345" text-anchor="middle" class="pwc-sans" font-size="10.5" letter-spacing="2" fill="#4d7060">THE FEAR BENEATH</text>
+  <text x="705" y="372" text-anchor="middle" class="pwc-serif" font-style="italic" font-size="19" fill="#3d5c50">&#8220;Nothing I do is enough.&#8221;</text>
+
+  <!-- way out -->
+  <line x1="440" y1="506" x2="560" y2="506" stroke="#c9a87c" stroke-width="1.5"/>
+  <text x="500" y="528" text-anchor="middle" class="pwc-sans" font-size="13" letter-spacing="3" fill="#c9a87c">THE WAY OUT</text>
+  <text x="500" y="560" text-anchor="middle" class="pwc-serif" font-size="23" fill="#3d5c50">In EFT, the withdrawer re-engages, and the pursuer softens.</text>
+</svg>
