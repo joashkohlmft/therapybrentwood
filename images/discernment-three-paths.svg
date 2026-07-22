@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dc-title dc-desc" width="1000" height="620">
+  <title id="dc-title">The three paths of discernment counseling</title>
+  <desc id="dc-desc">Discernment counseling is for mixed-agenda couples, where one partner is leaning out and the other leaning in. It helps you choose one of three paths with clarity: Option A, maintain the status quo for now; Option B, separate or divorce; or Option C, commit to a six-month full-effort attempt at couples therapy with separation off the table. One to five sessions help you reach one of these three with clarity rather than ambiguity.</desc>
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500&amp;display=swap');
+      .c-serif{font-family:'Cormorant Garamond',Georgia,serif;}.c-sans{font-family:'DM Sans',system-ui,sans-serif;}</style>
+    <marker id="c-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7a9e8e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="620" fill="#faf8f4"/>
+  <rect x="14" y="14" width="972" height="592" rx="10" fill="none" stroke="#e2ddd6" stroke-width="1.5"/>
+  <text x="500" y="50" text-anchor="middle" class="c-sans" font-size="13" letter-spacing="3" fill="#c9a87c">DISCERNMENT COUNSELING</text>
+  <text x="500" y="96" text-anchor="middle" class="c-serif" font-size="40" font-weight="600" fill="#3d5c50">Three Paths, One Clear Choice</text>
+  <line x1="462" y1="115" x2="538" y2="115" stroke="#c9a87c" stroke-width="1.5"/>
+  <rect x="330" y="146" width="340" height="60" rx="30" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.6"/>
+  <text x="500" y="172" text-anchor="middle" class="c-sans" font-size="15" font-weight="500" fill="#a9803f">Where you are now</text>
+  <text x="500" y="192" text-anchor="middle" class="c-serif" font-style="italic" font-size="14" fill="#6b6760">one partner leaning out, one leaning in</text>
+  <path d="M470,206 C420,270 300,285 232,338" fill="none" stroke="#7a9e8e" stroke-width="1.8" marker-end="url(#c-ar)"/>
+  <path d="M500,208 L500,336" fill="none" stroke="#7a9e8e" stroke-width="1.8" marker-end="url(#c-ar)"/>
+  <path d="M530,206 C580,270 700,285 768,338" fill="none" stroke="#7a9e8e" stroke-width="1.8" marker-end="url(#c-ar)"/>
+  <rect x="95" y="346" width="240" height="170" rx="12" fill="#ffffff" stroke="#cdd8d1" stroke-width="1.4"/>
+  <text x="215" y="384" text-anchor="middle" class="c-sans" font-size="12" letter-spacing="2" fill="#8a857c">OPTION A</text>
+  <text x="215" y="414" text-anchor="middle" class="c-serif" font-size="20" fill="#3d5c50">Maintain the</text>
+  <text x="215" y="438" text-anchor="middle" class="c-serif" font-size="20" fill="#3d5c50">status quo</text>
+  <text x="215" y="470" text-anchor="middle" class="c-sans" font-size="12.5" fill="#6b6760">stay as things are, for now</text>
+  <rect x="380" y="346" width="240" height="170" rx="12" fill="#ffffff" stroke="#cdd8d1" stroke-width="1.4"/>
+  <text x="500" y="384" text-anchor="middle" class="c-sans" font-size="12" letter-spacing="2" fill="#8a857c">OPTION B</text>
+  <text x="500" y="414" text-anchor="middle" class="c-serif" font-size="20" fill="#3d5c50">Separate</text>
+  <text x="500" y="438" text-anchor="middle" class="c-serif" font-size="20" fill="#3d5c50">or divorce</text>
+  <text x="500" y="470" text-anchor="middle" class="c-sans" font-size="12.5" fill="#6b6760">part, with clarity and care</text>
+  <rect x="665" y="346" width="240" height="170" rx="12" fill="#ffffff" stroke="#cdd8d1" stroke-width="1.4"/>
+  <text x="785" y="384" text-anchor="middle" class="c-sans" font-size="12" letter-spacing="2" fill="#8a857c">OPTION C</text>
+  <text x="785" y="414" text-anchor="middle" class="c-serif" font-size="20" fill="#3d5c50">Commit to try,</text>
+  <text x="785" y="438" text-anchor="middle" class="c-serif" font-size="20" fill="#3d5c50">fully</text>
+  <text x="785" y="466" text-anchor="middle" class="c-sans" font-size="12.5" fill="#6b6760">6 months of therapy,</text>
+  <text x="785" y="484" text-anchor="middle" class="c-sans" font-size="12.5" fill="#6b6760">separation off the table</text>
+  <line x1="460" y1="552" x2="540" y2="552" stroke="#c9a87c" stroke-width="1.5"/>
+  <text x="500" y="574" text-anchor="middle" class="c-sans" font-size="12.5" letter-spacing="3" fill="#c9a87c">THE GOAL</text>
+  <text x="500" y="600" text-anchor="middle" class="c-serif" font-size="20" fill="#3d5c50">One to five sessions to reach one of these three, with clarity rather than ambiguity.</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 1000 580" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dz-title dz-desc" width="1000" height="580">
+  <title id="dz-title">Spontaneous vs. responsive desire</title>
+  <desc id="dz-desc">Two equally healthy ways desire works. In spontaneous desire, desire arises first, seemingly from nowhere, then you reach for closeness, then arousal and pleasure. In responsive desire, context and closeness come first, then desire emerges, then arousal and pleasure. Responsive desire is not low desire; it is just as healthy and simply needs the context to come first. After Emily Nagoski.</desc>
+  <defs>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500&amp;display=swap');
+      .d-serif{font-family:'Cormorant Garamond',Georgia,serif;}.d-sans{font-family:'DM Sans',system-ui,sans-serif;}</style>
+    <marker id="d-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#7a9e8e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="580" fill="#faf8f4"/>
+  <rect x="14" y="14" width="972" height="552" rx="10" fill="none" stroke="#e2ddd6" stroke-width="1.5"/>
+  <text x="500" y="50" text-anchor="middle" class="d-sans" font-size="13" letter-spacing="3" fill="#c9a87c">UNDERSTANDING SEXUAL DESIRE</text>
+  <text x="500" y="96" text-anchor="middle" class="d-serif" font-size="39" font-weight="600" fill="#3d5c50">Spontaneous vs. Responsive Desire</text>
+  <line x1="462" y1="115" x2="538" y2="115" stroke="#c9a87c" stroke-width="1.5"/>
+  <rect x="90" y="146" width="820" height="150" rx="12" fill="#f7f0e6" opacity="0.45"/>
+  <text x="130" y="180" class="d-sans" font-size="14" letter-spacing="1.8" font-weight="600" fill="#a9803f">SPONTANEOUS DESIRE</text>
+  <text x="130" y="202" class="d-serif" font-style="italic" font-size="15" fill="#6b6760">desire comes first, seemingly from nowhere</text>
+  <rect x="130" y="228" width="180" height="48" rx="10" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.6"/>
+  <text x="220" y="257" text-anchor="middle" class="d-sans" font-size="14" fill="#a9803f">Desire arises</text>
+  <rect x="410" y="228" width="180" height="48" rx="10" fill="#ffffff" stroke="#cdd8d1" stroke-width="1.4"/>
+  <text x="500" y="257" text-anchor="middle" class="d-sans" font-size="14" fill="#2c2a26">Reaching for closeness</text>
+  <rect x="690" y="228" width="180" height="48" rx="10" fill="#ffffff" stroke="#cdd8d1" stroke-width="1.4"/>
+  <text x="780" y="257" text-anchor="middle" class="d-sans" font-size="14" fill="#2c2a26">Arousal &amp; pleasure</text>
+  <line x1="316" y1="252" x2="404" y2="252" stroke="#7a9e8e" stroke-width="2" marker-end="url(#d-ar)"/>
+  <line x1="596" y1="252" x2="684" y2="252" stroke="#7a9e8e" stroke-width="2" marker-end="url(#d-ar)"/>
+  <rect x="90" y="320" width="820" height="150" rx="12" fill="#eaf2ee" opacity="0.6"/>
+  <text x="130" y="354" class="d-sans" font-size="14" letter-spacing="1.8" font-weight="600" fill="#3d5c50">RESPONSIVE DESIRE</text>
+  <text x="130" y="376" class="d-serif" font-style="italic" font-size="15" fill="#6b6760">desire follows once the context feels right</text>
+  <rect x="130" y="402" width="180" height="48" rx="10" fill="#ffffff" stroke="#cdd8d1" stroke-width="1.4"/>
+  <text x="220" y="431" text-anchor="middle" class="d-sans" font-size="14" fill="#2c2a26">Context &amp; closeness</text>
+  <rect x="410" y="402" width="180" height="48" rx="10" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.6"/>
+  <text x="500" y="431" text-anchor="middle" class="d-sans" font-size="14" fill="#a9803f">Desire emerges</text>
+  <rect x="690" y="402" width="180" height="48" rx="10" fill="#ffffff" stroke="#cdd8d1" stroke-width="1.4"/>
+  <text x="780" y="431" text-anchor="middle" class="d-sans" font-size="14" fill="#2c2a26">Arousal &amp; pleasure</text>
+  <line x1="316" y1="426" x2="404" y2="426" stroke="#7a9e8e" stroke-width="2" marker-end="url(#d-ar)"/>
+  <line x1="596" y1="426" x2="684" y2="426" stroke="#7a9e8e" stroke-width="2" marker-end="url(#d-ar)"/>
+  <line x1="460" y1="500" x2="540" y2="500" stroke="#c9a87c" stroke-width="1.5"/>
+  <text x="500" y="522" text-anchor="middle" class="d-sans" font-size="12.5" letter-spacing="3" fill="#c9a87c">THE RELIEF</text>
+  <text x="500" y="549" text-anchor="middle" class="d-serif" font-size="20" fill="#3d5c50">Responsive desire is not low desire. It is just as healthy; it simply needs the context first.</text>
+</svg>
