@@ -269,6 +269,7 @@ document.addEventListener('DOMContentLoaded', function(){
         <li><a href="the-2am-question">The 2am Question</a></li>
         <li><a href="the-brakes-nobody-told-you-about">The Brakes Nobody Told You About</a></li>
         <li><a href="roommate-syndrome">Roommate Syndrome</a></li>
+        <li><a href="eft-couples-guide">Free EFT Couples Guide</a></li>
         <li class="dropdown-divider"></li>
         <li><a href="resources">All resources &rarr;</a></li>
       </ul>
@@ -294,9 +295,9 @@ document.addEventListener('DOMContentLoaded', function(){
 </section>
 
 <div style="width:100%;height:600px;overflow:hidden;position:relative;margin:0;">
-  <img src="images/person-window.jpg"
-       alt="A person gazing out a window, representing solitary reflection on attachment patterns in relationships"
-       style="width:100%;height:100%;object-fit:cover;object-position:center 40%;" class="parallax-img"
+  <img src="images/handstouching.jpg"
+       alt="Two hands reaching toward each other, representing the longing for connection beneath our attachment patterns"
+       style="width:100%;height:100%;object-fit:cover;object-position:center 50%;" class="parallax-img"
        fetchpriority="high" />
   <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(61,92,80,0.15) 0%, rgba(250,248,244,0.5) 100%);"></div>
 </div>
@@ -610,6 +611,7 @@ document.addEventListener('DOMContentLoaded', function(){
         <li><a href="the-2am-question">The 2am Question</a></li>
         <li><a href="the-brakes-nobody-told-you-about">The Brakes Nobody Told You About</a></li>
         <li><a href="roommate-syndrome">Roommate Syndrome</a></li>
+        <li><a href="eft-couples-guide">Free EFT Couples Guide</a></li>
         <li><a href="resources">All resources &rarr;</a></li>
       </ul>
     </li>
@@ -639,7 +641,7 @@ document.addEventListener('DOMContentLoaded', function(){
     pImgs.forEach(function(img){
       var rect=img.closest('div').getBoundingClientRect();
       var center=rect.top+rect.height/2-window.innerHeight/2;
-      img.style.transform='scale(1.6) translateY('+(center*0.12)+'px)';
+      img.style.transform='scale(1.1) translateY('+(center*0.12)+'px)';
     });
   }
   if(pImgs.length){window.addEventListener('scroll',updateParallax,{passive:true});updateParallax();}
