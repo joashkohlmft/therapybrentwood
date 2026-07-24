@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1000 590" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="es-title es-desc" width="1000" height="590">
+<svg viewBox="0 0 1000 552" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="es-title es-desc" width="1000" height="552">
   <title id="es-title">How EFT rebuilds the bond, step by step</title>
   <desc id="es-desc">The arc of Emotionally Focused Therapy shown as a rising staircase in three stages. Step 1, de-escalation: calm the negative cycle. Step 2, restructuring: reach from vulnerability and respond with tenderness. Step 3, a secure bond: new patterns that hold and keep deepening. 86 to 90 percent of couples improve, and the gains keep deepening at two-year follow-up.</desc>
   <defs>
@@ -6,27 +6,27 @@
       .e-serif{font-family:'Cormorant Garamond',Georgia,serif;}.e-sans{font-family:'DM Sans',system-ui,sans-serif;}</style>
     <marker id="es-ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c9a87c"/></marker>
   </defs>
-  <rect x="0" y="0" width="1000" height="590" fill="#faf8f4"/>
-  <rect x="14" y="14" width="972" height="562" rx="10" fill="none" stroke="#e2ddd6" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1000" height="552" fill="#faf8f4"/>
+  <rect x="14" y="14" width="972" height="524" rx="10" fill="none" stroke="#e2ddd6" stroke-width="1.5"/>
   <text x="500" y="50" text-anchor="middle" class="e-sans" font-size="13" letter-spacing="3" fill="#c9a87c">EMOTIONALLY FOCUSED THERAPY</text>
   <text x="500" y="96" text-anchor="middle" class="e-serif" font-size="40" font-weight="600" fill="#3d5c50">How EFT Rebuilds the Bond</text>
   <line x1="462" y1="115" x2="538" y2="115" stroke="#c9a87c" stroke-width="1.5"/>
-  <path d="M168,452 L292,452 L292,386 L556,386 L556,320 L812,320 L812,268" fill="none" stroke="#c9a87c" stroke-width="1.8" stroke-dasharray="2,7" marker-end="url(#es-ar)"/>
-  <text x="812" y="250" text-anchor="middle" class="e-serif" font-style="italic" font-size="14" fill="#a9803f">a bond that lasts</text>
-  <line x1="150" y1="496" x2="884" y2="496" stroke="#e2ddd6" stroke-width="1.5"/>
-  <rect x="150" y="412" width="258" height="84" rx="8" fill="#eef1ef" stroke="#a9b3ac" stroke-width="1.5"/>
-  <text x="279" y="440" text-anchor="middle" class="e-sans" font-size="11" letter-spacing="1.8" fill="#8a857c">STEP 1</text>
-  <text x="279" y="464" text-anchor="middle" class="e-serif" font-size="19" fill="#57605b">De-escalation</text>
-  <text x="279" y="483" text-anchor="middle" class="e-sans" font-size="12" fill="#6b6760">calm the negative cycle</text>
-  <rect x="412" y="346" width="258" height="150" rx="8" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
-  <text x="541" y="374" text-anchor="middle" class="e-sans" font-size="11" letter-spacing="1.8" fill="#5a7d6d">STEP 2</text>
-  <text x="541" y="398" text-anchor="middle" class="e-serif" font-size="19" fill="#3d5c50">Restructuring</text>
-  <text x="541" y="418" text-anchor="middle" class="e-sans" font-size="12" fill="#6b6760">reach &amp; respond anew</text>
-  <rect x="674" y="280" width="210" height="216" rx="8" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.5"/>
-  <text x="779" y="308" text-anchor="middle" class="e-sans" font-size="11" letter-spacing="1.8" fill="#a9803f">STEP 3</text>
-  <text x="779" y="332" text-anchor="middle" class="e-serif" font-size="19" fill="#a9803f">A secure bond</text>
-  <text x="779" y="352" text-anchor="middle" class="e-sans" font-size="12" fill="#6b6760">holds &amp; deepens</text>
-  <line x1="460" y1="524" x2="540" y2="524" stroke="#c9a87c" stroke-width="1.5"/>
-  <text x="500" y="546" text-anchor="middle" class="e-sans" font-size="12.5" letter-spacing="3" fill="#c9a87c">THE OUTCOME</text>
-  <text x="500" y="572" text-anchor="middle" class="e-serif" font-size="20" fill="#3d5c50">86-90% of couples improve, and the gains keep deepening at two-year follow-up.</text>
+  <path d="M168,382 L292,382 L292,316 L556,316 L556,250 L812,250 L812,198" fill="none" stroke="#c9a87c" stroke-width="1.8" stroke-dasharray="2,7" marker-end="url(#es-ar)"/>
+  <text x="812" y="180" text-anchor="middle" class="e-serif" font-style="italic" font-size="14" fill="#a9803f">a bond that lasts</text>
+  <line x1="150" y1="426" x2="884" y2="426" stroke="#e2ddd6" stroke-width="1.5"/>
+  <rect x="150" y="342" width="258" height="84" rx="8" fill="#eef1ef" stroke="#a9b3ac" stroke-width="1.5"/>
+  <text x="279" y="370" text-anchor="middle" class="e-sans" font-size="11" letter-spacing="1.8" fill="#8a857c">STEP 1</text>
+  <text x="279" y="394" text-anchor="middle" class="e-serif" font-size="19" fill="#57605b">De-escalation</text>
+  <text x="279" y="413" text-anchor="middle" class="e-sans" font-size="12" fill="#6b6760">calm the negative cycle</text>
+  <rect x="412" y="276" width="258" height="150" rx="8" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+  <text x="541" y="304" text-anchor="middle" class="e-sans" font-size="11" letter-spacing="1.8" fill="#5a7d6d">STEP 2</text>
+  <text x="541" y="328" text-anchor="middle" class="e-serif" font-size="19" fill="#3d5c50">Restructuring</text>
+  <text x="541" y="348" text-anchor="middle" class="e-sans" font-size="12" fill="#6b6760">reach &amp; respond anew</text>
+  <rect x="674" y="210" width="210" height="216" rx="8" fill="#f7f0e6" stroke="#c9a87c" stroke-width="1.5"/>
+  <text x="779" y="238" text-anchor="middle" class="e-sans" font-size="11" letter-spacing="1.8" fill="#a9803f">STEP 3</text>
+  <text x="779" y="262" text-anchor="middle" class="e-serif" font-size="19" fill="#a9803f">A secure bond</text>
+  <text x="779" y="282" text-anchor="middle" class="e-sans" font-size="12" fill="#6b6760">holds &amp; deepens</text>
+  <line x1="460" y1="460" x2="540" y2="460" stroke="#c9a87c" stroke-width="1.5"/>
+  <text x="500" y="482" text-anchor="middle" class="e-sans" font-size="12.5" letter-spacing="3" fill="#c9a87c">THE OUTCOME</text>
+  <text x="500" y="508" text-anchor="middle" class="e-serif" font-size="20" fill="#3d5c50">86-90% of couples improve, and the gains keep deepening at two-year follow-up.</text>
 </svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 452" xmlns="http://www.w3.org/2000/svg" role="img" style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',system-ui,sans-serif;">
+<title>The four survival responses on the hyperactivation-hypoactivation spectrum</title>
+<desc>Fight rides hyperactivation (the alarm turning up); freeze rides hypoactivation (the alarm turning down); flight and fawn can run on either. Each looks like one thing from outside and is another underneath.</desc>
+<defs>
+<linearGradient id="spec2" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#c9a87c"/>
+<stop offset="1" stop-color="#7a9e8e"/>
+</linearGradient>
+</defs>
+<text x="30" y="27" font-size="12.5" font-weight="700" letter-spacing="1.1" fill="#c9a87c">&#9650;&#160;&#160;ALARM UP &#183; HYPERACTIVATION</text>
+<rect x="30" y="48" width="12" height="346" rx="6" fill="url(#spec2)"/>
+<circle cx="36" cy="86" r="7" fill="#c9a87c"/>
+<circle cx="36" cy="176" r="7" fill="#cba98a"/>
+<circle cx="36" cy="266" r="7" fill="#9aa98e"/>
+<circle cx="36" cy="356" r="7" fill="#7a9e8e"/>
+<rect x="64" y="48" width="624" height="76" rx="12" fill="#faf8f4" stroke="#e2ddd6" stroke-width="1.5"/>
+<rect x="64" y="48" width="6" height="76" rx="3" fill="#c9a87c"/>
+<text x="86" y="76" font-size="14" font-weight="700" fill="#3d5c50">FIGHT</text>
+<text x="86" y="98" font-size="11.5" fill="#6b6760">Looks like anger.</text>
+<text x="86" y="115" font-size="11.5" font-style="italic" fill="#6b6760">Underneath: desperation to be heard &#8212; &#8220;make you see this matters.&#8221;</text>
+<rect x="64" y="138" width="624" height="76" rx="12" fill="#faf8f4" stroke="#e2ddd6" stroke-width="1.5"/>
+<rect x="64" y="138" width="6" height="76" rx="3" fill="#cba98a"/>
+<text x="86" y="166" font-size="14" font-weight="700" fill="#3d5c50">FLIGHT</text>
+<text x="86" y="188" font-size="11.5" fill="#6b6760">Looks like not caring.</text>
+<text x="86" y="205" font-size="11.5" font-style="italic" fill="#6b6760">Underneath: care that cannot bear to stay in the room.</text>
+<rect x="64" y="228" width="624" height="76" rx="12" fill="#faf8f4" stroke="#e2ddd6" stroke-width="1.5"/>
+<rect x="64" y="228" width="6" height="76" rx="3" fill="#9aa98e"/>
+<text x="86" y="256" font-size="14" font-weight="700" fill="#3d5c50">FAWN</text>
+<text x="86" y="278" font-size="11.5" fill="#6b6760">Looks like easygoing.</text>
+<text x="86" y="295" font-size="11.5" font-style="italic" fill="#6b6760">Underneath: safety bought by appeasing and disappearing.</text>
+<rect x="64" y="318" width="624" height="76" rx="12" fill="#faf8f4" stroke="#e2ddd6" stroke-width="1.5"/>
+<rect x="64" y="318" width="6" height="76" rx="3" fill="#7a9e8e"/>
+<text x="86" y="346" font-size="14" font-weight="700" fill="#3d5c50">FREEZE</text>
+<text x="86" y="368" font-size="11.5" fill="#6b6760">Looks like withholding.</text>
+<text x="86" y="385" font-size="11.5" font-style="italic" fill="#6b6760">Underneath: an overloaded system going offline to protect itself.</text>
+<text x="30" y="422" font-size="12.5" font-weight="700" letter-spacing="1.1" fill="#5c8574">&#9660;&#160;&#160;ALARM DOWN &#183; HYPOACTIVATION</text>
+<text x="688" y="443" text-anchor="end" font-size="8.5" fill="#c4bcae" letter-spacing="0.3">&#169; Joash Koh, LMFT &#183; fight &#8594; hyper, freeze &#8594; hypo, flight &amp; fawn &#8594; either</text>
+</svg>
