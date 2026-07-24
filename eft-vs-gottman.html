@@ -1046,5 +1046,28 @@
 })();
 </script>
 
+<script>
+/* mobile overlay accordion (collapses Services & Resources by default) */
+(function(){
+  var labels = document.querySelectorAll('.mobile-overlay-nav .overlay-section-label');
+  labels.forEach(function(label){
+    var sub = label.nextElementSibling;
+    if(!sub || !sub.classList.contains('overlay-sub')) return;
+    sub.classList.add('collapsed');
+    label.setAttribute('role','button');
+    label.setAttribute('tabindex','0');
+    label.setAttribute('aria-expanded','false');
+    function toggle(){
+      var collapsed = sub.classList.toggle('collapsed');
+      label.classList.toggle('open', !collapsed);
+      label.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    }
+    label.addEventListener('click', toggle);
+    label.addEventListener('keydown', function(e){
+      if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); }
+    });
+  });
+})();
+</script>
 </body>
 </html>
