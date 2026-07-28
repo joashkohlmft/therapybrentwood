@@ -55,6 +55,13 @@
   .resource-card-tag { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.4rem; }
   .resource-card-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--text); line-height: 1.3; margin-bottom: 0.4rem; }
   .resource-card-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 0; }
+  /* Free downloadable PDF — standout card (see CLAUDE.md: Free PDF handout exception) */
+  .resource-card.resource-card-pdf { background: linear-gradient(135deg, var(--sage-light) 0%, var(--warm-light) 100%); border: 1.5px solid var(--sage); box-shadow: 0 4px 18px rgba(61,92,80,0.10); }
+  .resource-card.resource-card-pdf:hover { border-color: var(--sage-dark); box-shadow: 0 6px 22px rgba(61,92,80,0.16); }
+  .resource-card-pdf .resource-card-tag { color: var(--sage-dark); }
+  .resource-card-pdf .resource-card-arrow { color: var(--sage-dark); }
+  .resource-card-pdf-badge { display: inline-flex; align-items: center; gap: 0.4rem; background: var(--sage-dark); color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.34rem 0.72rem; border-radius: 100px; margin-bottom: 0.75rem; }
+  .resource-card-pdf-badge svg { display: block; }
   .resource-card-arrow { position: absolute; top: 1.5rem; right: 1.5rem; font-size: 1rem; color: var(--sage); }
   .coming-soon { background: var(--cream); border: 1px dashed var(--border); border-radius: 14px; padding: 1.5rem 2rem; margin-bottom: 1.25rem; opacity: 0.6; }
   .coming-soon-tag { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.4rem; }
@@ -418,18 +425,19 @@
     <p class="resource-card-desc">The viral Orange Peel and Bird theories are secret tests for love. Why testing your partner quietly backfires, how it manufactures the distance it fears, and the braver reach that actually builds security.</p>
   </a>
 
-  <a href="eft-couples-guide" class="resource-card reveal">
-    <span class="resource-card-arrow">&rarr;</span>
-    <p class="resource-card-tag">Free PDF &middot; EFT &middot; 28 Handouts &middot; July 2026</p>
-    <p class="resource-card-title">The Wondrous Art of Love: A Free EFT Guide for Couples</p>
-    <p class="resource-card-desc">Twenty-eight handouts drawn from Emotionally Focused Therapy and attachment science, written by Dr. Mark Gregory Karris. The cycle beneath your fights, raw spots, reaching and catching, healing the big hurts, and tending the bond for life. Free to download, no sign-up required.</p>
-  </a>
-
   <a href="weaponized-therapy-speak" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Relationships &middot; Therapy Culture &middot; 11 min read &middot; July 2026</p>
     <p class="resource-card-title">When Therapy Words Become Weapons</p>
     <p class="resource-card-desc">&ldquo;Gaslighting,&rdquo; &ldquo;toxic,&rdquo; &ldquo;narcissist&rdquo; &mdash; why clinical labels arrive as a verdict and block the closeness they&rsquo;re reaching for, plus a label-to-feeling guide back to vulnerability. A companion to the &ldquo;knowing gap&rdquo; piece.</p>
+  </a>
+
+  <a href="eft-couples-guide" class="resource-card resource-card-pdf reveal">
+    <span class="resource-card-arrow">&darr;</span>
+    <span class="resource-card-pdf-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg> Free Download</span>
+    <p class="resource-card-tag">Free PDF &middot; EFT &middot; 28 Handouts &middot; July 2026</p>
+    <p class="resource-card-title">The Wondrous Art of Love: A Free EFT Guide for Couples</p>
+    <p class="resource-card-desc">Twenty-eight handouts drawn from Emotionally Focused Therapy and attachment science, written by Dr. Mark Gregory Karris. The cycle beneath your fights, raw spots, reaching and catching, healing the big hurts, and tending the bond for life. Free to download, no sign-up required.</p>
   </a>
 
   <div class="coming-soon">
