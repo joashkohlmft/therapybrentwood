@@ -293,6 +293,8 @@
   }
   .dropdown-menu li a:hover { color: var(--sage-dark); background: var(--sage-light); }
   .dropdown-divider { border-top: 1px solid var(--border); margin: 0.35rem 0; }
+  .dropdown-menu .dropdown-grouplabel { font-family: 'DM Sans', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--warm); padding: 0.5rem 1.25rem 0.2rem; pointer-events: none; list-style: none; }
+  @media (min-width: 769px) { .dropdown-menu:not(.mega) { max-height: calc(100vh - 96px); overflow-y: auto; overflow-x: hidden; } }
 
   /* Resources mega (two-column) dropdown */
   .dropdown-menu.mega {
@@ -557,7 +559,7 @@
     .footer-links li { display: inline !important; }
     .footer-links a { display: inline-block !important; font-size: .8rem !important; color: rgba(255,255,255,.6) !important; }
     .footer-copy { font-size: .68rem !important; width: 100% !important; }
-    .mobile-overlay-logo { color: rgba(255,255,255,.75) !important; font-size: 1rem !important; margin-bottom: 0.5rem !important; }
+    .mobile-overlay-logo { color: rgba(255,255,255,.75) !important; font-size: 1.35rem !important; margin-bottom: 0.5rem !important; }
     .mobile-overlay-nav a { color: rgba(255,255,255,.82) !important; padding: .4rem 0 !important; }
     .mobile-overlay-nav .overlay-section-label { color: var(--warm) !important; opacity: 1 !important; }
     .mobile-overlay-nav .overlay-sub a { color: rgba(255,255,255,.65) !important; }
@@ -630,7 +632,7 @@
   /* Overlay logo */
   .mobile-overlay-logo {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     color: rgba(255,255,255,.55);
     text-decoration: none;
     letter-spacing: .05em;
@@ -669,9 +671,9 @@
   .mobile-overlay-nav a:hover { color: var(--warm); }
   .mobile-overlay-nav .overlay-section-label {
     font-family: 'DM Sans', sans-serif;
-    font-size: .65rem;
-    font-weight: 600;
-    letter-spacing: .14em;
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: .04em;
     text-transform: uppercase;
     color: var(--warm);
     padding: .75rem 0 .55rem;
@@ -683,7 +685,7 @@
   }
   .mobile-overlay-nav .overlay-section-label::after {
     content: '\25BE';
-    font-size: .8rem;
+    font-size: .95rem;
     line-height: 1;
     color: rgba(201,168,124,.9);
     transition: transform .2s ease;
@@ -715,7 +717,7 @@
     background: var(--warm);
     color: #fff !important;
     font-family: 'DM Sans', sans-serif !important;
-    font-size: .95rem !important;
+    font-size: 1.35rem !important;
     font-weight: 500 !important;
     padding: .9rem 2.25rem !important;
     border-radius: 100px !important;
