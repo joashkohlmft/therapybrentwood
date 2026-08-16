@@ -1,0 +1,42 @@
+<svg viewBox="0 0 828 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The repair arc, six steps. Step 1, the hurt partner names the wound. Step 2, the injuring partner stays present and takes it in. Step 3, the hurt partner lowers the guard they put up (the silent Never Again vow) and shares the deeper hurt. Step 4, highlighted, the injuring partner offers a real apology, which is itself five moves. Step 5, the hurt partner asks for what they need now. Step 6, together they build a new story with rituals. None of it runs without safety first." style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',sans-serif;">
+  <defs><marker id="repArr" markerWidth="9" markerHeight="7" refX="6" refY="3.5" orient="auto"><polygon points="0 0, 9 3.5, 0 7" fill="#7a9e8e"/></marker></defs>
+  <text x="414" y="32" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="24" font-weight="600" fill="#3d5c50">The repair arc</text>
+  <text x="414" y="54" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#9a9490">how an attachment injury actually heals &#8212; six steps</text>
+  <line x1="134" y1="134" x2="148" y2="134" stroke="#7a9e8e" stroke-width="2.2" marker-end="url(#repArr)"/>
+  <line x1="270" y1="134" x2="284" y2="134" stroke="#7a9e8e" stroke-width="2.2" marker-end="url(#repArr)"/>
+  <line x1="406" y1="134" x2="420" y2="134" stroke="#7a9e8e" stroke-width="2.2" marker-end="url(#repArr)"/>
+  <line x1="542" y1="134" x2="556" y2="134" stroke="#7a9e8e" stroke-width="2.2" marker-end="url(#repArr)"/>
+  <line x1="678" y1="134" x2="692" y2="134" stroke="#7a9e8e" stroke-width="2.2" marker-end="url(#repArr)"/>
+  <rect x="12" y="88" width="122" height="92" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.6"/>
+  <circle cx="28" cy="104" r="10" fill="#3d5c50"/><text x="28" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">1</text>
+  <text x="73" y="130" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">Name the wound</text>
+  <text x="73" y="154" text-anchor="middle" font-style="italic" font-size="9.5" fill="#7a9e8e">hurt partner</text>
+  <rect x="148" y="88" width="122" height="92" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.6"/>
+  <circle cx="164" cy="104" r="10" fill="#3d5c50"/><text x="164" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">2</text>
+  <text x="209" y="123" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">Stay present,</text>
+  <text x="209" y="140" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">take it in</text>
+  <text x="209" y="160" text-anchor="middle" font-style="italic" font-size="9.5" fill="#7a9e8e">injuring partner</text>
+  <rect x="284" y="88" width="122" height="92" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.6"/>
+  <circle cx="300" cy="104" r="10" fill="#3d5c50"/><text x="300" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">3</text>
+  <text x="345" y="122" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">Lower the guard</text>
+  <text x="345" y="140" text-anchor="middle" font-style="italic" font-size="10" fill="#9a9490">share the deeper hurt</text>
+  <text x="345" y="160" text-anchor="middle" font-style="italic" font-size="9.5" fill="#7a9e8e">hurt partner</text>
+  <rect x="420" y="86" width="122" height="96" rx="11" fill="#f7f0e6" stroke="#c9a87c" stroke-width="2.2"/>
+  <circle cx="436" cy="104" r="10" fill="#a9803f"/><text x="436" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">4</text>
+  <text x="484" y="128" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="15" font-weight="600" fill="#a9803f">A real apology</text>
+  <text x="484" y="150" text-anchor="middle" font-style="italic" font-size="9.5" fill="#b58a4f">injuring partner</text>
+  <text x="484" y="200" text-anchor="middle" font-style="italic" font-size="9.5" fill="#a9803f">its own five moves (above)</text>
+  <rect x="556" y="88" width="122" height="92" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.6"/>
+  <circle cx="572" cy="104" r="10" fill="#3d5c50"/><text x="572" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">5</text>
+  <text x="617" y="123" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">Ask for what</text>
+  <text x="617" y="140" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">you need now</text>
+  <text x="617" y="160" text-anchor="middle" font-style="italic" font-size="9.5" fill="#7a9e8e">hurt partner</text>
+  <rect x="692" y="88" width="124" height="92" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.6"/>
+  <circle cx="708" cy="104" r="10" fill="#3d5c50"/><text x="708" y="108" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">6</text>
+  <text x="754" y="123" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">A new story</text>
+  <text x="754" y="140" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="14" fill="#3d5c50">+ rituals</text>
+  <text x="754" y="160" text-anchor="middle" font-style="italic" font-size="9.5" fill="#7a9e8e">together</text>
+  <rect x="12" y="210" width="804" height="42" rx="10" fill="#3d5c50"/>
+  <text x="414" y="236" text-anchor="middle" font-size="12.5" font-weight="600" letter-spacing="0.5" fill="#ffffff">SAFETY FIRST  &#8212;  none of this runs without it</text>
+  <text x="820" y="286" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3">&#169; Joash Koh, LMFT</text>
+  </svg>

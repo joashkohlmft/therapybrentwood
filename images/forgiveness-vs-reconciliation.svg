@@ -1,0 +1,27 @@
+<svg viewBox="0 0 720 536" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A 2x2 grid of forgiveness (no or yes) against reconciliation (no or yes). Forgive-no reconcile-yes is the danger zone, reunited on a buried wound. Forgive-yes reconcile-yes is genuine repair with trust rebuilt. Forgive-no reconcile-no is stuck or moving toward acceptance. Forgive-yes reconcile-no is peace with distance." style="width:100%;height:auto;display:block;background:#fff;font-family:'DM Sans',sans-serif;">
+  <text x="360" y="34" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="24" font-weight="600" fill="#3d5c50">Forgiveness is not reconciliation</text>
+  <text x="360" y="56" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#9a9490">two separate roads that can run apart</text>
+  <!-- TL: forgive no, reconcile yes = danger -->
+  <rect x="150" y="92" width="250" height="185" rx="12" fill="#f6ece0" stroke="#c9a87c" stroke-width="1.8"/>
+  <text x="275" y="150" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#a9803f">FORGIVE: NO  ·  RECONCILE: YES</text>
+  <text x="275" y="182" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="19" fill="#3d5c50">The danger zone</text>
+  <text x="275" y="208" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#57605b">reunited on a buried wound</text>
+  <!-- TR: forgive yes, reconcile yes = genuine repair -->
+  <rect x="410" y="92" width="250" height="185" rx="12" fill="#e7f0ea" stroke="#6f9483" stroke-width="1.8"/>
+  <text x="535" y="150" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#5a7d6d">FORGIVE: YES  ·  RECONCILE: YES</text>
+  <text x="535" y="182" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="19" fill="#3d5c50">Genuine repair</text>
+  <text x="535" y="208" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#57605b">trust rebuilt, together</text>
+  <!-- BL: forgive no, reconcile no = stuck/acceptance -->
+  <rect x="150" y="289" width="250" height="185" rx="12" fill="#f0efec" stroke="#b9b3aa" stroke-width="1.4"/>
+  <text x="275" y="347" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#8f8a80">FORGIVE: NO  ·  RECONCILE: NO</text>
+  <text x="275" y="379" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="19" fill="#57605b">Stuck</text>
+  <text x="275" y="405" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#57605b">or moving toward acceptance</text>
+  <!-- BR: forgive yes, reconcile no = peace with distance -->
+  <rect x="410" y="289" width="250" height="185" rx="12" fill="#eef1f0" stroke="#9db3a9" stroke-width="1.4"/>
+  <text x="535" y="347" text-anchor="middle" font-size="9.5" font-weight="700" letter-spacing="0.8" fill="#5a7d6d">FORGIVE: YES  ·  RECONCILE: NO</text>
+  <text x="535" y="373" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="19" fill="#3d5c50">Peace with distance</text>
+  <text x="535" y="399" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#57605b">you release it, you</text>
+  <text x="535" y="417" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#57605b">do not return</text>
+  <text x="360" y="506" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14" fill="#b6afa4">forgiveness is solo  ·  reconciliation is a joint venture</text>
+  <text x="712" y="528" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3">&#169; Joash Koh, LMFT</text>
+</svg>
