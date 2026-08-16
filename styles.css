@@ -337,16 +337,15 @@
   }
   .dropdown-menu.mega .mega-foot a { font-weight: 500; color: var(--sage-dark); }
 
-  /* Services mega — same look as Resources mega, three columns, pinned under the nav bar */
+  /* Services mega — same look as Resources mega, three columns, natural dropdown under the Services tab */
   @media (min-width: 769px) {
     .dropdown-menu.mega.mega-services {
-      position: fixed;
-      top: calc(34px + 68px);
-      left: 2rem;
+      left: 0;
       right: auto;
       grid-template-columns: repeat(3, 1fr);
-      min-width: 560px;
-      max-width: min(720px, calc(100vw - 4rem));
+      width: 660px;
+      min-width: 0;
+      max-width: calc(100vw - 2rem);
     }
     .dropdown-menu.mega.mega-services a { white-space: normal; line-height: 1.3; }
     .dropdown-menu.mega.mega-services .mega-foot {
