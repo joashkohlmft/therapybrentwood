@@ -315,31 +315,72 @@
 </div>
 
 <div class="resources-body">
+<style>
+.rf-tools{margin-bottom:2.5rem;}
+.rf-label{display:block;font-size:0.72rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--warm);margin-bottom:0.6rem;}
+.rf-search-wrap{position:relative;margin-bottom:1rem;}
+.rf-search-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);color:var(--text-muted);pointer-events:none;}
+#rf-search{width:100%;box-sizing:border-box;padding:0.85rem 1rem 0.85rem 2.9rem;font-family:'DM Sans',sans-serif;font-size:1rem;color:var(--text);background:#fff;border:1px solid var(--border);border-radius:100px;outline:none;transition:border-color 0.2s,box-shadow 0.2s;}
+#rf-search:focus{border-color:var(--sage);box-shadow:0 0 0 3px rgba(122,155,139,0.18);}
+#rf-search::placeholder{color:var(--text-muted);}
+.rf-chips{display:flex;flex-wrap:wrap;gap:0.5rem;}
+.rf-chip{font-family:'DM Sans',sans-serif;font-size:0.82rem;color:var(--sage-dark);background:#fff;border:1px solid var(--border);border-radius:100px;padding:0.4rem 0.9rem;cursor:pointer;transition:background 0.15s,border-color 0.15s,color 0.15s;}
+.rf-chip:hover{border-color:var(--sage);}
+.rf-chip-on{background:var(--sage-dark);border-color:var(--sage-dark);color:#fff;}
+.rf-status{font-size:0.8rem;color:var(--text-muted);margin:1.1rem 0 0;}
+.rf-empty{font-size:0.95rem;color:var(--text-muted);line-height:1.7;margin:1.5rem 0 0;padding:1.25rem 1.5rem;background:var(--cream);border:1px solid var(--border);border-radius:12px;}
+.rf-empty a{color:var(--sage-dark);}
+@media(max-width:600px){#rf-search{font-size:16px;}}
+</style>
+<div class="rf-tools">
+  <label for="rf-search" class="rf-label">Search the library</label>
+  <div class="rf-search-wrap">
+    <svg class="rf-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input id="rf-search" type="search" autocomplete="off" placeholder="Try &ldquo;affairs,&rdquo; &ldquo;stonewalling,&rdquo; &ldquo;intimacy&rdquo;&hellip;" aria-label="Search the resource library">
+  </div>
+  <div class="rf-chips" role="group" aria-label="Filter by topic">
+    <button type="button" class="rf-chip rf-chip-on" data-topic="all" aria-pressed="true">All</button>
+    <button type="button" class="rf-chip" data-topic="getting-started" aria-pressed="false">Getting Started</button>
+    <button type="button" class="rf-chip" data-topic="understanding-eft" aria-pressed="false">Understanding EFT</button>
+    <button type="button" class="rf-chip" data-topic="the-cycle" aria-pressed="false">The Cycle &amp; Communication</button>
+    <button type="button" class="rf-chip" data-topic="attachment" aria-pressed="false">Attachment</button>
+    <button type="button" class="rf-chip" data-topic="disconnection" aria-pressed="false">Disconnection &amp; Distance</button>
+    <button type="button" class="rf-chip" data-topic="intimacy" aria-pressed="false">Intimacy &amp; Sex</button>
+    <button type="button" class="rf-chip" data-topic="affairs" aria-pressed="false">Affairs, Trust &amp; Repair</button>
+    <button type="button" class="rf-chip" data-topic="trauma" aria-pressed="false">Trauma &amp; Nervous System</button>
+    <button type="button" class="rf-chip" data-topic="modern-love" aria-pressed="false">Dating &amp; Modern Love</button>
+    <button type="button" class="rf-chip" data-topic="therapy-culture" aria-pressed="false">Therapy Culture</button>
+    <button type="button" class="rf-chip" data-topic="money-family" aria-pressed="false">Money &amp; Family Life</button>
+    <button type="button" class="rf-chip" data-topic="ars" aria-pressed="false">ARS Framework</button>
+  </div>
+  <p id="rf-status" class="rf-status" role="status" aria-live="polite" style="display:none;"></p>
+  <p id="rf-empty" class="rf-empty" style="display:none;">No articles match that yet. Try a different word or clear the filters, or <a href="contact">ask me directly</a>.</p>
+</div>
 
-  <p style="font-size:0.72rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--warm);margin-bottom:1.5rem;">All articles</p>
+  <p id="rf-all-label" style="font-size:0.72rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--warm);margin-bottom:1.5rem;">All articles</p>
 
-  <a href="what-is-eft" class="resource-card reveal">
+  <a href="what-is-eft" data-topics="understanding-eft" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">EFT Explained &middot; 8 min read &middot; January 2022</p>
     <p class="resource-card-title">What Is EFT? A Guide for Someone New to This Work</p>
     <p class="resource-card-desc">The science of attachment, how EFT was developed, what the research actually says, and what it feels like to sit in an EFT session for the first time.</p>
   </a>
 
-  <a href="how-long-does-couples-therapy-take" class="resource-card reveal">
+  <a href="how-long-does-couples-therapy-take" data-topics="getting-started" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Couples Therapy &middot; 10 min read &middot; March 2022</p>
     <p class="resource-card-title">How Long Does Couples Therapy Take?</p>
     <p class="resource-card-desc">An honest answer to the question underneath the question, what couples are really asking, what EFT typically requires, and why waiting longer makes it take longer.</p>
   </a>
 
-  <a href="pursuer-withdrawer-cycle" class="resource-card reveal">
+  <a href="pursuer-withdrawer-cycle" data-topics="the-cycle attachment" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Couples &middot; 10 min read &middot; May 2022</p>
     <p class="resource-card-title">The Dance That&rsquo;s Tearing You Apart: Understanding the Pursuer-Withdrawer Cycle</p>
     <p class="resource-card-desc">Why you keep having the same fight, what drives the pursuer-withdrawer cycle, why it&rsquo;s so hard to break on your own, and how EFT creates lasting change.</p>
   </a>
 
-  <a href="what-to-expect-first-couples-therapy-session" class="resource-card reveal">
+  <a href="what-to-expect-first-couples-therapy-session" data-topics="getting-started" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Couples Therapy &middot; 12 min read &middot; July 2022</p>
     <p class="resource-card-title">What to Expect in Your First Couples Therapy Session</p>
@@ -347,214 +388,214 @@
   </a>
 
 
-  <a href="eft-vs-gottman" class="resource-card reveal">
+  <a href="eft-vs-gottman" data-topics="understanding-eft" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">EFT vs. Gottman &middot; 12 min read &middot; September 2022</p>
     <p class="resource-card-title">Two Maps, One Destination: Understanding EFT and the Gottman Method</p>
     <p class="resource-card-desc">Both are credible. Both have helped couples. But when the evidence is laid out fully, one stands in a category of its own. An honest, research-based comparison.</p>
   </a>
 
-  <a href="what-is-a-couples-therapy-intensive" class="resource-card reveal">
+  <a href="what-is-a-couples-therapy-intensive" data-topics="getting-started" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Intensives &middot; 10 min read &middot; November 2022</p>
     <p class="resource-card-title">What Is a Couples Therapy Intensive? And Is It Right for You?</p>
     <p class="resource-card-desc">How the intensive format differs from weekly therapy, the two-day EFT roadmap, and an honest clinical guide to who it&rsquo;s right for.</p>
   </a>
 
-  <div style="margin:2.5rem 0 1rem;">
+  <div id="rf-ars-divider" style="margin:2.5rem 0 1rem;">
     <p style="font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--warm);margin-bottom:1rem;">Asymmetrical Repair Syndrome: Original 4-Part Series</p>
   </div>
 
-  <a href="ars-part-1" class="resource-card reveal">
+  <a href="ars-part-1" data-topics="ars attachment" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">ARS &middot; Original Framework &middot; Part 1 &middot; March 2023</p>
     <p class="resource-card-title">When One Partner Carries the Relationship Alone</p>
     <p class="resource-card-desc">What Asymmetrical Repair Syndrome is, how it develops, and why the person who keeps pursuing is not the problem, they are the one carrying everything.</p>
   </a>
 
-  <a href="ars-part-2" class="resource-card reveal">
+  <a href="ars-part-2" data-topics="ars the-cycle" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">ARS &middot; Clinical Lens &middot; Part 2 &middot; April 2023</p>
     <p class="resource-card-title">What ARS Looks Like in the Room: An EFT Perspective</p>
     <p class="resource-card-desc">How ARS differs from standard pursuer-withdrawer patterns, what EFT sees beneath the surface, and what the therapeutic work actually requires.</p>
   </a>
 
-  <a href="ars-part-3" class="resource-card reveal">
+  <a href="ars-part-3" data-topics="ars" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">ARS &middot; For You &middot; Part 3 &middot; May 2023</p>
     <p class="resource-card-title">You&rsquo;re Not Crazy: Why You Feel Like the Only One Trying</p>
     <p class="resource-card-desc">Written directly for the person who is exhausted, who keeps trying, and who is starting to wonder if something is fundamentally wrong with them. It is not.</p>
   </a>
 
-  <a href="ars-part-4" class="resource-card reveal">
+  <a href="ars-part-4" data-topics="ars" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">ARS &middot; Healing &middot; Part 4 &middot; June 2023</p>
     <p class="resource-card-title">Can Asymmetrical Repair Syndrome Be Healed?</p>
     <p class="resource-card-desc">An honest look at prognosis, what becomes possible when both partners engage, and what remains available when only one is ready.</p>
   </a>
 
-  <a href="attachment-styles-why-not-helping" class="resource-card reveal">
+  <a href="attachment-styles-why-not-helping" data-topics="attachment understanding-eft" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Attachment &middot; 13 min read &middot; October 2023</p>
     <p class="resource-card-title">You Know Your Attachment Style. Why Isn&rsquo;t It Helping?</p>
     <p class="resource-card-desc">Knowing your attachment style is not enough to change how your relationship feels. Here&rsquo;s why, and what the nervous system actually needs. Introduces the original &ldquo;knowing gap&rdquo; and &ldquo;effort trap&rdquo; frameworks.</p>
   </a>
 
-  <a href="the-2am-question" class="resource-card reveal">
+  <a href="the-2am-question" data-topics="therapy-culture modern-love" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Relationships &middot; AI &middot; 10 min read &middot; November 2023</p>
     <p class="resource-card-title">The 2am Question: What People Ask AI About Their Marriages</p>
     <p class="resource-card-desc">Millions search for marriage help before saying a word out loud. Here are the six things they find, and what is actually happening underneath each one.</p>
   </a>
 
-  <a href="the-brakes-nobody-told-you-about" class="resource-card reveal">
+  <a href="the-brakes-nobody-told-you-about" data-topics="intimacy disconnection" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Intimacy &middot; Sexual Wellbeing &middot; 12 min read &middot; December 2023</p>
     <p class="resource-card-title">The Brakes Nobody Told You About: What&rsquo;s Actually Happening When Sex Disappears from a Relationship</p>
     <p class="resource-card-desc">When desire fades, the answer almost never lives in the bedroom. Six misreadings, and what attachment science, Emily Nagoski&rsquo;s dual control model, and EFT say instead.</p>
   </a>
 
-  <a href="roommate-syndrome" class="resource-card reveal">
+  <a href="roommate-syndrome" data-topics="intimacy disconnection the-cycle" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Intimacy &middot; Connection &middot; 9 min read &middot; January 2024</p>
     <p class="resource-card-title">Roommate Syndrome: When Your Marriage Feels Like a Business Partnership</p>
     <p class="resource-card-desc">Not fighting, not betrayal, just a slow fade into logistics. Why exhaustion, flatness, and mismatched desire share one root, and whether you can fall back in love after losing feelings.</p>
   </a>
 
-  <a href="why-small-fights-explode" class="resource-card reveal">
+  <a href="why-small-fights-explode" data-topics="the-cycle trauma" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Trauma &middot; Couples &middot; 11 min read &middot; February 2024</p>
     <p class="resource-card-title">Why Small Disagreements Turn Into Big Fights (or Total Silence)</p>
     <p class="resource-card-desc">Ninety seconds from a comment about the dishwasher to an explosive fight or three days of silence. What your nervous system is doing, the cycle underneath it, and what actually helps. First in a three-part series on trauma in couple relationships.</p>
   </a>
 
-  <a href="fight-flight-freeze-fawn" class="resource-card reveal">
+  <a href="fight-flight-freeze-fawn" data-topics="trauma" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Trauma &middot; Nervous System &middot; 10 min read &middot; March 2024</p>
     <p class="resource-card-title">Fight, Flight, Freeze, Fawn: What Survival Mode Looks Like in a Relationship</p>
     <p class="resource-card-desc">Yelling, walking out, going blank, keeping the peace at any cost: four nervous systems surviving the same moment. The four responses, hyperactivation vs. hypoactivation, and why each partner&rsquo;s response triggers the other&rsquo;s.</p>
   </a>
 
-  <a href="trauma-triggers-in-relationships" class="resource-card reveal">
+  <a href="trauma-triggers-in-relationships" data-topics="trauma attachment" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Trauma &middot; Attachment &middot; 9 min read &middot; April 2024</p>
     <p class="resource-card-title">Why Trauma Makes You More Reactive With Your Partner</p>
     <p class="resource-card-desc">You are not too sensitive. How trauma, the obvious kind and the quiet kind, lowers the threshold where a conversation becomes a threat, and what actually moves it.</p>
   </a>
 
-  <a href="orange-peel-theory" class="resource-card reveal">
+  <a href="orange-peel-theory" data-topics="attachment modern-love the-cycle" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Relationships &middot; Attachment &middot; 9 min read &middot; May 2024</p>
     <p class="resource-card-title">The Danger of the Secret Test: What the Orange Peel Theory Really Reveals</p>
     <p class="resource-card-desc">The viral Orange Peel and Bird theories are secret tests for love. Why testing your partner quietly backfires, how it manufactures the distance it fears, and the braver reach that actually builds security.</p>
   </a>
 
-  <a href="weaponized-therapy-speak" class="resource-card reveal">
+  <a href="weaponized-therapy-speak" data-topics="therapy-culture the-cycle" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Relationships &middot; Therapy Culture &middot; 11 min read &middot; June 2024</p>
     <p class="resource-card-title">When Therapy Words Become Weapons</p>
     <p class="resource-card-desc">&ldquo;Gaslighting,&rdquo; &ldquo;toxic,&rdquo; &ldquo;narcissist&rdquo; &mdash; why clinical labels arrive as a verdict and block the closeness they&rsquo;re reaching for, plus a label-to-feeling guide back to vulnerability. A companion to the &ldquo;knowing gap&rdquo; piece.</p>
   </a>
 
-  <a href="boundary-or-stonewalling" class="resource-card reveal">
+  <a href="boundary-or-stonewalling" data-topics="therapy-culture the-cycle" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Relationships &middot; Therapy Culture &middot; 11 min read &middot; July 2024</p>
     <p class="resource-card-title">Is It a Boundary, or Are You Stonewalling?</p>
     <p class="resource-card-desc">When &ldquo;I&rsquo;m setting a boundary&rdquo; becomes an emotional cut-off. Why chronic withdrawal starves the nervous system of co-regulation, a Boundary vs. Barrier guide, and how to step back without cutting off. The mirror companion to &ldquo;When Therapy Words Become Weapons.&rdquo;</p>
   </a>
 
-  <a href="trauma-bonding-or-attachment-panic" class="resource-card reveal">
+  <a href="trauma-bonding-or-attachment-panic" data-topics="trauma attachment modern-love" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Trauma &middot; Attachment &middot; 12 min read &middot; August 2024</p>
     <p class="resource-card-title">Is It a Trauma Bond, or Attachment Panic?</p>
     <p class="resource-card-desc">One of the most misused terms online. What a trauma bond actually is, the seven things people mistake for one, why intensity is not the same as abuse, and how to tell a repairable cycle from a relationship that isn&rsquo;t safe. Includes support resources.</p>
   </a>
 
-  <a href="love-bombing-or-eager-attachment" class="resource-card reveal">
+  <a href="love-bombing-or-eager-attachment" data-topics="attachment modern-love" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Attachment &middot; Dating &amp; Connection &middot; 11 min read &middot; September 2024</p>
     <p class="resource-card-title">Is It Love Bombing, or Just Eager Attachment?</p>
     <p class="resource-card-desc">Genuine enthusiasm is getting pathologized as manipulation, and it is fueling attachment panic. How to tell true love bombing (the opening of coercive control) from an eager, anxious reach, why intensity is not the tell, and the boundary test that reveals the truth. You are not too much.</p>
   </a>
 
-  <a href="black-cat-golden-retriever" class="resource-card reveal">
+  <a href="black-cat-golden-retriever" data-topics="the-cycle attachment modern-love" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Relationships &middot; Attachment &middot; 9 min read &middot; June 2025</p>
     <p class="resource-card-title">Black Cat &amp; Golden Retriever: The Dance Underneath</p>
     <p class="resource-card-desc">The viral &ldquo;black cat / golden retriever&rdquo; couple is a cute rebrand of the pursuer-withdrawer cycle. Which move is yours, why the eager one&rsquo;s enthusiasm is often anxious protest and the cool one&rsquo;s distance often self-protection, and the real risk of the meme: freezing a move into an identity. These are positions, not personalities, and positions can change.</p>
   </a>
 
-  <a href="does-insurance-cover-couples-therapy" class="resource-card reveal">
+  <a href="does-insurance-cover-couples-therapy" data-topics="getting-started money-family" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Fees &amp; Insurance &middot; 9 min read &middot; July 2025</p>
     <p class="resource-card-title">Does Insurance Cover Couples Therapy? Why I Don&rsquo;t Take It</p>
     <p class="resource-card-desc">Most insurance won&rsquo;t cover couples therapy, and the reason says something important about the care itself. The medical-model conflict, the identified-patient workaround, Z codes, and how superbills, HSA/FSA, and out-of-network reimbursement actually work.</p>
   </a>
 
-  <a href="why-communicate-more-backfires" class="resource-card reveal">
+  <a href="why-communicate-more-backfires" data-topics="the-cycle attachment" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Neurodivergence &middot; Couples &middot; 11 min read &middot; August 2025</p>
     <p class="resource-card-title">Why &ldquo;Just Communicate More&rdquo; Backfires for Neurodivergent Couples</p>
     <p class="resource-card-desc">Standard advice like &ldquo;just communicate more&rdquo; assumes both partners process the world the same way. For ADHD and autistic couples it often misses. The cycle underneath the fights, sensory overload as the hidden trigger, and why a narrower window of tolerance means going slow is what finally lets you reconnect.</p>
   </a>
 
-  <a href="emotional-availability-gap" class="resource-card reveal">
+  <a href="emotional-availability-gap" data-topics="attachment understanding-eft disconnection" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Clinical Framework &middot; Attachment &middot; 8 min read &middot; September 2025</p>
     <p class="resource-card-title">The Emotional Availability Gap: When the Right Words Aren&rsquo;t Enough</p>
     <p class="resource-card-desc">Why you can feel completely alone with a partner who does everything right. A framework for performed connection, the lyrics without the music, why it is usually a fawn survival response, and how the gap finally closes.</p>
   </a>
 
-  <a href="emotional-vs-sexual-affairs" class="resource-card reveal">
+  <a href="emotional-vs-sexual-affairs" data-topics="affairs attachment" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Attachment Injury &middot; 9 min read &middot; October 2025</p>
     <p class="resource-card-title">Emotional vs Sexual Affairs: Which Betrayal Hurts More?</p>
     <p class="resource-card-desc">Refusing the &ldquo;which is worse&rdquo; ranking: why both affairs are the same attachment injury, why time does not heal betrayal, how much you really need to know, and how couples recover.</p>
   </a>
 
-  <a href="phubbing" class="resource-card reveal">
+  <a href="phubbing" data-topics="attachment the-cycle disconnection modern-love" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Everyday Attachment &middot; 7 min read &middot; November 2025</p>
     <p class="resource-card-title">Phubbing: The Small Snub That Quietly Breaks the Bond</p>
     <p class="resource-card-desc">Being brushed aside for a phone is not really about screen time. Why a reach met with a screen registers as a micro-abandonment, what is usually happening for the person on the phone, and how couples actually repair it.</p>
   </a>
 
-  <a href="what-true-forgiveness-is" class="resource-card reveal">
+  <a href="what-true-forgiveness-is" data-topics="affairs" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Repair &amp; Forgiveness &middot; 13 min read &middot; December 2025</p>
     <p class="resource-card-title">What True Forgiveness Is (and What It Is Not)</p>
     <p class="resource-card-desc">Forgiveness vs reconciliation, why forgiveness alone does not rebuild trust, what makes an apology real, and the six-step repair arc for healing an attachment injury.</p>
   </a>
 
-  <a href="sexless-marriage" class="resource-card reveal">
+  <a href="sexless-marriage" data-topics="intimacy disconnection" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Intimacy &amp; Connection &middot; 13 min read &middot; January 2026</p>
     <p class="resource-card-title">Sexless Marriage: When the Silence Says More Than the Number</p>
     <p class="resource-card-desc">Why a sexless relationship is almost never about low libido, why it is rarely as dead as it feels, the quiet grief on both sides, and the way back through EFT.</p>
   </a>
 
-  <a href="money-fights" class="resource-card reveal">
+  <a href="money-fights" data-topics="the-cycle money-family" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Couples &amp; Money &middot; 12 min read &middot; February 2026</p>
     <p class="resource-card-title">Why Money Fights Are Never Really About Money</p>
     <p class="resource-card-desc">Couples who fight about money are rarely fighting about money. The two attachment needs underneath every budget argument, why the spender-saver split is the pursue-withdraw cycle in disguise, and the way back.</p>
   </a>
 
-  <a href="intensive-parenting-marriage" class="resource-card reveal">
+  <a href="intensive-parenting-marriage" data-topics="the-cycle money-family disconnection" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Parenting &amp; the Couple Bond &middot; 12 min read &middot; March 2026</p>
     <p class="resource-card-title">Running on Empty: Why Your Kids Are Draining Your Relationship</p>
     <p class="resource-card-desc">Patient with the kids all day, then flat with your partner at night. Why intensive parenting quietly depletes the couple bond, the shadow cycle beneath the logistics fights, and why protecting the bond is parenting.</p>
   </a>
 
-  <a href="open-marriage" class="resource-card reveal">
+  <a href="open-marriage" data-topics="intimacy affairs modern-love" class="resource-card reveal">
     <span class="resource-card-arrow">&rarr;</span>
     <p class="resource-card-tag">Intimacy &amp; Connection &middot; Non-Monogamy &middot; 12 min read &middot; April 2026</p>
     <p class="resource-card-title">Open Marriage and Consensual Non-Monogamy: An Attachment-Informed Guide</p>
     <p class="resource-card-desc">Neither structure is automatically healthier, why the reassuring research is often misread, what jealousy is really signaling, what separates transparent non-monogamy from an affair, and opening from strength rather than to fix.</p>
   </a>
 
-  <a href="eft-couples-guide" class="resource-card resource-card-pdf reveal">
+  <a href="eft-couples-guide" data-topics="understanding-eft" class="resource-card resource-card-pdf reveal">
     <span class="resource-card-arrow">&darr;</span>
     <span class="resource-card-pdf-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg> Free Download</span>
     <p class="resource-card-tag">Free PDF &middot; EFT &middot; 28 Handouts &middot; July 2026</p>
@@ -618,13 +659,52 @@
     <p class="coming-soon-label">Coming Soon</p>
   </div>
 
-  <div style="border-top:1px solid var(--border);margin-top:2rem;padding-top:1.25rem;">
+  <div id="rf-appendix" style="border-top:1px solid var(--border);margin-top:2rem;padding-top:1.25rem;">
     <p style="font-size:0.68rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.6rem;">Appendix</p>
-    <a href="eft-glossary" style="font-size:0.88rem;color:var(--sage-dark);text-decoration:none;display:inline-flex;align-items:center;gap:0.4rem;opacity:0.8;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.8">EFT Glossary: 21 core terms defined &rarr;</a>
+    <a href="eft-glossary" style="font-size:0.88rem;color:var(--sage-dark);text-decoration:none;display:inline-flex;align-items:center;gap:0.4rem;opacity:0.8;transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.8">EFT Glossary: 34 core terms defined &rarr;</a>
   </div>
 
 </div>
 
+<script>
+(function(){
+  var body=document.querySelector('.resources-body');
+  if(!body)return;
+  var input=document.getElementById('rf-search');
+  var status=document.getElementById('rf-status');
+  var empty=document.getElementById('rf-empty');
+  var chips=[].slice.call(document.querySelectorAll('.rf-chip'));
+  var cards=[].slice.call(body.querySelectorAll('a.resource-card'));
+  var decor=[].slice.call(body.querySelectorAll('.coming-soon'));
+  ['rf-all-label','rf-ars-divider','rf-appendix'].forEach(function(id){var el=document.getElementById(id);if(el)decor.push(el);});
+  cards.forEach(function(c){c.__t=(c.textContent||'').toLowerCase().replace(/\s+/g,' ');});
+  var topic='all';
+  function apply(){
+    var q=(input.value||'').trim().toLowerCase();
+    var words=q?q.split(/\s+/):[];
+    var filtering=words.length>0||topic!=='all';
+    var shown=0;
+    cards.forEach(function(c){
+      var t=(c.getAttribute('data-topics')||'').split(/\s+/);
+      var okTopic=topic==='all'||t.indexOf(topic)>-1;
+      var okText=words.every(function(w){return c.__t.indexOf(w)>-1;});
+      var vis=okTopic&&okText;
+      c.style.display=vis?'':'none';
+      if(vis){c.classList.add('visible');shown++;}
+    });
+    decor.forEach(function(d){d.style.display=filtering?'none':'';});
+    status.style.display=filtering?'':'none';
+    if(filtering)status.textContent=shown+(shown===1?' article':' articles');
+    empty.style.display=(filtering&&shown===0)?'':'none';
+  }
+  input.addEventListener('input',apply);
+  chips.forEach(function(ch){ch.addEventListener('click',function(){
+    topic=ch.getAttribute('data-topic');
+    chips.forEach(function(x){var on=x===ch;x.classList.toggle('rf-chip-on',on);x.setAttribute('aria-pressed',on?'true':'false');});
+    apply();
+  });});
+})();
+</script>
 <div class="cta-strip">
   <h2 class="reveal">Ready to experience <em>EFT in practice?</em></h2>
   <p>A complimentary 20-minute consultation, a direct, confidential conversation about what you are navigating.</p>
