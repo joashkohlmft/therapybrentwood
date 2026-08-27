@@ -333,11 +333,7 @@
 @media(max-width:600px){#rf-search{font-size:16px;}}
 </style>
 <div class="rf-tools">
-  <label for="rf-search" class="rf-label">Search the library</label>
-  <div class="rf-search-wrap">
-    <svg class="rf-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-    <input id="rf-search" type="search" autocomplete="off" placeholder="Try &ldquo;affairs,&rdquo; &ldquo;stonewalling,&rdquo; &ldquo;intimacy&rdquo;&hellip;" aria-label="Search the resource library">
-  </div>
+  <p class="rf-label">Browse by topic</p>
   <div class="rf-chips" role="group" aria-label="Filter by topic">
     <button type="button" class="rf-chip rf-chip-on" data-topic="all" aria-pressed="true">All</button>
     <button type="button" class="rf-chip" data-topic="getting-started" aria-pressed="false">Getting Started</button>
@@ -670,34 +666,27 @@
 (function(){
   var body=document.querySelector('.resources-body');
   if(!body)return;
-  var input=document.getElementById('rf-search');
   var status=document.getElementById('rf-status');
   var empty=document.getElementById('rf-empty');
   var chips=[].slice.call(document.querySelectorAll('.rf-chip'));
   var cards=[].slice.call(body.querySelectorAll('a.resource-card'));
   var decor=[].slice.call(body.querySelectorAll('.coming-soon'));
   ['rf-all-label','rf-ars-divider','rf-appendix'].forEach(function(id){var el=document.getElementById(id);if(el)decor.push(el);});
-  cards.forEach(function(c){c.__t=(c.textContent||'').toLowerCase().replace(/\s+/g,' ');});
   var topic='all';
   function apply(){
-    var q=(input.value||'').trim().toLowerCase();
-    var words=q?q.split(/\s+/):[];
-    var filtering=words.length>0||topic!=='all';
+    var filtering=topic!=='all';
     var shown=0;
     cards.forEach(function(c){
       var t=(c.getAttribute('data-topics')||'').split(/\s+/);
-      var okTopic=topic==='all'||t.indexOf(topic)>-1;
-      var okText=words.every(function(w){return c.__t.indexOf(w)>-1;});
-      var vis=okTopic&&okText;
+      var vis=topic==='all'||t.indexOf(topic)>-1;
       c.style.display=vis?'':'none';
       if(vis){c.classList.add('visible');shown++;}
     });
     decor.forEach(function(d){d.style.display=filtering?'none':'';});
     status.style.display=filtering?'':'none';
     if(filtering)status.textContent=shown+(shown===1?' article':' articles');
-    empty.style.display=(filtering&&shown===0)?'':'none';
+    if(empty)empty.style.display='none';
   }
-  input.addEventListener('input',apply);
   chips.forEach(function(ch){ch.addEventListener('click',function(){
     topic=ch.getAttribute('data-topic');
     chips.forEach(function(x){var on=x===ch;x.classList.toggle('rf-chip-on',on);x.setAttribute('aria-pressed',on?'true':'false');});

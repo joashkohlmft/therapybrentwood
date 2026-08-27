@@ -641,11 +641,7 @@
   <a href="#sec-frameworks" class="gf-jump gf-rail-link" data-sec="sec-frameworks">Original Frameworks</a>
 </nav>
 <div class="gf-tools">
-  <label for="gf-search" class="gf-label">Search the glossary</label>
-  <div class="gf-search-wrap">
-    <svg class="gf-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-    <input id="gf-search" type="search" autocomplete="off" placeholder="Try &ldquo;softening,&rdquo; &ldquo;attachment injury,&rdquo; &ldquo;flooding&rdquo;&hellip;" aria-label="Search the glossary">
-  </div>
+  <p class="gf-label">Browse by section</p>
   <div class="gf-chips" role="group" aria-label="Filter by section">
     <button type="button" class="gf-chip gf-chip-on" data-section="all" aria-pressed="true">All</button>
     <button type="button" class="gf-chip" data-section="core" aria-pressed="false">Core EFT Concepts</button>
@@ -869,7 +865,6 @@
 (function(){
   var body=document.querySelector('.article-body');
   if(!body)return;
-  var input=document.getElementById('gf-search');
   var status=document.getElementById('gf-status');
   var empty=document.getElementById('gf-empty');
   var chips=[].slice.call(document.querySelectorAll('.gf-chip'));
@@ -883,21 +878,16 @@
     if(tag==='P'&&cur){cur.els.push(el);return;}
     cur=null;
   });
-  units.forEach(function(u){u.text=u.els.map(function(e){return e.textContent||'';}).join(' ').toLowerCase().replace(/\s+/g,' ');});
   var decor=[];
   ['gf-intro','gf-related'].forEach(function(id){var e=document.getElementById(id);if(e)decor.push(e);});
   var ib=body.querySelector('.in-brief');if(ib)decor.push(ib);
   var hrs=[].slice.call(body.querySelectorAll('hr.section-divider'));
   var section='all';
   function apply(){
-    var q=(input.value||'').trim().toLowerCase();
-    var words=q?q.split(/\s+/):[];
-    var filtering=words.length>0||section!=='all';
+    var filtering=section!=='all';
     var shown=0;
     units.forEach(function(u){
-      var okSec=section==='all'||u.sec===section;
-      var okText=words.every(function(w){return u.text.indexOf(w)>-1;});
-      var vis=okSec&&okText;
+      var vis=section==='all'||u.sec===section;
       u.els.forEach(function(e){e.style.display=vis?'':'none';if(vis)e.classList.add('visible');});
       if(vis)shown++;
     });
@@ -911,9 +901,8 @@
     hrs.forEach(function(h){h.style.display=filtering?'none':'';});
     status.style.display=filtering?'':'none';
     if(filtering)status.textContent=shown+(shown===1?' term':' terms');
-    empty.style.display=(filtering&&shown===0)?'':'none';
+    if(empty)empty.style.display='none';
   }
-  input.addEventListener('input',apply);
   chips.forEach(function(ch){ch.addEventListener('click',function(){
     section=ch.getAttribute('data-section');
     chips.forEach(function(x){var on=x===ch;x.classList.toggle('gf-chip-on',on);x.setAttribute('aria-pressed',on?'true':'false');});
