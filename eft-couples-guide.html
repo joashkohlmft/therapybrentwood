@@ -274,7 +274,7 @@
 </head>
 <body>
 <div class="top-banner">
-  <a href="eft-couples-guide" id="topBannerCta" style="color:inherit;text-decoration:none;display:block;"><strong>Free Handouts for Couples</strong> &nbsp;&middot;&nbsp; Click here for 28 EFT exercises</a>
+  <a href="eft-couples-guide" id="topBannerCta" style="color:inherit;text-decoration:none;display:block;"><strong>Free Handouts for Couples</strong> &nbsp;&middot;&nbsp; Click here</a>
 </div>
 
 <nav>
@@ -822,9 +822,9 @@
 <div id="handoutModal" class="hm-overlay" hidden>
   <div class="hm-box" role="dialog" aria-modal="true" aria-labelledby="hm-title">
     <button type="button" class="hm-close" aria-label="Close">&times;</button>
-    <p class="hm-eyebrow">Free &middot; 28 handouts</p>
+    <p class="hm-eyebrow">Free couple ebook</p>
     <h2 id="hm-title">The Wondrous Art of Love</h2>
-    <p class="hm-sub">Twenty-eight EFT handouts for couples. Add your name and email and I&rsquo;ll send the guide to your inbox &mdash; or just grab the PDF below, no email needed.</p>
+    <p class="hm-sub">Twenty-eight EFT handouts for couples. Add your name and email and I&rsquo;ll send the guide straight to your inbox.</p>
     <form id="hm-form" class="hm-form" action="https://formspree.io/f/mnjwyjrl" method="POST">
       <input type="hidden" name="_subject" value="Free Handout &mdash; Wondrous Art of Love">
       <input type="hidden" name="source" value="handout-lead-magnet">
@@ -832,7 +832,6 @@
       <input type="email" name="email" placeholder="Email address" autocomplete="email" required>
       <button type="submit" class="hm-submit">Email me the guide &darr;</button>
     </form>
-    <p class="hm-alt"><a href="wondrous-art-of-love-eft-guide.pdf" download class="hm-skip">Or just download it, no email needed &rarr;</a></p>
     <p class="hm-done" hidden>Thank you. Your download is starting &mdash; check your inbox too.</p>
   </div>
 </div>
@@ -849,7 +848,6 @@
   m.querySelector('.hm-close').addEventListener('click',closeM);
   m.addEventListener('click',function(e){if(e.target===m)closeM();});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden)closeM();});
-  var skip=m.querySelector('.hm-skip'); if(skip)skip.addEventListener('click',function(){setTimeout(closeM,400);});
   form.addEventListener('submit',function(e){
     e.preventDefault();
     var btn=form.querySelector('.hm-submit');btn.disabled=true;btn.textContent='Sending…';
