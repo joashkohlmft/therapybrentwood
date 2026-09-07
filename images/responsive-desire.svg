@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 424" width="720" height="424" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'DM Sans',sans-serif">
+  <rect x="0" y="0" width="720" height="424" fill="#ffffff"/>
+  <defs>
+    <marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9a9490"/>
+    </marker>
+  </defs>
+  <text x="360" y="40" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="25" font-weight="600" fill="#3d5c50">Two Engines of Desire</text>
+  <text x="360" y="64" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14.5" fill="#9a9490">in midlife, desire follows closeness, it does not arrive first</text>
+
+  <!-- Row 1: spontaneous -->
+  <text x="360" y="108" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1.3" fill="#8a6d3f">EARLY LOVE &#183; SPONTANEOUS</text>
+  <rect x="150" y="124" width="180" height="66" rx="11" fill="#3d5c50"/>
+  <text x="240" y="164" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="23" font-weight="600" fill="#ffffff">Desire</text>
+  <rect x="390" y="124" width="180" height="66" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.4"/>
+  <text x="480" y="164" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="23" font-weight="600" fill="#3d5c50">Closeness</text>
+  <path d="M 336,157 L 384,157" fill="none" stroke="#9a9490" stroke-width="2" marker-end="url(#ah2)"/>
+  <text x="360" y="212" text-anchor="middle" font-size="11.5" font-style="italic" fill="#a89a7e" font-family="'DM Sans',sans-serif">the urge shows up first, then leads you toward each other</text>
+
+  <line x1="120" y1="242" x2="600" y2="242" stroke="#e8e2d6" stroke-width="1"/>
+
+  <!-- Row 2: responsive -->
+  <text x="360" y="278" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="1.3" fill="#5a7d6d">MIDLIFE &#183; RESPONSIVE</text>
+  <rect x="60" y="296" width="176" height="70" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.4"/>
+  <text x="148" y="330" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="19" font-weight="600" fill="#3d5c50">Safety &amp;</text>
+  <text x="148" y="352" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="19" font-weight="600" fill="#3d5c50">closeness</text>
+  <rect x="284" y="296" width="152" height="70" rx="11" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.4"/>
+  <text x="360" y="338" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="19" font-weight="600" fill="#3d5c50">Willingness</text>
+  <rect x="484" y="296" width="176" height="70" rx="11" fill="#3d5c50"/>
+  <text x="572" y="338" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="23" font-weight="600" fill="#ffffff">Desire</text>
+  <path d="M 240,331 L 280,331" fill="none" stroke="#9a9490" stroke-width="2" marker-end="url(#ah2)"/>
+  <path d="M 440,331 L 480,331" fill="none" stroke="#9a9490" stroke-width="2" marker-end="url(#ah2)"/>
+
+  <text x="360" y="398" text-anchor="middle" font-size="12.5" font-style="italic" fill="#8a857c" font-family="'DM Sans',sans-serif">You start it by stepping toward each other, not by waiting to be struck.</text>
+  <text x="712" y="410" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3" font-family="'DM Sans',sans-serif">&#169; Joash Koh, LMFT</text>
+</svg>
