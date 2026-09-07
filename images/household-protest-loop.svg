@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 584" width="720" height="584" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'DM Sans',sans-serif">
+  <rect x="0" y="0" width="720" height="584" fill="#ffffff"/>
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9a9490"/>
+    </marker>
+  </defs>
+  <text x="360" y="36" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="25" font-weight="600" fill="#3d5c50">The Household Protest Loop</text>
+  <text x="360" y="60" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14.5" fill="#9a9490">the harder one reaches, the further the other backs away</text>
+
+  <!-- A: carrier feeling (top) -->
+  <rect x="245" y="82" width="230" height="98" rx="12" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+  <text x="360" y="104" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1.3" fill="#5a7d6d">THE CARRIER</text>
+  <text text-anchor="middle" font-size="13.5" fill="#3d5c50" font-family="'DM Sans',sans-serif"><tspan x="360" y="126">The load piles up. A quiet</tspan><tspan x="360" y="144">alarm: &#8220;Am I all alone</tspan><tspan x="360" y="162">in this?&#8221;</tspan></text>
+
+  <!-- B: carrier move (right) -->
+  <rect x="452" y="250" width="232" height="98" rx="12" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+  <text x="568" y="272" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1.3" fill="#5a7d6d">THE CARRIER</text>
+  <text text-anchor="middle" font-size="13.5" fill="#3d5c50" font-family="'DM Sans',sans-serif"><tspan x="568" y="294">Reaches the only way that</tspan><tspan x="568" y="312">feels safe, sharp: &#8220;Why do</tspan><tspan x="568" y="330">I have to ask?&#8221;</tspan></text>
+
+  <!-- C: withdrawer feeling (bottom) -->
+  <rect x="245" y="420" width="230" height="98" rx="12" fill="#f4efe6" stroke="#d8c7a8" stroke-width="1.5"/>
+  <text x="360" y="442" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1.3" fill="#a8863f">THE WITHDRAWER</text>
+  <text text-anchor="middle" font-size="13.5" fill="#6f5b39" font-family="'DM Sans',sans-serif"><tspan x="360" y="464">Hears &#8220;you failed again.&#8221;</tspan><tspan x="360" y="482">Shame floods: &#8220;I never</tspan><tspan x="360" y="500">get it right.&#8221;</tspan></text>
+
+  <!-- D: withdrawer move (left) -->
+  <rect x="36" y="250" width="232" height="98" rx="12" fill="#f4efe6" stroke="#d8c7a8" stroke-width="1.5"/>
+  <text x="152" y="272" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1.3" fill="#a8863f">THE WITHDRAWER</text>
+  <text text-anchor="middle" font-size="13.5" fill="#6f5b39" font-family="'DM Sans',sans-serif"><tspan x="152" y="294">Defends, then goes quiet</tspan><tspan x="152" y="312">and escapes, to work,</tspan><tspan x="152" y="330">the phone, the garage.</tspan></text>
+
+  <!-- clockwise arrows -->
+  <path d="M 476,150 C 560,168 572,205 570,246" fill="none" stroke="#9a9490" stroke-width="1.8" marker-end="url(#ah)"/>
+  <path d="M 570,352 C 570,405 505,452 481,462" fill="none" stroke="#9a9490" stroke-width="1.8" marker-end="url(#ah)"/>
+  <path d="M 239,462 C 150,452 150,405 150,352" fill="none" stroke="#9a9490" stroke-width="1.8" marker-end="url(#ah)"/>
+  <path d="M 150,246 C 148,205 165,168 239,150" fill="none" stroke="#9a9490" stroke-width="1.8" marker-end="url(#ah)"/>
+
+  <!-- center label -->
+  <text x="360" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="18" font-style="italic" fill="#8a857c"><tspan x="360" y="284">The cycle is</tspan><tspan x="360" y="306">the problem,</tspan><tspan x="360" y="328">not either of you.</tspan></text>
+
+  <text x="360" y="556" text-anchor="middle" font-size="12.5" font-style="italic" fill="#8a857c" font-family="'DM Sans',sans-serif">His going quiet is the very thing that convinces her she is carrying it all alone.</text>
+  <text x="712" y="574" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3" font-family="'DM Sans',sans-serif">&#169; Joash Koh, LMFT</text>
+</svg>
