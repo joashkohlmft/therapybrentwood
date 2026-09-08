@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 720 560" width="720" height="560" xmlns="http://www.w3.org/2000/svg" role="img" font-family="'DM Sans',sans-serif">
+  <rect x="0" y="0" width="720" height="560" fill="#ffffff"/>
+  <defs><marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9a9490"/></marker></defs>
+  <text x="360" y="36" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-size="25" font-weight="600" fill="#3d5c50">The Cycle, in Two Layers</text>
+  <text x="360" y="60" text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="14.5" fill="#9a9490">the moves are opposite, the fear underneath is the same</text>
+  <!-- water tint + waterline -->
+  <rect x="28" y="300" width="664" height="212" rx="10" fill="#eef4f1"/>
+  <line x1="28" y1="300" x2="692" y2="300" stroke="#a9c3b8" stroke-width="1.5" stroke-dasharray="2 3"/>
+  <text x="40" y="294" font-size="9" font-weight="700" letter-spacing="1" fill="#8a857c" font-family="'DM Sans',sans-serif">WHAT YOU SEE</text>
+  <text x="40" y="318" font-size="9" font-weight="700" letter-spacing="1" fill="#8a857c" font-family="'DM Sans',sans-serif">WHAT IS DRIVING IT</text>
+  <!-- surface boxes -->
+  <rect x="64" y="150" width="250" height="96" rx="12" fill="#f4efe6" stroke="#d8c7a8" stroke-width="1.5"/>
+  <text x="189" y="176" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="#a8863f">THE PURSUER</text>
+  <text text-anchor="middle" font-size="13.5" fill="#6f5b39" font-family="'DM Sans',sans-serif"><tspan x="189" y="200">Protests, criticizes,</tspan><tspan x="189" y="220">reaches and pushes,</tspan><tspan x="189" y="240">moves toward.</tspan></text>
+  <rect x="406" y="150" width="250" height="96" rx="12" fill="#eaf2ee" stroke="#7a9e8e" stroke-width="1.5"/>
+  <text x="531" y="176" text-anchor="middle" font-size="10.5" font-weight="700" letter-spacing="1.2" fill="#5a7d6d">THE WITHDRAWER</text>
+  <text text-anchor="middle" font-size="13.5" fill="#3d5c50" font-family="'DM Sans',sans-serif"><tspan x="531" y="200">Defends, goes quiet,</tspan><tspan x="531" y="220">shuts down,</tspan><tspan x="531" y="240">moves away.</tspan></text>
+  <!-- loop arrows in the gap -->
+  <path d="M 316,182 C 350,160 372,160 404,182" fill="none" stroke="#9a9490" stroke-width="1.8" marker-end="url(#a1)"/>
+  <path d="M 404,214 C 372,236 350,236 316,214" fill="none" stroke="#9a9490" stroke-width="1.8" marker-end="url(#a1)"/>
+  <!-- dashed depth connectors -->
+  <line x1="189" y1="246" x2="189" y2="350" stroke="#c2b490" stroke-width="1.4" stroke-dasharray="3 4"/>
+  <line x1="531" y1="246" x2="531" y2="350" stroke="#9db6aa" stroke-width="1.4" stroke-dasharray="3 4"/>
+  <!-- feeling boxes -->
+  <rect x="64" y="352" width="250" height="108" rx="12" fill="#fbf7f0" stroke="#e6d9bf" stroke-width="1.4"/>
+  <text x="189" y="378" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1.1" fill="#b08a45">THE FEAR UNDERNEATH</text>
+  <text text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="17.5" fill="#6f5b39"><tspan x="189" y="406">&#8220;Am I alone?</tspan><tspan x="189" y="430">Do I still matter</tspan><tspan x="189" y="452">to you?&#8221;</tspan></text>
+  <rect x="406" y="352" width="250" height="108" rx="12" fill="#f2f8f5" stroke="#bdd6ca" stroke-width="1.4"/>
+  <text x="531" y="378" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="1.1" fill="#5a7d6d">THE FEAR UNDERNEATH</text>
+  <text text-anchor="middle" font-family="'Cormorant Garamond',serif" font-style="italic" font-size="17.5" fill="#3d5c50"><tspan x="531" y="406">&#8220;I can never win.</tspan><tspan x="531" y="430">I&#8217;m failing you,</tspan><tspan x="531" y="452">so I retreat.&#8221;</tspan></text>
+  <text x="360" y="498" text-anchor="middle" font-size="13" font-style="italic" fill="#8a857c" font-family="'DM Sans',sans-serif">The cycle is the enemy, not each other.</text>
+  <text x="712" y="512" text-anchor="end" font-size="8" fill="#c4bcae" letter-spacing="0.3" font-family="'DM Sans',sans-serif">&#169; Joash Koh, LMFT</text>
+</svg>
