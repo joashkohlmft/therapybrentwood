@@ -61,8 +61,6 @@
     "url": "https://www.therapybrentwood.com"
   },
   "url": "https://www.therapybrentwood.com/eft-glossary",
-  "datePublished": "2026-06-05",
-  "dateModified": "2026-09-08",
   "about": {
     "@type": "DefinedTermSet",
     "name": "EFT Glossary",
@@ -630,6 +628,10 @@
   .gf-rail-link{display:block;font-size:0.82rem;color:var(--text-muted);text-decoration:none;padding:0.28rem 0 0.28rem 0.7rem;border-left:2px solid var(--border);line-height:1.35;transition:color 0.15s,border-color 0.15s;}
   .gf-rail-link:hover{color:var(--sage-dark);}
   .gf-rail-link.gf-active{color:var(--sage-dark);border-left-color:var(--sage-dark);font-weight:500;}
+.gf-rail--on-hero .gf-rail-title{color:#cdb892;}
+.gf-rail--on-hero .gf-rail-link{color:rgba(255,255,255,0.72);border-left-color:rgba(255,255,255,0.3);}
+.gf-rail--on-hero .gf-rail-link:hover{color:#fff;}
+.gf-rail--on-hero .gf-rail-link.gf-active{color:#fff;border-left-color:#fff;font-weight:500;}
 }
 @media(max-width:600px){#gf-search{font-size:16px;}}
 </style>
@@ -922,11 +924,14 @@
     if(allChip)allChip.click();
   },true);
   var links=[].slice.call(document.querySelectorAll('.gf-rail-link'));
+  var railEl=document.querySelector('.gf-rail');
+  var heroEl=document.querySelector('.article-hero');
   if(links.length){
     var secs=links.map(function(l){return {link:l,el:document.getElementById(l.getAttribute('data-sec'))};}).filter(function(x){return x.el;});
     var raf=false;
     function spy(){
       raf=false;
+      if(railEl&&heroEl){ railEl.classList.toggle('gf-rail--on-hero', heroEl.getBoundingClientRect().bottom>150); }
       var active=secs[0];
       secs.forEach(function(sc){ if(sc.el.getBoundingClientRect().top<=140) active=sc; });
       links.forEach(function(l){l.classList.remove('gf-active');});
