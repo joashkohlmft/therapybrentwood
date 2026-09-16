@@ -358,6 +358,17 @@
     .dropdown-menu.mega.mega-services .mega-foot a { display: inline-block; padding: 0.2rem 0.4rem; white-space: nowrap; }
   }
 
+  /* Resources mega — three columns like Services, kept right-anchored under the Resources tab */
+  @media (min-width: 769px) {
+    .dropdown-menu.mega.mega-resources {
+      grid-template-columns: repeat(3, 1fr);
+      width: 740px;
+      min-width: 0;
+      max-width: calc(100vw - 2rem);
+    }
+    .dropdown-menu.mega.mega-resources a { white-space: normal; line-height: 1.3; }
+  }
+
   /* TOP BANNER */
   .top-banner strong { color: #fff; font-weight: 500; }
 
