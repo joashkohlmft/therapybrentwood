@@ -53,7 +53,7 @@
   },
   "url": "https://www.therapybrentwood.com/emotional-vs-sexual-affairs",
   "datePublished": "2026-01-14",
-  "dateModified": "2026-09-09",
+  "dateModified": "2026-11-11",
   "mainEntityOfPage": "https://www.therapybrentwood.com/emotional-vs-sexual-affairs",
   "image": "https://www.therapybrentwood.com/images/og-emotional-vs-sexual-affairs.jpg"
 }
@@ -109,6 +109,24 @@
   .related-grid { grid-template-columns: repeat(3, 1fr); }
   .related-card-tag { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.5rem; }
   .related-card-title { font-size: 1.1rem; line-height: 1.3; }
+  .series-nav { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; max-width: 960px; margin: 2rem auto 0; }
+  .series-nav-label { font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--warm); margin-bottom: 0.75rem; text-align: center; display: block; }
+  .series-nav-links { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+  .series-nav-links a { font-size: 0.82rem; color: var(--text-muted); text-decoration: none; padding: 0.35rem 0.85rem; border: 1px solid var(--border); border-radius: 100px; transition: all 0.2s; white-space: nowrap; }
+  .series-nav-links a:hover { color: var(--sage-dark); border-color: var(--sage); }
+  .series-nav-links a.active { background: var(--sage-dark); color: #fff !important; border-color: var(--sage-dark); display: flex; flex-direction: column; align-items: center; padding: 0.5rem 1rem; }
+  .series-nav-links a.active:visited { color: #fff !important; }
+  .series-nav-links a.active::before { content: "Reading now"; display: block; font-size: 0.58rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 0.2rem; line-height: 1; }
+  .series-nav-bottom { max-width: 960px; margin: 0 auto; padding: 0 2rem 3.5rem; }
+@media (max-width: 768px) {
+  .series-nav-links { flex-direction: column !important; flex-wrap: wrap !important; justify-content: flex-start !important; gap: 0.4rem !important; }
+  .series-nav-links a { white-space: normal !important; font-size: 0.8rem !important; padding: 0.5rem 0.85rem !important; display: block !important; text-align: left !important; border-radius: 8px !important; width: 100% !important; box-sizing: border-box !important; }
+  .series-nav { padding: 1rem 1.1rem !important; margin: 1.5rem 1.25rem 0 !important; border-radius: 10px !important; }
+  .series-nav-label { font-size: 0.6rem !important; margin-bottom: 0.6rem !important; }
+  .series-nav-links a.active { flex-direction: row !important; align-items: center !important; gap: 0.5rem !important; padding: 0.55rem 0.85rem !important; }
+  .series-nav-links a.active::before { display: inline-block !important; margin-bottom: 0 !important; margin-right: 0.35rem !important; font-size: 0.55rem !important; white-space: nowrap !important; }
+  .series-nav-bottom { padding: 0 0 2.5rem; }
+}
   #reading-progress { position: fixed; top: 0; left: 0; height: 3px; background: var(--warm); width: 0%; z-index: 9999; transition: width 0.1s linear; }
 @media (max-width: 768px) {
   .article-hero h1 { font-size: clamp(1.55rem, 5vw, 2rem) !important; line-height: 1.2 !important; }
@@ -402,6 +420,7 @@
           <a href="trauma-triggers-in-relationships">Why Trauma Makes You Reactive</a>
           <a href="trauma-bonding-or-attachment-panic">Is It a Trauma Bond?</a>
           <a href="emotional-vs-sexual-affairs">Emotional vs Sexual Affairs</a>
+          <a href="affair-recovery">Affair Recovery: The Truth</a>
           <a href="what-true-forgiveness-is">What True Forgiveness Is</a>
         </li>
         <li class="mega-col">
@@ -454,6 +473,14 @@
       <div class="article-byline-text">
         Written by <strong>Joash Koh, LMFT</strong> &middot; ICEEFT Certified EFT Therapist &middot; Brentwood, Tennessee
       </div>
+    </div>
+  </div>
+  <div class="series-nav">
+    <p class="series-nav-label">After an Affair, a 3-part series</p>
+    <div class="series-nav-links">
+      <a href="emotional-vs-sexual-affairs" class="active">Part 1: What Happened</a>
+      <a href="affair-recovery">Part 2: The Truth</a>
+      <a href="what-true-forgiveness-is">Part 3: Forgiveness</a>
     </div>
   </div>
 </section>
@@ -595,6 +622,17 @@
     </div>
   </div>
 
+</div>
+
+<div class="series-nav-bottom">
+  <div class="series-nav">
+    <p class="series-nav-label">After an Affair, a 3-part series</p>
+    <div class="series-nav-links">
+      <a href="emotional-vs-sexual-affairs" class="active">Part 1: What Happened</a>
+      <a href="affair-recovery">Part 2: The Truth</a>
+      <a href="what-true-forgiveness-is">Part 3: Forgiveness</a>
+    </div>
+  </div>
 </div>
 
 <div class="related-articles">
@@ -879,6 +917,7 @@
         <li><a href="trauma-triggers-in-relationships">Why Trauma Makes You Reactive</a></li>
         <li><a href="trauma-bonding-or-attachment-panic">Is It a Trauma Bond?</a></li>
         <li><a href="emotional-vs-sexual-affairs">Emotional vs Sexual Affairs</a></li>
+        <li><a href="affair-recovery">Affair Recovery: The Truth</a></li>
         <li><a href="what-true-forgiveness-is">What True Forgiveness Is</a></li>
         <li class="overlay-sub-head">Intimacy &amp; Connection</li>
         <li><a href="the-brakes-nobody-told-you-about">The Brakes Nobody Told You About</a></li>
